@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="e2studio" Version="5.3.0.023"/>
+  <Placeholders>
+    <PlaceholderPrefix>${</PlaceholderPrefix>
+    <PlaceholderPostfix>}</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="RX63N" Type="Application">
+    <Files>
+      <Category Name="demo_src">
+        <Path>demo_src\main.c</Path>
+        <Path>demo_src\r_usb_pcdc_descriptor.c</Path>
+        <Path>demo_src\r_usb_pcdc_echo_apl.c</Path>
+        <Path>demo_src\r_usb_pcdc_uart_apl.c</Path>
+        <Path>demo_src\r_usb_rsk_lowpower.c</Path>
+        <Path>demo_src\r_usb_rsk_scidriver.c</Path>
+        <Category Name="inc">
+          <Path>demo_src\inc\r_usb_pcdc_apl.h</Path>
+          <Path>demo_src\inc\r_usb_pcdc_apl_config.h</Path>
+          <Path>demo_src\inc\r_usb_rsk_lowpower.h</Path>
+          <Path>demo_src\inc\r_usb_rsk_sci.h</Path>
+        </Category>
+      </Category>
+      <Category Name="r_bsp">
+        <Path>r_bsp\platform.h</Path>
+        <Path>r_bsp\readme.txt</Path>
+        <Category Name="board">
+          <Category Name="rskrx63n">
+            <Path>r_bsp\board\rskrx63n\dbsct.c</Path>
+            <Path>r_bsp\board\rskrx63n\hwsetup.c</Path>
+            <Path>r_bsp\board\rskrx63n\hwsetup.h</Path>
+            <Path>r_bsp\board\rskrx63n\lowlvl.c</Path>
+            <Path>r_bsp\board\rskrx63n\lowsrc.c</Path>
+            <Path>r_bsp\board\rskrx63n\lowsrc.h</Path>
+            <Path>r_bsp\board\rskrx63n\r_bsp.h</Path>
+            <Path>r_bsp\board\rskrx63n\r_bsp_config_reference.h</Path>
+            <Path>r_bsp\board\rskrx63n\resetprg.c</Path>
+            <Path>r_bsp\board\rskrx63n\rskrx63n.h</Path>
+            <Path>r_bsp\board\rskrx63n\sbrk.c</Path>
+            <Path>r_bsp\board\rskrx63n\vecttbl.c</Path>
+            <Path>r_bsp\board\rskrx63n\vecttbl.h</Path>
+          </Category>
+          <Category Name="user">
+            <Path>r_bsp\board\user\r_bsp.h</Path>
+          </Category>
+        </Category>
+        <Category Name="doc">
+          <Category Name="en">
+            <Path>r_bsp\doc\en\r01an1685ej0340_rx.pdf</Path>
+          </Category>
+          <Category Name="jp">
+            <Path>r_bsp\doc\jp\r01an1685jj0340_rx.pdf</Path>
+          </Category>
+        </Category>
+        <Category Name="mcu">
+          <Category Name="all">
+            <Path>r_bsp\mcu\all\r_bsp_common.c</Path>
+            <Path>r_bsp\mcu\all\r_bsp_common.h</Path>
+            <Path>r_bsp\mcu\all\r_typedefs.h</Path>
+          </Category>
+          <Category Name="rx63n">
+            <Path>r_bsp\mcu\rx63n\cpu.c</Path>
+            <Path>r_bsp\mcu\rx63n\cpu.h</Path>
+            <Path>r_bsp\mcu\rx63n\locking.c</Path>
+            <Path>r_bsp\mcu\rx63n\locking.h</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_clocks.c</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_info.h</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_init.c</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_init.h</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_interrupts.c</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_interrupts.h</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_locks.c</Path>
+            <Path>r_bsp\mcu\rx63n\mcu_locks.h</Path>
+            <Category Name="register_access">
+              <Path>r_bsp\mcu\rx63n\register_access\iodefine.h</Path>
+            </Category>
+          </Category>
+        </Category>
+      </Category>
+      <Category Name="r_byteq">
+        <Path>r_byteq\r_byteq_if.h</Path>
+        <Path>r_byteq\readme.txt</Path>
+        <Category Name="doc">
+          <Path>r_byteq\doc\r01an1683jj0160_rx.pdf</Path>
+        </Category>
+        <Category Name="ref">
+          <Path>r_byteq\ref\r_byteq_config_reference.h</Path>
+        </Category>
+        <Category Name="src">
+          <Path>r_byteq\src\r_byteq.c</Path>
+          <Path>r_byteq\src\r_byteq_private.h</Path>
+        </Category>
+      </Category>
+      <Category Name="r_config">
+        <Path>r_config\r_bsp_config.h</Path>
+        <Path>r_config\r_bsp_config_readme.txt</Path>
+        <Path>r_config\r_byteq_config.h</Path>
+        <Path>r_config\r_sci_rx_config.h</Path>
+        <Path>r_config\r_usb_basic_config.h</Path>
+        <Path>r_config\r_usb_pcdc_config.h</Path>
+      </Category>
+      <Category Name="r_sci_rx">
+        <Path>r_sci_rx\r_sci_rx_if.h</Path>
+        <Path>r_sci_rx\readme.txt</Path>
+        <Category Name="doc">
+          <Category Name="en">
+            <Path>r_sci_rx\doc\en\r01an1815ej0180-rx.pdf</Path>
+          </Category>
+          <Category Name="ja">
+            <Path>r_sci_rx\doc\ja\r01an1815jj0180-rx.pdf</Path>
+          </Category>
+        </Category>
+        <Category Name="ref">
+          <Path>r_sci_rx\ref\r_sci_rx_config_reference.h</Path>
+        </Category>
+        <Category Name="src">
+          <Path>r_sci_rx\src\r_sci_rx.c</Path>
+          <Path>r_sci_rx\src\r_sci_rx_platform.h</Path>
+          <Path>r_sci_rx\src\r_sci_rx_private.h</Path>
+          <Category Name="targets">
+            <Category Name="rx63n">
+              <Path>r_sci_rx\src\targets\rx63n\r_sci_rx63n.c</Path>
+              <Path>r_sci_rx\src\targets\rx63n\r_sci_rx63n_data.c</Path>
+              <Path>r_sci_rx\src\targets\rx63n\r_sci_rx63n_private.h</Path>
+            </Category>
+          </Category>
+        </Category>
+      </Category>
+      <Category Name="r_usb_basic">
+        <Path>r_usb_basic\r_usb_basic_if.h</Path>
+        <Path>r_usb_basic\readme.txt</Path>
+        <Category Name="doc">
+          <Category Name="en">
+            <Path>r_usb_basic\doc\en\r01an2025ej0121_usb.pdf</Path>
+          </Category>
+          <Category Name="ja">
+            <Path>r_usb_basic\doc\ja\r01an2025jj0121_usb.pdf</Path>
+          </Category>
+        </Category>
+        <Category Name="ref">
+          <Path>r_usb_basic\ref\r_usb_basic_config_reference.h</Path>
+        </Category>
+        <Category Name="src">
+          <Category Name="driver">
+            <Path>r_usb_basic\src\driver\r_usb_cdataio.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_clibusbip.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hbc.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hcontrolrw.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hdriver.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hhubsys.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hintfifo.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hinthandler_usbip0.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hinthandler_usbip1.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hlibusbip.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hmanager.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hscheduler.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hsignal.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_hstdfunction.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_pbc.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_pcontrolrw.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_pdriver.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_peptable.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_pintfifo.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_pinthandler_usbip0.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_plibusbip.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_psignal.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_pstdfunction.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_pstdrequest.c</Path>
+            <Path>r_usb_basic\src\driver\r_usb_usbif_api.c</Path>
+            <Category Name="inc">
+              <Path>r_usb_basic\src\driver\inc\r_usb_basic_define.h</Path>
+              <Path>r_usb_basic\src\driver\inc\r_usb_extern.h</Path>
+              <Path>r_usb_basic\src\driver\inc\r_usb_typedef.h</Path>
+            </Category>
+          </Category>
+          <Category Name="hw">
+            <Path>r_usb_basic\src\hw\r_usb_creg_abs.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_creg_access.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_dma.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_hostelectrical.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_hreg_abs.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_hreg_access.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_preg_abs.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_preg_access.c</Path>
+            <Path>r_usb_basic\src\hw\r_usb_rx_mcu.c</Path>
+            <Category Name="inc">
+              <Path>r_usb_basic\src\hw\inc\r_usb_bitdefine.h</Path>
+              <Path>r_usb_basic\src\hw\inc\r_usb_dmac.h</Path>
+              <Path>r_usb_basic\src\hw\inc\r_usb_reg_access.h</Path>
+            </Category>
+          </Category>
+        </Category>
+      </Category>
+      <Category Name="r_usb_pcdc">
+        <Path>r_usb_pcdc\r_usb_pcdc_if.h</Path>
+        <Path>r_usb_pcdc\readme.txt</Path>
+        <Category Name="doc">
+          <Category Name="en">
+            <Path>r_usb_pcdc\doc\en\r01an2030ej0121_usb.pdf</Path>
+          </Category>
+          <Category Name="ja">
+            <Path>r_usb_pcdc\doc\ja\r01an2030jj0121_usb.pdf</Path>
+          </Category>
+        </Category>
+        <Category Name="ref">
+          <Path>r_usb_pcdc\ref\r_usb_pcdc_config_reference.h</Path>
+        </Category>
+        <Category Name="src">
+          <Path>r_usb_pcdc\src\r_usb_pcdc_api.c</Path>
+          <Path>r_usb_pcdc\src\r_usb_pcdc_driver.c</Path>
+          <Category Name="inc">
+            <Path>r_usb_pcdc\src\inc\r_usb_pcdc.h</Path>
+          </Category>
+        </Category>
+      </Category>
+    </Files>
+    <Device Category="com.renesas.cdt.rxc.HardwareDebug.Compiler.option.cpuType.rx600" Series="RX">R5F563NEDxFC</Device>
+    <BuildOptions Name="CC-RX" Version="v2.05.00">
+      <BuildMode Active="True" Name="HardwareDebug">
+        <GeneralOptions/>
+        <CompileOptions>
+          <Option>-include="${ProjDirPath}/../${ProjName}/demo_src/inc"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_usb_basic"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_usb_basic/src/hw/inc"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_usb_pcdc/src/inc"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_usb_basic/src/driver/inc"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_usb_pcdc"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_bsp"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_byteq"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_byteq/src"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_config"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_sci_rx"</Option>
+          <Option>-include="${ProjDirPath}/../${ProjName}/r_sci_rx/src"</Option>
+          <Option>-define=__RX</Option>
+          <Option>-debug</Option>
+          <Option>-nomessage</Option>
+          <Option>-nologo</Option>
+          <Option>-isa=rxv1</Option>
+          <Option>-fpu</Option>
+          <Option>-alias=noansi</Option>
+          <Option>-lang=cpp</Option>
+          <Option>-lang=c99</Option>
+          <Option>-output=obj=${CONFIGDIR}\${FILELEAF}.obj</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-define=__RX</Option>
+          <Option>-nolistfile</Option>
+          <Option>-nologo</Option>
+          <Option>-isa=rxv1</Option>
+          <Option>-debug</Option>
+          <Option>-fpu</Option>
+        </AssembleOptions>
+        <LinkOptions>
+          <Option>-list="PCDC.map"</Option>
+          <Option>-nooptimize</Option>
+          <Option>-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,P*,C_1,C_2,C,C$*,D*,W*,L/0FFFE0000,FIXEDVECT/0FFFFFF80</Option>
+          <Option>-nologo</Option>
+          <Option>-rom=D=R</Option>
+          <Option>-rom=D_1=R_1</Option>
+          <Option>-rom=D_2=R_2</Option>
+          <Option>-nocompress</Option>
+          <Option>-vect=_undefined_interrupt_source_isr</Option>
+          <Option>-nomessage</Option>
+          <Option>-end</Option>
+          <Option>-nomessage</Option>
+          <Option>-output="${CONFIGDIR}\${ProjName}.mot"</Option>
+          <Option>-input="${CONFIGDIR}\${ProjName}.abs"</Option>
+          <Option>-form=stype</Option>
+          <Option>-exit</Option>
+          <PreLinker>Auto</PreLinker>
+        </LinkOptions>
+        <LibraryGenerateOptions>
+          <Option>-lang=c99</Option>
+          <Option>-head=runtime,stdio,stdlib,string,new</Option>
+          <Option>-isa=rxv1</Option>
+          <Option>-fpu</Option>
+          <GenerateMode>BuildOptionChanged</GenerateMode>
+        </LibraryGenerateOptions>
+        <LinkOrder>
+          <Path>HardwareDebug\r_usb_pcdc_api.obj</Path>
+          <Path>HardwareDebug\r_usb_pcdc_driver.obj</Path>
+          <Path>HardwareDebug\r_usb_creg_abs.obj</Path>
+          <Path>HardwareDebug\r_usb_creg_access.obj</Path>
+          <Path>HardwareDebug\r_usb_dma.obj</Path>
+          <Path>HardwareDebug\r_usb_hostelectrical.obj</Path>
+          <Path>HardwareDebug\r_usb_hreg_abs.obj</Path>
+          <Path>HardwareDebug\r_usb_hreg_access.obj</Path>
+          <Path>HardwareDebug\r_usb_preg_abs.obj</Path>
+          <Path>HardwareDebug\r_usb_preg_access.obj</Path>
+          <Path>HardwareDebug\r_usb_rx_mcu.obj</Path>
+          <Path>HardwareDebug\r_usb_cdataio.obj</Path>
+          <Path>HardwareDebug\r_usb_clibusbip.obj</Path>
+          <Path>HardwareDebug\r_usb_hbc.obj</Path>
+          <Path>HardwareDebug\r_usb_hcontrolrw.obj</Path>
+          <Path>HardwareDebug\r_usb_hdriver.obj</Path>
+          <Path>HardwareDebug\r_usb_hhubsys.obj</Path>
+          <Path>HardwareDebug\r_usb_hintfifo.obj</Path>
+          <Path>HardwareDebug\r_usb_hinthandler_usbip0.obj</Path>
+          <Path>HardwareDebug\r_usb_hinthandler_usbip1.obj</Path>
+          <Path>HardwareDebug\r_usb_hlibusbip.obj</Path>
+          <Path>HardwareDebug\r_usb_hmanager.obj</Path>
+          <Path>HardwareDebug\r_usb_hscheduler.obj</Path>
+          <Path>HardwareDebug\r_usb_hsignal.obj</Path>
+          <Path>HardwareDebug\r_usb_hstdfunction.obj</Path>
+          <Path>HardwareDebug\r_usb_pbc.obj</Path>
+          <Path>HardwareDebug\r_usb_pcontrolrw.obj</Path>
+          <Path>HardwareDebug\r_usb_pdriver.obj</Path>
+          <Path>HardwareDebug\r_usb_peptable.obj</Path>
+          <Path>HardwareDebug\r_usb_pintfifo.obj</Path>
+          <Path>HardwareDebug\r_usb_pinthandler_usbip0.obj</Path>
+          <Path>HardwareDebug\r_usb_plibusbip.obj</Path>
+          <Path>HardwareDebug\r_usb_psignal.obj</Path>
+          <Path>HardwareDebug\r_usb_pstdfunction.obj</Path>
+          <Path>HardwareDebug\r_usb_pstdrequest.obj</Path>
+          <Path>HardwareDebug\r_usb_usbif_api.obj</Path>
+          <Path>HardwareDebug\r_sci_rx63n.obj</Path>
+          <Path>HardwareDebug\r_sci_rx63n_data.obj</Path>
+          <Path>HardwareDebug\r_sci_rx.obj</Path>
+          <Path>HardwareDebug\r_byteq.obj</Path>
+          <Path>HardwareDebug\cpu.obj</Path>
+          <Path>HardwareDebug\locking.obj</Path>
+          <Path>HardwareDebug\mcu_clocks.obj</Path>
+          <Path>HardwareDebug\mcu_init.obj</Path>
+          <Path>HardwareDebug\mcu_interrupts.obj</Path>
+          <Path>HardwareDebug\mcu_locks.obj</Path>
+          <Path>HardwareDebug\r_bsp_common.obj</Path>
+          <Path>HardwareDebug\dbsct.obj</Path>
+          <Path>HardwareDebug\hwsetup.obj</Path>
+          <Path>HardwareDebug\lowlvl.obj</Path>
+          <Path>HardwareDebug\lowsrc.obj</Path>
+          <Path>HardwareDebug\resetprg.obj</Path>
+          <Path>HardwareDebug\sbrk.obj</Path>
+          <Path>HardwareDebug\vecttbl.obj</Path>
+          <Path>HardwareDebug\main.obj</Path>
+          <Path>HardwareDebug\r_usb_pcdc_descriptor.obj</Path>
+          <Path>HardwareDebug\r_usb_pcdc_echo_apl.obj</Path>
+          <Path>HardwareDebug\r_usb_pcdc_uart_apl.obj</Path>
+          <Path>HardwareDebug\r_usb_rsk_lowpower.obj</Path>
+          <Path>HardwareDebug\r_usb_rsk_scidriver.obj</Path>
+          <Path>HardwareDebug\PCDC.lib</Path>
+        </LinkOrder>
+        <CommonOptions>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/demo_src/inc</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_usb_basic</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_usb_basic/src/hw/inc</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_usb_pcdc/src/inc</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_usb_basic/src/driver/inc</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_usb_pcdc</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_bsp</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_byteq</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_byteq/src</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_config</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_sci_rx</IncludePathForC>
+          <IncludePathForC>${ProjDirPath}/../${ProjName}/r_sci_rx/src</IncludePathForC>
+          <MacroForC>__RX</MacroForC>
+          <MacroForAsm>__RX</MacroForAsm>
+        </CommonOptions>
+      </BuildMode>
+    </BuildOptions>
+  </Project>
+</MicomToolCommonProjectFile>

@@ -1,0 +1,12 @@
+module TOP(
+	input  wire clk,
+	input  wire [16:0] control
+);
+
+wire sync;
+wire [5:0] address;
+wire [3:0] data;
+
+reg [147:0] register;
+
+endmodule

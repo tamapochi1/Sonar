@@ -1,0 +1,35 @@
+module Serial(
+	input  wire clk,
+	
+	input  wire RSPCK,
+	input  wire MOSI,
+	output wire MISO,
+	input  wire SSL,
+	
+	input  wire [7:0] sendData,
+	input  wire send,
+	output wire [7:0] recievedData,
+	output wire recieved
+);
+
+reg [7:0] sendBuffer;
+reg [2:0] sendingBitCounter;
+reg waitingForSend;
+reg [7:0] recieveBuffer;
+reg [2:0] recievedBitCounter;
+
+
+assign recieved = ~(recieveBitCounter == 2'h3);
+
+always @(negedge SSL)
+ begin
+	recievedBitCounter <= 3'h0;
+ end
+
+
+always @(negedge RSPCK)
+ begin
+	
+ end
+
+endmodule
