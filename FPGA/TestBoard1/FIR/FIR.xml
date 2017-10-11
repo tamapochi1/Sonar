@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2017.10.10.22:37:41"
+ outputDirectory="F:/Git/Sonar/FPGA/TestBoard1/FIR/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="MAX 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10M08SAE144C8GES"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="avalon_streaming_sink" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="17" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="ast_sink_data" direction="input" role="data" width="17" />
+   <port name="ast_sink_valid" direction="input" role="valid" width="1" />
+   <port name="ast_sink_error" direction="input" role="error" width="2" />
+  </interface>
+  <interface name="avalon_streaming_source" kind="avalon_streaming" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="30" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="ast_source_data" direction="output" role="data" width="30" />
+   <port name="ast_source_valid" direction="output" role="valid" width="1" />
+   <port name="ast_source_error" direction="output" role="error" width="2" />
+  </interface>
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="FIR:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10M08SAE144C8GES,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1507642661,AUTO_UNIQUE_ID=(altera_fir_compiler_ii:17.0:L_bandsFilter=1,MODE_STRING=None Set,ModeWidth=0,backPressure=false,bankCount=1,bankDisplay=0,bankInWidth=0,baseAddress=0,busAddressWidth=5,busDataWidth=16,chanPerInputInterface=1,chanPerOutputInterface=1,channelModes=0,1,2,3,clockRate=48,clockSlack=0,coeffBitWidth=8,coeffBitWidth_derived=8,coeffComplex=false,coeffFracBitWidth=0,coeffNum=29,coeffReload=false,coeffScaling=auto,coeffSetFixedValue=1,0,-7,-15,-12,10,42,54,22,-43,-98,-90,-12,83,127,83,-12,-90,-98,-43,22,54,42,10,-12,-15,-7,0,1,coeffSetFixedValueImag=0,0,0,0,0,0,0,0,coeffSetRealValue=0.0013075324,-5.4587975E-4,-0.0081939796,-0.016556092,-0.012873912,0.011297639,0.044883132,0.057572299,0.023978918,-0.046037739,-0.10327311,-0.094838994,-0.013192484,0.088244248,0.13381707,0.088244248,-0.013192484,-0.094838994,-0.10327311,-0.046037739,0.023978918,0.057572299,0.044883132,0.011297639,-0.012873912,-0.016556092,-0.0081939796,-5.4587975E-4,0.0013075324,coeffSetRealValueImag=0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0530093, -0.04498, 0.0, 0.0749693, 0.159034, 0.224907, 0.249809, 0.224907, 0.159034, 0.0749693, 0.0, -0.04498, -0.0530093, -0.0321283, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,coeffSetScaleValue=0.001053677716535433,0.0,-0.007375744015748031,-0.015805165748031497,-0.012644132598425197,0.010536777165354332,0.04425446409448819,0.05689859669291339,0.02318090976377953,-0.045308141811023626,-0.10326041622047244,-0.09483099448818898,-0.012644132598425197,0.08745525047244095,0.13381707,0.08745525047244095,-0.012644132598425197,-0.09483099448818898,-0.10326041622047244,-0.045308141811023626,0.02318090976377953,0.05689859669291339,0.04425446409448819,0.010536777165354332,-0.012644132598425197,-0.015805165748031497,-0.007375744015748031,0.0,0.001053677716535433,coeffSetScaleValueImag=0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,coeffType=int,coefficientReadback=false,coefficientWriteable=false,decimFactor=1,delayRAMBlockThreshold=20,deviceFamily=MAX 10,dspCount=1,dualMemDistRAMThreshold=1280,errorList=0,filterType=single,funcResult=-interp=1 -decim=1 -incycles=160 -len=29 -bankcount=1 -nsym -nband=1 -chans=1 -family=&quot;MAX 10&quot; 
+|{}|1|1|1|1|30|0|16|3|noCode|LUTS: 189 DSPs: 1 RAM Bits: 544|,hardMultiplierThreshold=-1,inputBitWidth=17,inputChannelNum=1,inputFracBitWidth=0,inputInterfaceNum=1,inputRate=0.3,inputType=int,interpFactor=1,karatsuba=false,latency=16,latency_realOnly=16,lutCount=189,mRAMThreshold=1000000,memBitCount=544,modeFormatted=--,num_modes=2,outBitWidth=30,outFracBitWidth=0,outFullFracBitWidth=0,outFullFracBitWidth_realOnly=0,outLSBRound=trunc,outLsbBitRem=0,outMSBRound=trunc,outMsbBitRem=0,outType=int,outWidth=30,outWidth_realOnly=30,outputInterfaceNum=1,outputfifodepth=4,outputfifodepth_realOnly=3,readWriteMode=read_write,reconfigurable=false,reconfigurable_list=0,speedGrade=slow,symmetryMode=nsym)"
+   instancePathKey="FIR"
+   kind="FIR"
+   version="1.0"
+   name="FIR">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1507642661" />
+  <parameter name="AUTO_DEVICE" value="10M08SAE144C8GES" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/FIR.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library_package.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/altera_avalon_sc_fifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd"
+       type="VHDL"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="F:/Git/Sonar/FPGA/TestBoard1/FIR.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="F:/intelfpga_lite/17.0/ip/altera/dsp/altera_fir_compiler_ii/src/HP_FIR_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="FIR">queue size: 0 starting:FIR "FIR"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="FIR"><![CDATA["<b>FIR</b>" reuses <b>altera_fir_compiler_ii</b> "<b>submodules/FIR_fir_compiler_ii_0</b>"]]></message>
+   <message level="Debug" culprit="FIR">queue size: 0 starting:altera_fir_compiler_ii "submodules/FIR_fir_compiler_ii_0"</message>
+   <message level="Debug" culprit="fir_compiler_ii_0"><![CDATA[F:/intelfpga_lite/17.0/quartus/dspba/backend/windows64/fir_ip_api_interface FIR_fir_compiler_ii_0_rtl_core . MAX10 slow 0 48 1 0.3 29 1 1 1 nsym 1 17 0 8 0 0 false false -- 16 5 20 1280 1000000 -1 true false 1 -- <<< 1,0,-7,-15,-12,10,42,54,22,-43,-98,-90,-12,83,127,83,-12,-90,-98,-43,22,54,42,10,-12,-15,-7,0,1 ]]></message>
+   <message level="Debug" culprit="fir_compiler_ii_0"><![CDATA[OUTPARAMS -interp=1 -decim=1 -incycles=160 -len=29 -bankcount=1 -nsym -nband=1 -chans=1 -family="MAX 10" 
+|{}|1|1|1|1|30|0|16|3|true|LUTS: 189 DSPs: 1 RAM Bits: 544|FIR_fir_compiler_ii_0_rtl_core.vhd|]]></message>
+   <message level="Info" culprit="fir_compiler_ii_0">PhysChanIn 1, PhysChanOut 1, ChansPerPhyIn 1, ChansPerPhyOut 1, OutputFullBitWidth 30, Bankcount 1, Latency 16, CoefBitWidth 8</message>
+   <message level="Info" culprit="fir_compiler_ii_0"><![CDATA["<b>FIR</b>" instantiated <b>altera_fir_compiler_ii</b> "<b>fir_compiler_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_fir_compiler_ii:17.0:L_bandsFilter=1,MODE_STRING=None Set,ModeWidth=0,backPressure=false,bankCount=1,bankDisplay=0,bankInWidth=0,baseAddress=0,busAddressWidth=5,busDataWidth=16,chanPerInputInterface=1,chanPerOutputInterface=1,channelModes=0,1,2,3,clockRate=48,clockSlack=0,coeffBitWidth=8,coeffBitWidth_derived=8,coeffComplex=false,coeffFracBitWidth=0,coeffNum=29,coeffReload=false,coeffScaling=auto,coeffSetFixedValue=1,0,-7,-15,-12,10,42,54,22,-43,-98,-90,-12,83,127,83,-12,-90,-98,-43,22,54,42,10,-12,-15,-7,0,1,coeffSetFixedValueImag=0,0,0,0,0,0,0,0,coeffSetRealValue=0.0013075324,-5.4587975E-4,-0.0081939796,-0.016556092,-0.012873912,0.011297639,0.044883132,0.057572299,0.023978918,-0.046037739,-0.10327311,-0.094838994,-0.013192484,0.088244248,0.13381707,0.088244248,-0.013192484,-0.094838994,-0.10327311,-0.046037739,0.023978918,0.057572299,0.044883132,0.011297639,-0.012873912,-0.016556092,-0.0081939796,-5.4587975E-4,0.0013075324,coeffSetRealValueImag=0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0530093, -0.04498, 0.0, 0.0749693, 0.159034, 0.224907, 0.249809, 0.224907, 0.159034, 0.0749693, 0.0, -0.04498, -0.0530093, -0.0321283, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,coeffSetScaleValue=0.001053677716535433,0.0,-0.007375744015748031,-0.015805165748031497,-0.012644132598425197,0.010536777165354332,0.04425446409448819,0.05689859669291339,0.02318090976377953,-0.045308141811023626,-0.10326041622047244,-0.09483099448818898,-0.012644132598425197,0.08745525047244095,0.13381707,0.08745525047244095,-0.012644132598425197,-0.09483099448818898,-0.10326041622047244,-0.045308141811023626,0.02318090976377953,0.05689859669291339,0.04425446409448819,0.010536777165354332,-0.012644132598425197,-0.015805165748031497,-0.007375744015748031,0.0,0.001053677716535433,coeffSetScaleValueImag=0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,coeffType=int,coefficientReadback=false,coefficientWriteable=false,decimFactor=1,delayRAMBlockThreshold=20,deviceFamily=MAX 10,dspCount=1,dualMemDistRAMThreshold=1280,errorList=0,filterType=single,funcResult=-interp=1 -decim=1 -incycles=160 -len=29 -bankcount=1 -nsym -nband=1 -chans=1 -family=&quot;MAX 10&quot; 
+|{}|1|1|1|1|30|0|16|3|noCode|LUTS: 189 DSPs: 1 RAM Bits: 544|,hardMultiplierThreshold=-1,inputBitWidth=17,inputChannelNum=1,inputFracBitWidth=0,inputInterfaceNum=1,inputRate=0.3,inputType=int,interpFactor=1,karatsuba=false,latency=16,latency_realOnly=16,lutCount=189,mRAMThreshold=1000000,memBitCount=544,modeFormatted=--,num_modes=2,outBitWidth=30,outFracBitWidth=0,outFullFracBitWidth=0,outFullFracBitWidth_realOnly=0,outLSBRound=trunc,outLsbBitRem=0,outMSBRound=trunc,outMsbBitRem=0,outType=int,outWidth=30,outWidth_realOnly=30,outputInterfaceNum=1,outputfifodepth=4,outputfifodepth_realOnly=3,readWriteMode=read_write,reconfigurable=false,reconfigurable_list=0,speedGrade=slow,symmetryMode=nsym"
+   instancePathKey="FIR:.:fir_compiler_ii_0"
+   kind="altera_fir_compiler_ii"
+   version="17.0"
+   name="FIR_fir_compiler_ii_0">
+  <parameter name="outBitWidth" value="30" />
+  <parameter name="inputFracBitWidth" value="0" />
+  <parameter
+     name="coeffSetRealValueImag"
+     value="0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0530093, -0.04498, 0.0, 0.0749693, 0.159034, 0.224907, 0.249809, 0.224907, 0.159034, 0.0749693, 0.0, -0.04498, -0.0530093, -0.0321283, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0" />
+  <parameter name="inputInterfaceNum" value="1" />
+  <parameter name="MODE_STRING" value="None Set" />
+  <parameter
+     name="funcResult"
+     value="-interp=1 -decim=1 -incycles=160 -len=29 -bankcount=1 -nsym -nband=1 -chans=1 -family=&quot;MAX 10&quot; 
+|{}|1|1|1|1|30|0|16|3|noCode|LUTS: 189 DSPs: 1 RAM Bits: 544|" />
+  <parameter name="speedGrade" value="slow" />
+  <parameter name="outFullFracBitWidth_realOnly" value="0" />
+  <parameter name="coeffBitWidth" value="8" />
+  <parameter name="coeffType" value="int" />
+  <parameter name="outMSBRound" value="trunc" />
+  <parameter name="outLSBRound" value="trunc" />
+  <parameter name="coeffReload" value="false" />
+  <parameter name="delayRAMBlockThreshold" value="20" />
+  <parameter name="inputType" value="int" />
+  <parameter name="chanPerOutputInterface" value="1" />
+  <parameter name="busAddressWidth" value="5" />
+  <parameter name="coefficientWriteable" value="false" />
+  <parameter name="coeffSetFixedValueImag" value="0,0,0,0,0,0,0,0" />
+  <parameter name="num_modes" value="2" />
+  <parameter name="karatsuba" value="false" />
+  <parameter name="coeffBitWidth_derived" value="8" />
+  <parameter name="bankDisplay" value="0" />
+  <parameter name="baseAddress" value="0" />
+  <parameter
+     name="coeffSetRealValue"
+     value="0.0013075324,-5.4587975E-4,-0.0081939796,-0.016556092,-0.012873912,0.011297639,0.044883132,0.057572299,0.023978918,-0.046037739,-0.10327311,-0.094838994,-0.013192484,0.088244248,0.13381707,0.088244248,-0.013192484,-0.094838994,-0.10327311,-0.046037739,0.023978918,0.057572299,0.044883132,0.011297639,-0.012873912,-0.016556092,-0.0081939796,-5.4587975E-4,0.0013075324" />
+  <parameter name="coeffSetScaleValueImag" value="0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0" />
+  <parameter name="chanPerInputInterface" value="1" />
+  <parameter name="deviceFamily" value="MAX 10" />
+  <parameter name="dspCount" value="1" />
+  <parameter name="outType" value="int" />
+  <parameter name="symmetryMode" value="nsym" />
+  <parameter name="outLsbBitRem" value="0" />
+  <parameter name="decimFactor" value="1" />
+  <parameter name="ModeWidth" value="0" />
+  <parameter name="memBitCount" value="544" />
+  <parameter name="outputInterfaceNum" value="1" />
+  <parameter name="filterType" value="single" />
+  <parameter name="backPressure" value="false" />
+  <parameter name="inputBitWidth" value="17" />
+  <parameter name="coeffScaling" value="auto" />
+  <parameter name="outFullFracBitWidth" value="0" />
+  <parameter name="coeffNum" value="29" />
+  <parameter name="busDataWidth" value="16" />
+  <parameter name="coeffComplex" value="false" />
+  <parameter name="outputfifodepth_realOnly" value="3" />
+  <parameter name="inputChannelNum" value="1" />
+  <parameter name="channelModes" value="0,1,2,3" />
+  <parameter
+     name="coeffSetScaleValue"
+     value="0.001053677716535433,0.0,-0.007375744015748031,-0.015805165748031497,-0.012644132598425197,0.010536777165354332,0.04425446409448819,0.05689859669291339,0.02318090976377953,-0.045308141811023626,-0.10326041622047244,-0.09483099448818898,-0.012644132598425197,0.08745525047244095,0.13381707,0.08745525047244095,-0.012644132598425197,-0.09483099448818898,-0.10326041622047244,-0.045308141811023626,0.02318090976377953,0.05689859669291339,0.04425446409448819,0.010536777165354332,-0.012644132598425197,-0.015805165748031497,-0.007375744015748031,0.0,0.001053677716535433" />
+  <parameter name="latency" value="16" />
+  <parameter name="lutCount" value="189" />
+  <parameter name="outFracBitWidth" value="0" />
+  <parameter name="outputfifodepth" value="4" />
+  <parameter name="clockRate" value="48" />
+  <parameter name="readWriteMode" value="read_write" />
+  <parameter name="reconfigurable" value="false" />
+  <parameter name="outWidth" value="30" />
+  <parameter name="coeffFracBitWidth" value="0" />
+  <parameter
+     name="coeffSetFixedValue"
+     value="1,0,-7,-15,-12,10,42,54,22,-43,-98,-90,-12,83,127,83,-12,-90,-98,-43,22,54,42,10,-12,-15,-7,0,1" />
+  <parameter name="modeFormatted" value="--" />
+  <parameter name="mRAMThreshold" value="1000000" />
+  <parameter name="bankCount" value="1" />
+  <parameter name="interpFactor" value="1" />
+  <parameter name="outWidth_realOnly" value="30" />
+  <parameter name="errorList" value="0" />
+  <parameter name="L_bandsFilter" value="1" />
+  <parameter name="clockSlack" value="0" />
+  <parameter name="outMsbBitRem" value="0" />
+  <parameter name="reconfigurable_list" value="0" />
+  <parameter name="dualMemDistRAMThreshold" value="1280" />
+  <parameter name="latency_realOnly" value="16" />
+  <parameter name="inputRate" value="0.3" />
+  <parameter name="coefficientReadback" value="false" />
+  <parameter name="bankInWidth" value="0" />
+  <parameter name="hardMultiplierThreshold" value="-1" />
+  <generatedFiles>
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library_package.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/altera_avalon_sc_fifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd"
+       type="VHDL"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="F:/intelfpga_lite/17.0/ip/altera/dsp/altera_fir_compiler_ii/src/HP_FIR_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="FIR" as="fir_compiler_ii_0" />
+  <messages>
+   <message level="Debug" culprit="FIR">queue size: 0 starting:altera_fir_compiler_ii "submodules/FIR_fir_compiler_ii_0"</message>
+   <message level="Debug" culprit="fir_compiler_ii_0"><![CDATA[F:/intelfpga_lite/17.0/quartus/dspba/backend/windows64/fir_ip_api_interface FIR_fir_compiler_ii_0_rtl_core . MAX10 slow 0 48 1 0.3 29 1 1 1 nsym 1 17 0 8 0 0 false false -- 16 5 20 1280 1000000 -1 true false 1 -- <<< 1,0,-7,-15,-12,10,42,54,22,-43,-98,-90,-12,83,127,83,-12,-90,-98,-43,22,54,42,10,-12,-15,-7,0,1 ]]></message>
+   <message level="Debug" culprit="fir_compiler_ii_0"><![CDATA[OUTPARAMS -interp=1 -decim=1 -incycles=160 -len=29 -bankcount=1 -nsym -nband=1 -chans=1 -family="MAX 10" 
+|{}|1|1|1|1|30|0|16|3|true|LUTS: 189 DSPs: 1 RAM Bits: 544|FIR_fir_compiler_ii_0_rtl_core.vhd|]]></message>
+   <message level="Info" culprit="fir_compiler_ii_0">PhysChanIn 1, PhysChanOut 1, ChansPerPhyIn 1, ChansPerPhyOut 1, OutputFullBitWidth 30, Bankcount 1, Latency 16, CoefBitWidth 8</message>
+   <message level="Info" culprit="fir_compiler_ii_0"><![CDATA["<b>FIR</b>" instantiated <b>altera_fir_compiler_ii</b> "<b>fir_compiler_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

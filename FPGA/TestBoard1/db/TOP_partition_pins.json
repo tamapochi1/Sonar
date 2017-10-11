@@ -1,0 +1,21 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "speaker",
+					"strict" : false
+				},
+				{
+					"name" : "pwmOut",
+					"strict" : false
+				},
+				{
+					"name" : "clk48",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
