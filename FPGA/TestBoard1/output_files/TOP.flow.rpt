@@ -1,5 +1,5 @@
 Flow report for TOP
-Wed Oct 11 18:59:19 2017
+Mon Oct 16 18:03:30 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Oct 11 18:59:19 2017       ;
+; Flow Status                        ; Successful - Mon Oct 16 18:03:30 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; TOP                                         ;
 ; Top-level Entity Name              ; TOP                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08SAE144C8GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 174 / 8,064 ( 2 % )                         ;
-;     Total combinational functions  ; 164 / 8,064 ( 2 % )                         ;
-;     Dedicated logic registers      ; 123 / 8,064 ( 2 % )                         ;
-; Total registers                    ; 123                                         ;
+; Total logic elements               ; 504 / 8,064 ( 6 % )                         ;
+;     Total combinational functions  ; 456 / 8,064 ( 6 % )                         ;
+;     Dedicated logic registers      ; 439 / 8,064 ( 5 % )                         ;
+; Total registers                    ; 439                                         ;
 ; Total pins                         ; 5 / 101 ( 5 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 544 / 387,072 ( < 1 % )                     ;
+; Total memory bits                  ; 1,920 / 387,072 ( < 1 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 2 / 48 ( 4 % )                              ;
 ; Total PLLs                         ; 1 / 1 ( 100 % )                             ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
@@ -67,43 +67,73 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/11/2017 18:58:47 ;
+; Start date & time ; 10/16/2017 18:03:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TOP                 ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                           ;
-+-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 165407972350.150771592715000                          ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                           ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                             ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                                  ; --            ; --          ; eda_simulation ;
-; FLOW_ENABLE_POWER_ANALYZER          ; On                                                    ; Off           ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                     ; --            ; --          ; --             ;
-; MISC_FILE                           ; FIR/synthesis/../FIR.cmp                              ; --            ; --          ; --             ;
-; MISC_FILE                           ; FIR/synthesis/../../FIR.qsys                          ; --            ; --          ; --             ;
-; MISC_FILE                           ; PLL_inst.v                                            ; --            ; --          ; --             ;
-; MISC_FILE                           ; PLL_bb.v                                              ; --            ; --          ; --             ;
-; MISC_FILE                           ; PLL.ppf                                               ; --            ; --          ; --             ;
-; MISC_FILE                           ; DIV_inst.v                                            ; --            ; --          ; --             ;
-; MISC_FILE                           ; DIV_bb.v                                              ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                   ; --            ; --          ; --             ;
-; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE  ; 12.5 %                                                ; 12.5%         ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                 ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                          ; --            ; --          ; --             ;
-; SLD_FILE                            ; FIR/synthesis/FIR.debuginfo                           ; --            ; --          ; --             ;
-; SLD_INFO                            ; QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1507642661 ; --            ; FIR         ; --             ;
-; SOPCINFO_FILE                       ; FIR/synthesis/../../FIR.sopcinfo                      ; --            ; --          ; --             ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                    ; --            ; --          ; --             ;
-+-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                ;
++--------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                                                     ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 165407972350.150814458214980                                              ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                        ; --            ; --          ; tb_TestBoard1  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_TestBoard1                                                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                               ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                                                 ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/tb_TestBoard1.v                                       ; --            ; --          ; tb_TestBoard1  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_TestBoard1                                                             ; --            ; --          ; tb_TestBoard1  ;
+; EDA_TEST_BENCH_NAME                  ; tb_TestBoard1                                                             ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                                                      ; --            ; --          ; tb_TestBoard1  ;
+; EDA_TIME_SCALE                       ; 10 ps                                                                     ; --            ; --          ; eda_simulation ;
+; FLOW_ENABLE_POWER_ANALYZER           ; On                                                                        ; Off           ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                        ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                         ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/../../FIR.qsys                                             ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/FIR.v                                                      ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/dspba_library_package.vhd                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/dspba_library.vhd                               ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/auk_dspip_math_pkg_hpfir.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/auk_dspip_lib_pkg_hpfir.vhd                     ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd       ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd     ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/auk_dspip_roundsat_hpfir.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/altera_avalon_sc_fifo.v                         ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd              ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_ast.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0.vhd                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_nativelink.tcl            ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_msim.tcl                  ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_tb.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_mlab.m                    ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_model.m                   ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_coef_int.txt              ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_input.txt                 ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/simulation/submodules/FIR_fir_compiler_ii_0_param.txt                 ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/synthesis/../FIR.cmp                                                  ; --            ; --          ; --             ;
+; MISC_FILE                            ; FIR/synthesis/../../FIR.qsys                                              ; --            ; --          ; --             ;
+; MISC_FILE                            ; PLL_inst.v                                                                ; --            ; --          ; --             ;
+; MISC_FILE                            ; PLL_bb.v                                                                  ; --            ; --          ; --             ;
+; MISC_FILE                            ; PLL.ppf                                                                   ; --            ; --          ; --             ;
+; MISC_FILE                            ; DIV_inst.v                                                                ; --            ; --          ; --             ;
+; MISC_FILE                            ; DIV_bb.v                                                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                    ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                    ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                    ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                       ; --            ; --          ; --             ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE   ; 12.5 %                                                                    ; 12.5%         ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                     ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                              ; --            ; --          ; --             ;
+; SLD_FILE                             ; FIR/synthesis/FIR.debuginfo                                               ; --            ; --          ; --             ;
+; SLD_INFO                             ; QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1508073620                     ; --            ; FIR         ; --             ;
+; SOPCINFO_FILE                        ; FIR/synthesis/../../FIR.sopcinfo                                          ; --            ; --          ; --             ;
+; SPD_FILE                             ; FIR/simulation/../FIR.spd                                                 ; --            ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                        ; --            ; --          ; --             ;
++--------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -111,13 +141,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 673 MB              ; 00:00:23                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 1357 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 533 MB              ; 00:00:01                           ;
-; PowerPlay Power Analyzer  ; 00:00:05     ; 1.0                     ; 664 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.1                     ; 629 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 516 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:26     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 676 MB              ; 00:00:22                           ;
+; Fitter                    ; 00:00:06     ; 1.1                     ; 1370 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 534 MB              ; 00:00:01                           ;
+; PowerPlay Power Analyzer  ; 00:00:02     ; 1.2                     ; 666 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.2                     ; 635 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 520 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:35                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

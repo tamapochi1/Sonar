@@ -1,5 +1,6 @@
 module PWM(
 	input  wire clk,
+	input  wire reset_n,
 	input  wire [7:0] duty,
 	output wire out
 );
@@ -11,7 +12,7 @@ assign out = counter < duty;
 always @(posedge clk)
  begin
  
-	if(counter == 8'hFF)
+	if(counter == 8'hFF || ~reset_n)
 	 begin
 		counter <= 8'h00;
 	 end

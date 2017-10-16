@@ -11,17 +11,39 @@ wire clk0_64;
 wire clk0_3;
 wire reset;
 
-
 assign pdwClk = clk4_8;
 
+PLL pll(.inclk0(clk48), .c0(clk4_8), .c1(clk0_64), .c2(clk0_3), .locked());
 
-PLL pll(.inclk0(clk48), .c0(clk4_8), .c1(clk0_64), .c2(clk0_3), .locked(reset));
+// Power ON Reset
+reg por;
+reg [15:0] por_counter;
+always @(posedge clk48)
+ begin
+ 
+	if(por_counter != 16'h00FF)
+	 begin
+	 
+		por <= 1'b0;
+		por_counter <= por_counter + 16'h1;
+		
+	 end
+	else
+	 begin
+	 
+		por <= 1'b1;
+		por_counter <= por_counter;
+		
+	 end
+ end
+assign reset = por;
 
+// Output 40kHz to Speaker.
 reg [3:0] counter;
 always @(posedge clk0_64)
  begin
  
-	if(counter == 4'hF)
+	if(counter == 4'hF || ~reset)
 	 begin
 		counter <= 4'h0;
 	 end
@@ -33,47 +55,58 @@ always @(posedge clk0_64)
  end
 assign speaker = counter < 4'h8;
 
-
+// Receive PDW data from MIC.
+reg signed [7:0] pdw_inputBuf;
 always @(posedge pdwClk)
  begin
  
-	pdw_inputBuf <= pdwData;
+	if(~reset)
+	 begin
+		pdw_inputBuf <= 8'd0;
+	 end
+	else
+	 begin
+		pdw_inputBuf <= pdwData ? 8'b1 : -8'b1;
+	 end
 
  end
 
-reg pdw_inputBuf;
-Integrator int0(.clk(pdwClk), .in(pdw_inputBuf), .out(conn_int0To1));
-wire [16:0] conn_int0To1;
-Integrator int1(.clk(pdwClk), .in(conn_int0To1), .out(conn_int1To2));
-wire [16:0] conn_int1To2; 
-Integrator int2(.clk(pdwClk), .in(conn_int1To2), .out(conn_int2To3));
-wire [16:0] conn_int2To3;
-Integrator int3(.clk(pdwClk), .in(conn_int2To3), .out(ints_result));
-wire [16:0] ints_result;
+wire signed [7:0] cic_result;
+wire signed [20:0] fir_result;
+wire cic_valid;
+wire fir_valid;
 
-Differentiator dif0(.clk(clk0_3), .in(ints_result), .out(conn_dif0To1));
-wire [16:0] conn_dif0To1;
-Differentiator dif1(.clk(clk0_3), .in(conn_dif0To1), .out(conn_dif1To2));
-wire [16:0] conn_dif1To2;
-Differentiator dif2(.clk(clk0_3), .in(conn_dif1To2), .out(conn_dif2To3));
-wire [16:0] conn_dif2To3;
-Differentiator dif3(.clk(clk0_3), .in(conn_dif2To3), .out(cic_result));
-wire [16:0] cic_result;
+CIC cic(
+	.clk(pdwClk),
+	.reset_n(reset),
+	.in(pdw_inputBuf),
+	.out(cic_result),
+	.out_valid(cic_valid));
+
 
 FIR fir(
 	.ast_sink_data(cic_result),
-	.ast_sink_valid(1'b1),
+	.ast_sink_valid(cic_valid),
+	.ast_sink_error(2'b00),
 	.ast_source_data(fir_result),
-	.clk(clk48),
+	.ast_source_valid(fir_valid),
+	.clk(clk4_8),
 	.reset_n(reset));
+
 	
-wire [29:0] fir_result;
+reg [20:0] fir_result_buf;
+always @(posedge fir_valid)
+ begin
 
-//DIV div(.denom(16'h00FF), .numer(fir_result), .quotient(result));	// 死ぬほどLE使う。500以上？
-assign result = fir_result[29:22];
-
+	fir_result_buf <= fir_result;
+	 
+ end
+	
 wire [7:0] result;
 
-PWM pwm(.clk(clk4_8), .duty(result), .out(pwmOut));
+//DIV div(.denom(16'h00FF), .numer(fir_result), .quotient(result));	// 死ぬほどLE使う。500以上？
+assign result = fir_result_buf[20:13] + 7'd127;
+
+PWM pwm(.clk(clk48), .reset_n(reset), .duty(result), .out(pwmOut));
 
 endmodule

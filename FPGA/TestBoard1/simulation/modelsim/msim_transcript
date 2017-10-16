@@ -1,0 +1,1027 @@
+# Reading F:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do TOP_run_msim_rtl_verilog.do
+# if ![file isdirectory TOP_iputf_libs] {
+# 	file mkdir TOP_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying F:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+# vlib TOP_iputf_libs/fir_compiler_ii_0
+# ** Warning: (vlib-34) Library already exists at "TOP_iputf_libs/fir_compiler_ii_0".
+# vmap fir_compiler_ii_0 ./TOP_iputf_libs/fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap fir_compiler_ii_0 ./TOP_iputf_libs/fir_compiler_ii_0 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library_package.vhd"                       -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:44 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library_package.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# End time: 18:10:44 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library.vhd"                               -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:44 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dspba_sync_reg
+# -- Compiling architecture sync_reg of dspba_sync_reg
+# End time: 18:10:44 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_math_pkg_hpfir.vhd"                    -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:44 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_math_pkg_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package auk_dspip_math_pkg_hpfir
+# -- Compiling package body auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_math_pkg_hpfir
+# End time: 18:10:44 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_lib_pkg_hpfir.vhd"                     -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:44 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_lib_pkg_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling package auk_dspip_lib_pkg_hpfir
+# End time: 18:10:44 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd" -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:44 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity auk_dspip_avalon_streaming_controller_hpfir
+# -- Compiling architecture struct of auk_dspip_avalon_streaming_controller_hpfir
+# End time: 18:10:44 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd"       -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:44 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading package altera_mf_components
+# -- Compiling entity auk_dspip_avalon_streaming_sink_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_sink_hpfir
+# ** Warning: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(113): Nonresolved signal 'sink_next_state' may have multiple sources.
+#   Drivers:
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(272):Process sink_comb_update_2
+#        Driven at:
+#           F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(279)
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(177):Process sink_comb_update_1
+#        Driven at:
+#           F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(183)
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd"     -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package altera_mf_components
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling entity auk_dspip_avalon_streaming_source_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_source_hpfir
+# ** Warning: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(122): Nonresolved signal 'count_finished' may have multiple sources.
+#   Drivers:
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(217):Conditional signal assignment line__216
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(206):Conditional signal assignment line__205
+# ** Warning: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(123): Nonresolved signal 'count_started' may have multiple sources.
+#   Drivers:
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(219):Conditional signal assignment line__218
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(210):Conditional signal assignment line__209
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_roundsat_hpfir.vhd"                    -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_roundsat_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity auk_dspip_roundsat_hpfir
+# -- Compiling architecture beh of auk_dspip_roundsat_hpfir
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/altera_avalon_sc_fifo.v"                         -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/altera_avalon_sc_fifo.v -work fir_compiler_ii_0 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd"              -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity FIR_fir_compiler_ii_0_rtl_core
+# -- Compiling architecture normal of FIR_fir_compiler_ii_0_rtl_core
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_ast.vhd"                   -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_ast.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity FIR_fir_compiler_ii_0_ast
+# -- Compiling architecture struct of FIR_fir_compiler_ii_0_ast
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0.vhd"                       -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity FIR_fir_compiler_ii_0
+# -- Compiling architecture syn of FIR_fir_compiler_ii_0
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_tb.vhd"                    -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_tb.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FIR_fir_compiler_ii_0_tb
+# -- Compiling architecture rtl of FIR_fir_compiler_ii_0_tb
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading entity FIR_fir_compiler_ii_0
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/FIR.v"                                                                             
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/FIR.v 
+# -- Compiling module FIR
+# 
+# Top level modules:
+# 	FIR
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/TOP.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/TOP.v 
+# -- Compiling module TOP
+# 
+# Top level modules:
+# 	TOP
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/PLL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/PLL.v 
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/PWM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/PWM.v 
+# -- Compiling module PWM
+# 
+# Top level modules:
+# 	PWM
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/CIC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/CIC.v 
+# -- Compiling module CIC
+# 
+# Top level modules:
+# 	CIC
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1/db {F:/Git/Sonar/FPGA/TestBoard1/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1/db" F:/Git/Sonar/FPGA/TestBoard1/db/pll_altpll.v 
+# -- Compiling module PLL_altpll
+# 
+# Top level modules:
+# 	PLL_altpll
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim {F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:45 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim" F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v 
+# -- Compiling module tb_TestBoard1
+# 
+# Top level modules:
+# 	tb_TestBoard1
+# End time: 18:10:45 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm -L fiftyfivenm_ver -L rtl_work -L work -L fir_compiler_ii_0 -voptargs="+acc"  tb_TestBoard1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm -L fiftyfivenm_ver -L rtl_work -L work -L fir_compiler_ii_0 -voptargs=""+acc"" tb_TestBoard1 
+# Start time: 18:10:45 on Oct 16,2017
+# Loading work.tb_TestBoard1
+# Loading work.TOP
+# Loading work.PLL
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.CIC
+# Loading work.FIR
+# Loading work.PWM
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading fir_compiler_ii_0.auk_dspip_math_pkg_hpfir(body)
+# Loading fir_compiler_ii_0.auk_dspip_lib_pkg_hpfir
+# Loading fir_compiler_ii_0.fir_fir_compiler_ii_0(syn)
+# Loading fir_compiler_ii_0.fir_fir_compiler_ii_0_ast(struct)
+# Loading altera_mf.altera_mf_components
+# Loading fir_compiler_ii_0.auk_dspip_avalon_streaming_sink_hpfir(rtl)
+# Loading fir_compiler_ii_0.auk_dspip_avalon_streaming_source_hpfir(rtl)
+# Loading ieee.std_logic_arith(body)
+# Loading fir_compiler_ii_0.auk_dspip_avalon_streaming_controller_hpfir(struct)
+# Loading ieee.math_real(body)
+# Loading fir_compiler_ii_0.dspba_library_package
+# Loading lpm.lpm_components
+# Loading fir_compiler_ii_0.fir_fir_compiler_ii_0_rtl_core(normal)
+# Loading fir_compiler_ii_0.dspba_delay(delay)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading lpm.lpm_hint_evaluation(body)
+# Loading lpm.lpm_mult(lpm_syn)
+# Loading fir_compiler_ii_0.auk_dspip_roundsat_hpfir(beh)
+# ** Warning: (vsim-3017) F:/Git/Sonar/FPGA/TestBoard1/TOP.v(87): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir File: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/FIR.v
+# ** Warning: (vsim-3722) F:/Git/Sonar/FPGA/TestBoard1/TOP.v(87): [TFMPC] - Missing connection for port 'ast_source_error'.
+# ** Warning: Design size of 14258 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ms
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_wi0_r0_delayr1_mem_dmem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_wi0_r0_memr0_dmem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 114620  Instance: tb_TestBoard1.target.pll.altpll_component.cycloneiii_pll.pll3
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 12514420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 15848820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 19183220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 22517620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 25852020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 29186420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 32520820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 35855220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 39189620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 42524020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 45858420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 49192820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 52527220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 55861620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 59196020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 62530420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 65864820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 69199220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 72533620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 75868020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 79202420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 82536820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 85871220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 89205620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 92540020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 95874420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 99208820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 102543220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 105877620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 109212020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 112546420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 115880820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 119215220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 122549620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 125884020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 129218420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 132552820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 135887220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 139221620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 142556020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 145890420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 149224820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 152559220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 155893620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 159228020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 162562420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 165896820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 169231220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 172565620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 175900020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 179234420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 182568820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 185903220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 189237620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 192572020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 195906420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 199240820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 202575220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 205909620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Note: $stop    : F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v(24)
+#    Time: 208389580 ps  Iteration: 4  Instance: /tb_TestBoard1
+# Break in Module tb_TestBoard1 at F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v line 24
+add wave -position end  sim:/tb_TestBoard1/target/pwm/duty
+quit -sim
+# End time: 18:14:17 on Oct 16,2017, Elapsed time: 0:03:32
+# Errors: 0, Warnings: 84
+do TOP_run_msim_rtl_verilog.do
+# if ![file isdirectory TOP_iputf_libs] {
+# 	file mkdir TOP_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+# vlib TOP_iputf_libs/fir_compiler_ii_0
+# ** Warning: (vlib-34) Library already exists at "TOP_iputf_libs/fir_compiler_ii_0".
+# vmap fir_compiler_ii_0 ./TOP_iputf_libs/fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap fir_compiler_ii_0 ./TOP_iputf_libs/fir_compiler_ii_0 
+# Modifying modelsim.ini
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library_package.vhd"                       -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library_package.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library.vhd"                               -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/dspba_library.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dspba_sync_reg
+# -- Compiling architecture sync_reg of dspba_sync_reg
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_math_pkg_hpfir.vhd"                    -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_math_pkg_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package auk_dspip_math_pkg_hpfir
+# -- Compiling package body auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_math_pkg_hpfir
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_lib_pkg_hpfir.vhd"                     -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_lib_pkg_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling package auk_dspip_lib_pkg_hpfir
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd" -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity auk_dspip_avalon_streaming_controller_hpfir
+# -- Compiling architecture struct of auk_dspip_avalon_streaming_controller_hpfir
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd"       -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading package altera_mf_components
+# -- Compiling entity auk_dspip_avalon_streaming_sink_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_sink_hpfir
+# ** Warning: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(113): Nonresolved signal 'sink_next_state' may have multiple sources.
+#   Drivers:
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(272):Process sink_comb_update_2
+#        Driven at:
+#           F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(279)
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(177):Process sink_comb_update_1
+#        Driven at:
+#           F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd(183)
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd"     -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package altera_mf_components
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling entity auk_dspip_avalon_streaming_source_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_source_hpfir
+# ** Warning: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(122): Nonresolved signal 'count_finished' may have multiple sources.
+#   Drivers:
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(217):Conditional signal assignment line__216
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(206):Conditional signal assignment line__205
+# ** Warning: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(123): Nonresolved signal 'count_started' may have multiple sources.
+#   Drivers:
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(219):Conditional signal assignment line__218
+#     F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd(210):Conditional signal assignment line__209
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_roundsat_hpfir.vhd"                    -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/auk_dspip_roundsat_hpfir.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity auk_dspip_roundsat_hpfir
+# -- Compiling architecture beh of auk_dspip_roundsat_hpfir
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/altera_avalon_sc_fifo.v"                         -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vlog -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/altera_avalon_sc_fifo.v -work fir_compiler_ii_0 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 18:15:54 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd"              -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:54 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity FIR_fir_compiler_ii_0_rtl_core
+# -- Compiling architecture normal of FIR_fir_compiler_ii_0_rtl_core
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_ast.vhd"                   -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_ast.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity FIR_fir_compiler_ii_0_ast
+# -- Compiling architecture struct of FIR_fir_compiler_ii_0_ast
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0.vhd"                       -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity FIR_fir_compiler_ii_0
+# -- Compiling architecture syn of FIR_fir_compiler_ii_0
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_tb.vhd"                    -work fir_compiler_ii_0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vcom -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/submodules/FIR_fir_compiler_ii_0_tb.vhd -work fir_compiler_ii_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FIR_fir_compiler_ii_0_tb
+# -- Compiling architecture rtl of FIR_fir_compiler_ii_0_tb
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading entity FIR_fir_compiler_ii_0
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/FIR.v"                                                                             
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vlog -reportprogress 300 F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/FIR.v 
+# -- Compiling module FIR
+# 
+# Top level modules:
+# 	FIR
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/TOP.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/TOP.v 
+# -- Compiling module TOP
+# 
+# Top level modules:
+# 	TOP
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/PLL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/PLL.v 
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/PWM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/PWM.v 
+# -- Compiling module PWM
+# 
+# Top level modules:
+# 	PWM
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1 {F:/Git/Sonar/FPGA/TestBoard1/CIC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1" F:/Git/Sonar/FPGA/TestBoard1/CIC.v 
+# -- Compiling module CIC
+# 
+# Top level modules:
+# 	CIC
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1/db {F:/Git/Sonar/FPGA/TestBoard1/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1/db" F:/Git/Sonar/FPGA/TestBoard1/db/pll_altpll.v 
+# -- Compiling module PLL_altpll
+# 
+# Top level modules:
+# 	PLL_altpll
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim {F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:55 on Oct 16,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim" F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v 
+# -- Compiling module tb_TestBoard1
+# 
+# Top level modules:
+# 	tb_TestBoard1
+# End time: 18:15:55 on Oct 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm -L fiftyfivenm_ver -L rtl_work -L work -L fir_compiler_ii_0 -voptargs="+acc"  tb_TestBoard1
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm -L fiftyfivenm_ver -L rtl_work -L work -L fir_compiler_ii_0 -voptargs=""+acc"" tb_TestBoard1 
+# Start time: 18:15:55 on Oct 16,2017
+# Loading work.tb_TestBoard1
+# Loading work.TOP
+# Loading work.PLL
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.CIC
+# Loading work.FIR
+# Loading work.PWM
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading fir_compiler_ii_0.auk_dspip_math_pkg_hpfir(body)
+# Loading fir_compiler_ii_0.auk_dspip_lib_pkg_hpfir
+# Loading fir_compiler_ii_0.fir_fir_compiler_ii_0(syn)
+# Loading fir_compiler_ii_0.fir_fir_compiler_ii_0_ast(struct)
+# Loading altera_mf.altera_mf_components
+# Loading fir_compiler_ii_0.auk_dspip_avalon_streaming_sink_hpfir(rtl)
+# Loading fir_compiler_ii_0.auk_dspip_avalon_streaming_source_hpfir(rtl)
+# Loading ieee.std_logic_arith(body)
+# Loading fir_compiler_ii_0.auk_dspip_avalon_streaming_controller_hpfir(struct)
+# Loading ieee.math_real(body)
+# Loading fir_compiler_ii_0.dspba_library_package
+# Loading lpm.lpm_components
+# Loading fir_compiler_ii_0.fir_fir_compiler_ii_0_rtl_core(normal)
+# Loading fir_compiler_ii_0.dspba_delay(delay)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading lpm.lpm_hint_evaluation(body)
+# Loading lpm.lpm_mult(lpm_syn)
+# Loading fir_compiler_ii_0.auk_dspip_roundsat_hpfir(beh)
+# ** Warning: (vsim-3017) F:/Git/Sonar/FPGA/TestBoard1/TOP.v(87): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir File: F:/Git/Sonar/FPGA/TestBoard1/FIR/simulation/FIR.v
+# ** Warning: (vsim-3722) F:/Git/Sonar/FPGA/TestBoard1/TOP.v(87): [TFMPC] - Missing connection for port 'ast_source_error'.
+# ** Warning: Design size of 14258 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# log -r *
+# run 1 ms
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_wi0_r0_delayr1_mem_dmem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: Warning: READ_DURING_WRITE_MODE_MIXED_PORTS is assumed as OLD_DATA
+#    Time: 0 ps  Iteration: 0  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_wi0_r0_memr0_dmem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_1_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core/u0_m0_wo0_mtree_mult1_0_component
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 114620  Instance: tb_TestBoard1.target.pll.altpll_component.cycloneiii_pll.pll3
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 12514420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 15848820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 19183220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 22517620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 25852020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 29186420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 32520820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 35855220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 39189620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 42524020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 45858420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 49192820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 52527220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 55861620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 59196020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 62530420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 65864820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 69199220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 72533620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 75868020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 79202420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 82536820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 85871220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 89205620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 92540020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 95874420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 99208820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 102543220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 105877620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 109212020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 112546420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 115880820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 119215220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 122549620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 125884020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 129218420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 132552820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 135887220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 139221620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 142556020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 145890420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 149224820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 152559220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 155893620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 159228020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 162562420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 165896820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 169231220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 172565620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 175900020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 179234420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 182568820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 185903220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 189237620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 192572020 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 195906420 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 199240820 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 202575220 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 205909620 ps  Iteration: 6  Instance: /tb_TestBoard1/target/fir/fir_compiler_ii_0/FIR_fir_compiler_ii_0_ast_inst/real_passthrough/hpfircore_core
+# ** Note: $stop    : F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v(24)
+#    Time: 208389580 ps  Iteration: 4  Instance: /tb_TestBoard1
+# Break in Module tb_TestBoard1 at F:/Git/Sonar/FPGA/TestBoard1/simulation/modelsim/tb_TestBoard1.v line 24
+add wave -position end  sim:/tb_TestBoard1/target/pwm/duty
+add wave -position end  sim:/tb_TestBoard1/target/fir/ast_source_valid
+add wave -position end  sim:/tb_TestBoard1/target/fir/ast_source_data
+add wave -position end  sim:/tb_TestBoard1/target/cic/out_valid
+add wave -position end  sim:/tb_TestBoard1/target/cic/out
+add wave -position 9  sim:/tb_TestBoard1/target/fir_result_buf
+# End time: 18:25:48 on Oct 16,2017, Elapsed time: 0:09:53
+# Errors: 0, Warnings: 84

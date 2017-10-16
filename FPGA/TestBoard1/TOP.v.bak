@@ -1,8 +1,81 @@
 module TOP(
-
+	input  wire clk48,
+	output wire speaker,
+	output wire pdwClk,
+	input  wire pdwData,
+	output wire pwmOut
 );
 
+wire clk4_8;
+wire clk0_64;
+wire clk0_3;
+wire reset;
 
 
+assign pdwClk = clk4_8;
+
+
+PLL pll(.inclk0(clk48), .c0(clk4_8), .c1(clk0_64), .c2(clk0_3), .locked(reset));
+
+reg [3:0] counter;
+always @(posedge clk0_64)
+ begin
+ 
+	if(counter == 4'hF)
+	 begin
+		counter <= 4'h0;
+	 end
+	else
+	 begin
+		counter <= counter + 4'h1;
+	 end
+	 
+ end
+assign speaker = counter < 4'h8;
+
+
+reg pdw_inputBuf;
+always @(posedge pdwClk)
+ begin
+ 
+	pdw_inputBuf <= pdwData;
+
+ end
+
+wire [16:0] conn_int0To1;
+wire [16:0] conn_int1To2; 
+wire [16:0] conn_int2To3;
+wire [16:0] ints_result;
+wire [16:0] conn_dif0To1;
+wire [16:0] conn_dif1To2;
+wire [16:0] conn_dif2To3;
+wire [16:0] cic_result;
+
+Integrator int0(.clk(pdwClk), .in(pdw_inputBuf), .out(conn_int0To1));
+Integrator int1(.clk(pdwClk), .in(conn_int0To1), .out(conn_int1To2));
+Integrator int2(.clk(pdwClk), .in(conn_int1To2), .out(conn_int2To3));
+Integrator int3(.clk(pdwClk), .in(conn_int2To3), .out(ints_result));
+
+Differentiator dif0(.clk(clk0_3), .in(ints_result), .out(conn_dif0To1));
+Differentiator dif1(.clk(clk0_3), .in(conn_dif0To1), .out(conn_dif1To2));
+Differentiator dif2(.clk(clk0_3), .in(conn_dif1To2), .out(conn_dif2To3));
+Differentiator dif3(.clk(clk0_3), .in(conn_dif2To3), .out(cic_result));
+
+
+FIR fir(
+	.ast_sink_data(cic_result),
+	.ast_sink_valid(1'b1),
+	.ast_source_data(fir_result),
+	.clk(clk48),
+	.reset_n(reset));
+	
+wire [29:0] fir_result;
+
+//DIV div(.denom(16'h00FF), .numer(fir_result), .quotient(result));	// 死ぬほどLE使う。500以上？
+assign result = fir_result[29:22];
+
+wire [7:0] result;
+
+PWM pwm(.clk(clk4_8), .duty(result), .out(pwmOut));
 
 endmodule

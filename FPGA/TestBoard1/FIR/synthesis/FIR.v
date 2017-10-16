@@ -4,10 +4,10 @@
 
 `timescale 1 ps / 1 ps
 module FIR (
-		input  wire [16:0] ast_sink_data,    //   avalon_streaming_sink.data
+		input  wire [7:0]  ast_sink_data,    //   avalon_streaming_sink.data
 		input  wire        ast_sink_valid,   //                        .valid
 		input  wire [1:0]  ast_sink_error,   //                        .error
-		output wire [29:0] ast_source_data,  // avalon_streaming_source.data
+		output wire [20:0] ast_source_data,  // avalon_streaming_source.data
 		output wire        ast_source_valid, //                        .valid
 		output wire [1:0]  ast_source_error, //                        .error
 		input  wire        clk,              //                     clk.clk

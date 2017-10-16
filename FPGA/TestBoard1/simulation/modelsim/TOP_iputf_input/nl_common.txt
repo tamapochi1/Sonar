@@ -1,0 +1,12 @@
+family_language_pairs
+max10 verilog
+max10 vhdl
+max10 verilog
+max10 vhdl
+max10 verilog
+max10 vhdl
+max10 verilog
+max10 vhdl
+max10 verilog
+max10 vhdl
+end family_language pairs

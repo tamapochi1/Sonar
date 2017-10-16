@@ -6,7 +6,7 @@
    version="1.0"
    description=""
    tags="INTERNAL_COMPONENT=true"
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
    element fir_compiler_ii_0
@@ -31,7 +31,7 @@
  <parameter name="hideFromIPCatalog" value="true" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="TestBoard1.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -75,7 +75,7 @@
   <parameter name="bankDisplay" value="0" />
   <parameter name="baseAddress" value="0" />
   <parameter name="channelModes" value="0,1,2,3" />
-  <parameter name="clockRate" value="48" />
+  <parameter name="clockRate" value="4.8" />
   <parameter name="clockSlack" value="0" />
   <parameter name="coeffBitWidth" value="8" />
   <parameter name="coeffComplex" value="false" />
@@ -91,7 +91,7 @@
   <parameter name="dualMemDistRAMThreshold" value="1280" />
   <parameter name="filterType" value="single" />
   <parameter name="hardMultiplierThreshold" value="-1" />
-  <parameter name="inputBitWidth" value="17" />
+  <parameter name="inputBitWidth" value="8" />
   <parameter name="inputChannelNum" value="1" />
   <parameter name="inputFracBitWidth" value="0" />
   <parameter name="inputRate" value="0.3" />

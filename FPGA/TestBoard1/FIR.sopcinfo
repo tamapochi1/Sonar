@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="FIR" kind="FIR" version="1.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2017.10.10.22:37:41 -->
+ <!-- 2017.10.15.22:20:20 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1507642661</value>
+  <value>1508073620</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -152,7 +152,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="clockRate">
    <type>java.lang.String</type>
-   <value>48</value>
+   <value>4.8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -345,7 +345,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="inputBitWidth">
    <type>int</type>
-   <value>17</value>
+   <value>8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -481,7 +481,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outBitWidth">
    <type>int</type>
-   <value>30</value>
+   <value>21</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>true</visible>
@@ -529,7 +529,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outWidth">
    <type>int</type>
-   <value>30</value>
+   <value>21</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>true</visible>
@@ -537,7 +537,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outWidth_realOnly">
    <type>int</type>
-   <value>30</value>
+   <value>21</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -553,7 +553,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="latency_realOnly">
    <type>int</type>
-   <value>16</value>
+   <value>17</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -561,7 +561,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outputfifodepth_realOnly">
    <type>int</type>
-   <value>3</value>
+   <value>4</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -609,7 +609,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="latency">
    <type>int</type>
-   <value>16</value>
+   <value>17</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -617,7 +617,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outputfifodepth">
    <type>int</type>
-   <value>4</value>
+   <value>8</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -625,8 +625,8 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="funcResult">
    <type>java.lang.String</type>
-   <value><![CDATA[-interp=1 -decim=1 -incycles=160 -len=29 -bankcount=1 -nsym -nband=1 -chans=1 -family="MAX 10" 
-|{}|1|1|1|1|30|0|16|3|noCode|LUTS: 189 DSPs: 1 RAM Bits: 544|]]></value>
+   <value><![CDATA[-interp=1 -decim=1 -incycles=16 -len=29 -bankcount=1 -nsym -nband=1 -chans=1 -family="MAX 10" 
+|{}|1|1|1|1|21|0|17|4|noCode|LUTS: 177 DSPs: 2 RAM Bits: 1920|]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -666,7 +666,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="lutCount">
    <type>int</type>
-   <value>189</value>
+   <value>177</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -674,7 +674,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dspCount">
    <type>int</type>
-   <value>1</value>
+   <value>2</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -682,7 +682,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="memBitCount">
    <type>int</type>
-   <value>544</value>
+   <value>1920</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -827,7 +827,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="dataBitsPerSymbol">
     <type>int</type>
-    <value>17</value>
+    <value>8</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -918,7 +918,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>ast_sink_data</name>
     <direction>Input</direction>
-    <width>17</width>
+    <width>8</width>
     <role>data</role>
    </port>
    <port>
@@ -967,7 +967,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="dataBitsPerSymbol">
     <type>int</type>
-    <value>30</value>
+    <value>21</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -1058,7 +1058,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>ast_source_data</name>
     <direction>Output</direction>
-    <width>30</width>
+    <width>21</width>
     <role>data</role>
    </port>
    <port>

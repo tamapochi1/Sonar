@@ -1,5 +1,6 @@
 module Integrator(
 	input  wire clk,
+	input  wire reset,
 	input  wire [16:0] in,
 	output wire [16:0] out
 );
@@ -7,6 +8,13 @@ module Integrator(
 reg [16:0] result;
 
 assign out = result;
+
+always @(posedge reset)
+ begin
+ 
+	result <= 17'd0;
+	
+ end
 
 always @(posedge clk)
  begin

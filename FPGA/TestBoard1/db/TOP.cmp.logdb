@@ -1,5 +1,5 @@
 v1
-PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|lpm_mult:u0_m0_wo0_mtree_mult1_0_component|mult_fnt:auto_generated|mac_mult1,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|lpm_mult:u0_m0_wo0_mtree_mult1_0_component|mult_vlt:auto_generated|mac_mult1,
 IO_RULES,NUM_PINS_NOT_EXCEED_LOC_AVAILABLE,PASS,IO_000001,Capacity Checks,Number of pins in an I/O bank should not exceed the number of locations available.,Critical,0 such failures found.,,I/O,,
 IO_RULES,NUM_CLKS_NOT_EXCEED_CLKS_AVAILABLE,INAPPLICABLE,IO_000002,Capacity Checks,Number of clocks in an I/O bank should not exceed the number of clocks available.,Critical,No Global Signal assignments found.,,I/O,,
 IO_RULES,NUM_VREF_NOT_EXCEED_LOC_AVAILABLE,PASS,IO_000003,Capacity Checks,Number of pins in a Vrefgroup should not exceed the number of locations available.,Critical,0 such failures found.,,I/O,,
@@ -38,9 +38,9 @@ IO_RULES_MATRIX,Total Inapplicable,0;5;0;5;5;0;0;5;0;0;5;2;5;5;3;5;2;3;5;5;5;2;5
 IO_RULES_MATRIX,Total Fail,0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0,
 IO_RULES_MATRIX,speaker,Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Pass;Inapplicable;Pass;Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable,
 IO_RULES_MATRIX,pdwClk,Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Pass;Inapplicable;Pass;Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable,
-IO_RULES_MATRIX,pdwData,Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Pass;Inapplicable;Pass;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable,
 IO_RULES_MATRIX,pwmOut,Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Pass;Inapplicable;Pass;Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable,
 IO_RULES_MATRIX,clk48,Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Pass;Inapplicable;Pass;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable,
+IO_RULES_MATRIX,pdwData,Pass;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Pass;Inapplicable;Pass;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Inapplicable;Pass;Inapplicable;Inapplicable,
 IO_RULES_SUMMARY,Total I/O Rules,30,
 IO_RULES_SUMMARY,Number of I/O Rules Passed,12,
 IO_RULES_SUMMARY,Number of I/O Rules Failed,0,
