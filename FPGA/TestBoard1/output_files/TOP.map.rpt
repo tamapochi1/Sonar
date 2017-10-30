@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TOP
-Mon Oct 16 18:03:13 2017
+Mon Oct 30 16:05:37 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -88,16 +88,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 16 18:03:13 2017       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 30 16:05:37 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; TOP                                         ;
 ; Top-level Entity Name              ; TOP                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 511                                         ;
-;     Total combinational functions  ; 455                                         ;
-;     Dedicated logic registers      ; 439                                         ;
-; Total registers                    ; 439                                         ;
-; Total pins                         ; 5                                           ;
+; Total logic elements               ; 564                                         ;
+;     Total combinational functions  ; 482                                         ;
+;     Dedicated logic registers      ; 482                                         ;
+; Total registers                    ; 482                                         ;
+; Total pins                         ; 27                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 1,920                                       ;
 ; Embedded Multiplier 9-bit elements ; 2                                           ;
@@ -198,63 +198,63 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                      ;
-+--------------------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                          ; Library ;
-+--------------------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; FIR/synthesis/FIR.v                                                      ; yes             ; User Verilog HDL File        ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/FIR.v                                                      ; FIR     ;
-; FIR/synthesis/submodules/dspba_library_package.vhd                       ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library_package.vhd                       ; FIR     ;
-; FIR/synthesis/submodules/dspba_library.vhd                               ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd                               ; FIR     ;
-; FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd                    ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd                    ; FIR     ;
-; FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd                     ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd                     ; FIR     ;
-; FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd ; FIR     ;
-; FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd       ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd       ; FIR     ;
-; FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd     ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd     ; FIR     ;
-; FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd                    ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd                    ; FIR     ;
-; FIR/synthesis/submodules/altera_avalon_sc_fifo.v                         ; yes             ; User Verilog HDL File        ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/altera_avalon_sc_fifo.v                         ; FIR     ;
-; FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd              ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd              ; FIR     ;
-; FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd                   ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd                   ; FIR     ;
-; FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd                       ; yes             ; User VHDL File               ; F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd                       ; FIR     ;
-; TOP.v                                                                    ; yes             ; User Verilog HDL File        ; F:/Git/Sonar/FPGA/TestBoard1/TOP.v                                                                    ;         ;
-; PLL.v                                                                    ; yes             ; User Wizard-Generated File   ; F:/Git/Sonar/FPGA/TestBoard1/PLL.v                                                                    ;         ;
-; PWM.v                                                                    ; yes             ; User Verilog HDL File        ; F:/Git/Sonar/FPGA/TestBoard1/PWM.v                                                                    ;         ;
-; CIC.v                                                                    ; yes             ; User Verilog HDL File        ; F:/Git/Sonar/FPGA/TestBoard1/CIC.v                                                                    ;         ;
-; altpll.tdf                                                               ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf                                     ;         ;
-; aglobal170.inc                                                           ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc                                 ;         ;
-; stratix_pll.inc                                                          ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_pll.inc                                ;         ;
-; stratixii_pll.inc                                                        ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratixii_pll.inc                              ;         ;
-; cycloneii_pll.inc                                                        ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/cycloneii_pll.inc                              ;         ;
-; db/pll_altpll.v                                                          ; yes             ; Auto-Generated Megafunction  ; F:/Git/Sonar/FPGA/TestBoard1/db/pll_altpll.v                                                          ;         ;
-; altsyncram.tdf                                                           ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf                                 ;         ;
-; stratix_ram_block.inc                                                    ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc                          ;         ;
-; lpm_mux.inc                                                              ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc                                    ;         ;
-; lpm_decode.inc                                                           ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc                                 ;         ;
-; a_rdenreg.inc                                                            ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc                                  ;         ;
-; altrom.inc                                                               ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc                                     ;         ;
-; altram.inc                                                               ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc                                     ;         ;
-; altdpram.inc                                                             ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc                                   ;         ;
-; db/altsyncram_etm3.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; F:/Git/Sonar/FPGA/TestBoard1/db/altsyncram_etm3.tdf                                                   ;         ;
-; lpm_mult.tdf                                                             ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf                                   ;         ;
-; lpm_add_sub.inc                                                          ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_add_sub.inc                                ;         ;
-; multcore.inc                                                             ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/multcore.inc                                   ;         ;
-; bypassff.inc                                                             ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/bypassff.inc                                   ;         ;
-; altshift.inc                                                             ; yes             ; Megafunction                 ; f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altshift.inc                                   ;         ;
-; db/mult_vlt.tdf                                                          ; yes             ; Auto-Generated Megafunction  ; F:/Git/Sonar/FPGA/TestBoard1/db/mult_vlt.tdf                                                          ;         ;
-; db/altsyncram_5op3.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; F:/Git/Sonar/FPGA/TestBoard1/db/altsyncram_5op3.tdf                                                   ;         ;
-+--------------------------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                               ;
++--------------------------------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                   ; Library ;
++--------------------------------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
+; FIR/synthesis/FIR.v                                                      ; yes             ; User Verilog HDL File        ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/FIR.v                                                      ; FIR     ;
+; FIR/synthesis/submodules/dspba_library_package.vhd                       ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library_package.vhd                       ; FIR     ;
+; FIR/synthesis/submodules/dspba_library.vhd                               ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd                               ; FIR     ;
+; FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd                    ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd                    ; FIR     ;
+; FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd                     ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd                     ; FIR     ;
+; FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd ; FIR     ;
+; FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd       ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd       ; FIR     ;
+; FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd     ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd     ; FIR     ;
+; FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd                    ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd                    ; FIR     ;
+; FIR/synthesis/submodules/altera_avalon_sc_fifo.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/altera_avalon_sc_fifo.v                         ; FIR     ;
+; FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd              ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd              ; FIR     ;
+; FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd                   ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd                   ; FIR     ;
+; FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd                       ; yes             ; User VHDL File               ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd                       ; FIR     ;
+; TOP.v                                                                    ; yes             ; User Verilog HDL File        ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/TOP.v                                                                    ;         ;
+; PLL.v                                                                    ; yes             ; User Wizard-Generated File   ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/PLL.v                                                                    ;         ;
+; PWM.v                                                                    ; yes             ; User Verilog HDL File        ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/PWM.v                                                                    ;         ;
+; CIC.v                                                                    ; yes             ; User Verilog HDL File        ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/CIC.v                                                                    ;         ;
+; altpll.tdf                                                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf                                                              ;         ;
+; aglobal170.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc                                                          ;         ;
+; stratix_pll.inc                                                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_pll.inc                                                         ;         ;
+; stratixii_pll.inc                                                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratixii_pll.inc                                                       ;         ;
+; cycloneii_pll.inc                                                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/cycloneii_pll.inc                                                       ;         ;
+; db/pll_altpll.v                                                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/pll_altpll.v                                                          ;         ;
+; altsyncram.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf                                                          ;         ;
+; stratix_ram_block.inc                                                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                                   ;         ;
+; lpm_mux.inc                                                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc                                                             ;         ;
+; lpm_decode.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc                                                          ;         ;
+; a_rdenreg.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc                                                           ;         ;
+; altrom.inc                                                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc                                                              ;         ;
+; altram.inc                                                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc                                                              ;         ;
+; altdpram.inc                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc                                                            ;         ;
+; db/altsyncram_etm3.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/altsyncram_etm3.tdf                                                   ;         ;
+; lpm_mult.tdf                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf                                                            ;         ;
+; lpm_add_sub.inc                                                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_add_sub.inc                                                         ;         ;
+; multcore.inc                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/multcore.inc                                                            ;         ;
+; bypassff.inc                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/bypassff.inc                                                            ;         ;
+; altshift.inc                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altshift.inc                                                            ;         ;
+; db/mult_vlt.tdf                                                          ; yes             ; Auto-Generated Megafunction  ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/mult_vlt.tdf                                                          ;         ;
+; db/altsyncram_5op3.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/altsyncram_5op3.tdf                                                   ;         ;
++--------------------------------------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -262,23 +262,23 @@ agreement for further details.
 +---------------------------------------------+----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                      ;
 +---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 511                                                                        ;
+; Estimated Total logic elements              ; 564                                                                        ;
 ;                                             ;                                                                            ;
-; Total combinational functions               ; 455                                                                        ;
+; Total combinational functions               ; 482                                                                        ;
 ; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 45                                                                         ;
-;     -- 3 input functions                    ; 204                                                                        ;
-;     -- <=2 input functions                  ; 206                                                                        ;
+;     -- 4 input functions                    ; 54                                                                         ;
+;     -- 3 input functions                    ; 205                                                                        ;
+;     -- <=2 input functions                  ; 223                                                                        ;
 ;                                             ;                                                                            ;
 ; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 222                                                                        ;
-;     -- arithmetic mode                      ; 233                                                                        ;
+;     -- normal mode                          ; 233                                                                        ;
+;     -- arithmetic mode                      ; 249                                                                        ;
 ;                                             ;                                                                            ;
-; Total registers                             ; 439                                                                        ;
-;     -- Dedicated logic registers            ; 439                                                                        ;
+; Total registers                             ; 482                                                                        ;
+;     -- Dedicated logic registers            ; 482                                                                        ;
 ;     -- I/O registers                        ; 0                                                                          ;
 ;                                             ;                                                                            ;
-; I/O pins                                    ; 5                                                                          ;
+; I/O pins                                    ; 27                                                                         ;
 ; Total memory bits                           ; 1920                                                                       ;
 ;                                             ;                                                                            ;
 ; Embedded Multiplier 9-bit elements          ; 2                                                                          ;
@@ -287,9 +287,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1                                                                          ;
 ;                                             ;                                                                            ;
 ; Maximum fan-out node                        ; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 428                                                                        ;
-; Total fan-out                               ; 2959                                                                       ;
-; Average fan-out                             ; 3.20                                                                       ;
+; Maximum fan-out                             ; 459                                                                        ;
+; Total fan-out                               ; 3194                                                                       ;
+; Average fan-out                             ; 3.07                                                                       ;
 +---------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -298,12 +298,12 @@ agreement for further details.
 +-------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                       ; Entity Name                             ; Library Name ;
 +-------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+--------------+
-; |TOP                                                                          ; 455 (36)            ; 439 (31)                  ; 1920        ; 0          ; 2            ; 2       ; 0         ; 5    ; 0            ; 0          ; |TOP                                                                                                                                                                                                                                                      ; TOP                                     ; work         ;
+; |TOP                                                                          ; 482 (62)            ; 482 (60)                  ; 1920        ; 0          ; 2            ; 2       ; 0         ; 27   ; 0            ; 0          ; |TOP                                                                                                                                                                                                                                                      ; TOP                                     ; work         ;
 ;    |CIC:cic|                                                                  ; 242 (242)           ; 230 (230)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|CIC:cic                                                                                                                                                                                                                                              ; CIC                                     ; work         ;
-;    |FIR:fir|                                                                  ; 158 (0)             ; 170 (0)                   ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir                                                                                                                                                                                                                                              ; FIR                                     ; FIR          ;
-;       |FIR_fir_compiler_ii_0:fir_compiler_ii_0|                               ; 158 (0)             ; 170 (0)                   ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0                                                                                                                                                                                                      ; FIR_fir_compiler_ii_0                   ; fir          ;
-;          |FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|           ; 158 (0)             ; 170 (0)                   ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst                                                                                                                                             ; FIR_fir_compiler_ii_0_ast               ; fir          ;
-;             |FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core| ; 158 (158)           ; 161 (127)                 ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core                                                                             ; FIR_fir_compiler_ii_0_rtl_core          ; fir          ;
+;    |FIR:fir|                                                                  ; 159 (0)             ; 184 (0)                   ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir                                                                                                                                                                                                                                              ; FIR                                     ; FIR          ;
+;       |FIR_fir_compiler_ii_0:fir_compiler_ii_0|                               ; 159 (0)             ; 184 (0)                   ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0                                                                                                                                                                                                      ; FIR_fir_compiler_ii_0                   ; fir          ;
+;          |FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|           ; 159 (0)             ; 184 (0)                   ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst                                                                                                                                             ; FIR_fir_compiler_ii_0_ast               ; fir          ;
+;             |FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core| ; 159 (159)           ; 162 (128)                 ; 1920        ; 0          ; 2            ; 2       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core                                                                             ; FIR_fir_compiler_ii_0_rtl_core          ; fir          ;
 ;                |altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem|                 ; 0 (0)               ; 0 (0)                     ; 1792        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem                                ; altsyncram                              ; work         ;
 ;                   |altsyncram_5op3:auto_generated|                            ; 0 (0)               ; 0 (0)                     ; 1792        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem|altsyncram_5op3:auto_generated ; altsyncram_5op3                         ; work         ;
 ;                |altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem|                       ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem                                      ; altsyncram                              ; work         ;
@@ -319,7 +319,7 @@ agreement for further details.
 ;                   |mult_vlt:auto_generated|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 1            ; 1       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|lpm_mult:u0_m0_wo0_mtree_mult1_0_component|mult_vlt:auto_generated          ; mult_vlt                                ; work         ;
 ;                |lpm_mult:u0_m0_wo0_mtree_mult1_1_component|                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 1            ; 1       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|lpm_mult:u0_m0_wo0_mtree_mult1_1_component                                  ; lpm_mult                                ; work         ;
 ;                   |mult_vlt:auto_generated|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 1            ; 1       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|lpm_mult:u0_m0_wo0_mtree_mult1_1_component|mult_vlt:auto_generated          ; mult_vlt                                ; work         ;
-;             |auk_dspip_avalon_streaming_source_hpfir:source|                  ; 0 (0)               ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source                                                                                              ; auk_dspip_avalon_streaming_source_hpfir ; fir          ;
+;             |auk_dspip_avalon_streaming_source_hpfir:source|                  ; 0 (0)               ; 22 (22)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source                                                                                              ; auk_dspip_avalon_streaming_source_hpfir ; fir          ;
 ;    |PLL:pll|                                                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|PLL:pll                                                                                                                                                                                                                                              ; PLL                                     ; work         ;
 ;       |altpll:altpll_component|                                               ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|PLL:pll|altpll:altpll_component                                                                                                                                                                                                                      ; altpll                                  ; work         ;
 ;          |PLL_altpll:auto_generated|                                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP|PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated                                                                                                                                                                                            ; PLL_altpll                              ; work         ;
@@ -435,8 +435,7 @@ Encoding Type:  One-Hot
 ; FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_sink_hpfir:sink|sink_state.run1                                              ; Lost fanout                                                                                                                                                                                                                      ;
 ; FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_sink_hpfir:sink|sink_state.st_err                                            ; Lost fanout                                                                                                                                                                                                                      ;
 ; FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_sink_hpfir:sink|sink_state.end1                                              ; Lost fanout                                                                                                                                                                                                                      ;
-; FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|u0_m0_wo0_accum_o[20]                   ; Lost fanout                                                                                                                                                                                                                      ;
-; Total Number of Removed Registers = 15                                                                                                                                                                           ;                                                                                                                                                                                                                                  ;
+; Total Number of Removed Registers = 14                                                                                                                                                                           ;                                                                                                                                                                                                                                  ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -454,12 +453,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 439   ;
-; Number of registers using Synchronous Clear  ; 143   ;
-; Number of registers using Synchronous Load   ; 24    ;
-; Number of registers using Asynchronous Clear ; 170   ;
+; Total registers                              ; 482   ;
+; Number of registers using Synchronous Clear  ; 159   ;
+; Number of registers using Synchronous Load   ; 25    ;
+; Number of registers using Asynchronous Clear ; 184   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 234   ;
+; Number of registers using Clock Enable       ; 235   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1523,26 +1522,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+--------+----------+---------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "FIR:fir"                                                                                                                   ;
-+------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                                                  ;
-+------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; ast_sink_error         ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; ast_source_data[11..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; ast_source_data[20]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
-; ast_source_error       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FIR:fir"                                                                                                             ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                                                  ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; ast_sink_error   ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; ast_source_error ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PLL:pll"                                                                              ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; c2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; locked ; Output ; Info     ; Explicitly unconnected                                                              ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; Port Connectivity Checks: "PLL:pll"                 ;
++--------+--------+----------+------------------------+
+; Port   ; Type   ; Severity ; Details                ;
++--------+--------+----------+------------------------+
+; locked ; Output ; Info     ; Explicitly unconnected ;
++--------+--------+----------+------------------------+
 
 
 +-----------------------------------------------------+
@@ -1550,24 +1546,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 5                           ;
-; cycloneiii_ff         ; 439                         ;
-;     CLR               ; 104                         ;
+; boundary_port         ; 27                          ;
+; cycloneiii_ff         ; 482                         ;
+;     CLR               ; 117                         ;
 ;     ENA               ; 109                         ;
 ;     ENA CLR           ; 42                          ;
-;     ENA CLR SLD       ; 24                          ;
+;     ENA CLR SLD       ; 25                          ;
 ;     ENA SCLR          ; 59                          ;
-;     SCLR              ; 84                          ;
-;     plain             ; 17                          ;
-; cycloneiii_lcell_comb ; 456                         ;
-;     arith             ; 233                         ;
-;         2 data inputs ; 54                          ;
-;         3 data inputs ; 179                         ;
-;     normal            ; 223                         ;
+;     SCLR              ; 100                         ;
+;     plain             ; 30                          ;
+; cycloneiii_lcell_comb ; 482                         ;
+;     arith             ; 249                         ;
+;         2 data inputs ; 69                          ;
+;         3 data inputs ; 180                         ;
+;     normal            ; 233                         ;
 ;         1 data inputs ; 27                          ;
-;         2 data inputs ; 126                         ;
+;         2 data inputs ; 127                         ;
 ;         3 data inputs ; 25                          ;
-;         4 data inputs ; 45                          ;
+;         4 data inputs ; 54                          ;
 ; cycloneiii_mac_mult   ; 2                           ;
 ; cycloneiii_mac_out    ; 2                           ;
 ; cycloneiii_pll        ; 1                           ;
@@ -1583,7 +1579,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1593,66 +1589,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Oct 16 18:03:02 2017
+    Info: Processing started: Mon Oct 30 16:05:21 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TestBoard1 -c TOP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fir/synthesis/fir.v
-    Info (12023): Found entity 1: FIR File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/FIR.v Line: 6
+    Info (12023): Found entity 1: FIR File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/FIR.v Line: 6
 Info (12021): Found 1 design units, including 0 entities, in source file fir/synthesis/submodules/dspba_library_package.vhd
-    Info (12022): Found design unit 1: dspba_library_package (fir) File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library_package.vhd Line: 16
+    Info (12022): Found design unit 1: dspba_library_package (fir) File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library_package.vhd Line: 16
 Info (12021): Found 4 design units, including 2 entities, in source file fir/synthesis/submodules/dspba_library.vhd
-    Info (12022): Found design unit 1: dspba_delay-delay File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 33
-    Info (12022): Found design unit 2: dspba_sync_reg-sync_reg File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 115
-    Info (12023): Found entity 1: dspba_delay File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 17
-    Info (12023): Found entity 2: dspba_sync_reg File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 91
+    Info (12022): Found design unit 1: dspba_delay-delay File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 33
+    Info (12022): Found design unit 2: dspba_sync_reg-sync_reg File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 115
+    Info (12023): Found entity 1: dspba_delay File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 17
+    Info (12023): Found entity 2: dspba_sync_reg File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/dspba_library.vhd Line: 91
 Info (12021): Found 2 design units, including 0 entities, in source file fir/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd
-    Info (12022): Found design unit 1: auk_dspip_math_pkg_hpfir (fir) File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd Line: 54
-    Info (12022): Found design unit 2: auk_dspip_math_pkg_hpfir-body File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd Line: 131
+    Info (12022): Found design unit 1: auk_dspip_math_pkg_hpfir (fir) File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd Line: 54
+    Info (12022): Found design unit 2: auk_dspip_math_pkg_hpfir-body File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_math_pkg_hpfir.vhd Line: 131
 Info (12021): Found 1 design units, including 0 entities, in source file fir/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd
-    Info (12022): Found design unit 1: auk_dspip_lib_pkg_hpfir (fir) File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd Line: 22
+    Info (12022): Found design unit 1: auk_dspip_lib_pkg_hpfir (fir) File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_lib_pkg_hpfir.vhd Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file fir/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd
-    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_controller_hpfir-struct File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd Line: 64
-    Info (12023): Found entity 1: auk_dspip_avalon_streaming_controller_hpfir File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd Line: 41
+    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_controller_hpfir-struct File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd Line: 64
+    Info (12023): Found entity 1: auk_dspip_avalon_streaming_controller_hpfir File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_controller_hpfir.vhd Line: 41
 Info (12021): Found 2 design units, including 1 entities, in source file fir/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd
-    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_sink_hpfir-rtl File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd Line: 106
-    Info (12023): Found entity 1: auk_dspip_avalon_streaming_sink_hpfir File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd Line: 56
+    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_sink_hpfir-rtl File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd Line: 106
+    Info (12023): Found entity 1: auk_dspip_avalon_streaming_sink_hpfir File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_sink_hpfir.vhd Line: 56
 Info (12021): Found 2 design units, including 1 entities, in source file fir/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd
-    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_source_hpfir-rtl File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd Line: 109
-    Info (12023): Found entity 1: auk_dspip_avalon_streaming_source_hpfir File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd Line: 70
+    Info (12022): Found design unit 1: auk_dspip_avalon_streaming_source_hpfir-rtl File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd Line: 109
+    Info (12023): Found entity 1: auk_dspip_avalon_streaming_source_hpfir File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_avalon_streaming_source_hpfir.vhd Line: 70
 Info (12021): Found 2 design units, including 1 entities, in source file fir/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd
-    Info (12022): Found design unit 1: auk_dspip_roundsat_hpfir-beh File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd Line: 57
-    Info (12023): Found entity 1: auk_dspip_roundsat_hpfir File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd Line: 39
+    Info (12022): Found design unit 1: auk_dspip_roundsat_hpfir-beh File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd Line: 57
+    Info (12023): Found entity 1: auk_dspip_roundsat_hpfir File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/auk_dspip_roundsat_hpfir.vhd Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file fir/synthesis/submodules/altera_avalon_sc_fifo.v
-    Info (12023): Found entity 1: altera_avalon_sc_fifo File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
+    Info (12023): Found entity 1: altera_avalon_sc_fifo File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
 Info (12021): Found 2 design units, including 1 entities, in source file fir/synthesis/submodules/fir_fir_compiler_ii_0_rtl_core.vhd
-    Info (12022): Found design unit 1: FIR_fir_compiler_ii_0_rtl_core-normal File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 47
-    Info (12023): Found entity 1: FIR_fir_compiler_ii_0_rtl_core File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 34
+    Info (12022): Found design unit 1: FIR_fir_compiler_ii_0_rtl_core-normal File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 47
+    Info (12023): Found entity 1: FIR_fir_compiler_ii_0_rtl_core File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 34
 Info (12021): Found 2 design units, including 1 entities, in source file fir/synthesis/submodules/fir_fir_compiler_ii_0_ast.vhd
-    Info (12022): Found design unit 1: FIR_fir_compiler_ii_0_ast-struct File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 55
-    Info (12023): Found entity 1: FIR_fir_compiler_ii_0_ast File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 9
+    Info (12022): Found design unit 1: FIR_fir_compiler_ii_0_ast-struct File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 55
+    Info (12023): Found entity 1: FIR_fir_compiler_ii_0_ast File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file fir/synthesis/submodules/fir_fir_compiler_ii_0.vhd
-    Info (12022): Found design unit 1: FIR_fir_compiler_ii_0-syn File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 33
-    Info (12023): Found entity 1: FIR_fir_compiler_ii_0 File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 19
+    Info (12022): Found design unit 1: FIR_fir_compiler_ii_0-syn File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 33
+    Info (12023): Found entity 1: FIR_fir_compiler_ii_0 File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
-    Info (12023): Found entity 1: TOP File: F:/Git/Sonar/FPGA/TestBoard1/TOP.v Line: 1
+    Info (12023): Found entity 1: TOP File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/TOP.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file integrator.v
-    Info (12023): Found entity 1: Integrator File: F:/Git/Sonar/FPGA/TestBoard1/Integrator.v Line: 1
+    Info (12023): Found entity 1: Integrator File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/Integrator.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: PLL File: F:/Git/Sonar/FPGA/TestBoard1/PLL.v Line: 40
+    Info (12023): Found entity 1: PLL File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/PLL.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file differentiator.v
-    Info (12023): Found entity 1: Differentiator File: F:/Git/Sonar/FPGA/TestBoard1/Differentiator.v Line: 1
+    Info (12023): Found entity 1: Differentiator File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/Differentiator.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pwm.v
-    Info (12023): Found entity 1: PWM File: F:/Git/Sonar/FPGA/TestBoard1/PWM.v Line: 1
+    Info (12023): Found entity 1: PWM File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/PWM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file div.v
-    Info (12023): Found entity 1: DIV File: F:/Git/Sonar/FPGA/TestBoard1/DIV.v Line: 40
+    Info (12023): Found entity 1: DIV File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/DIV.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file cic.v
-    Info (12023): Found entity 1: CIC File: F:/Git/Sonar/FPGA/TestBoard1/CIC.v Line: 1
+    Info (12023): Found entity 1: CIC File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/CIC.v Line: 1
 Info (12127): Elaborating entity "TOP" for the top level hierarchy
-Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll" File: F:/Git/Sonar/FPGA/TestBoard1/TOP.v Line: 16
-Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll|altpll:altpll_component" File: F:/Git/Sonar/FPGA/TestBoard1/PLL.v Line: 103
-Info (12130): Elaborated megafunction instantiation "PLL:pll|altpll:altpll_component" File: F:/Git/Sonar/FPGA/TestBoard1/PLL.v Line: 103
-Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with the following parameter: File: F:/Git/Sonar/FPGA/TestBoard1/PLL.v Line: 103
+Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/TOP.v Line: 20
+Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll|altpll:altpll_component" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/PLL.v Line: 103
+Info (12130): Elaborated megafunction instantiation "PLL:pll|altpll:altpll_component" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/PLL.v Line: 103
+Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with the following parameter: File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/PLL.v Line: 103
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "10"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1717,28 +1713,28 @@ Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with t
     Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: PLL_altpll File: F:/Git/Sonar/FPGA/TestBoard1/db/pll_altpll.v Line: 30
-Info (12128): Elaborating entity "PLL_altpll" for hierarchy "PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated" File: f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "CIC" for hierarchy "CIC:cic" File: F:/Git/Sonar/FPGA/TestBoard1/TOP.v Line: 84
-Warning (10230): Verilog HDL assignment warning at CIC.v(56): truncated value with size 16 to match size of target (8) File: F:/Git/Sonar/FPGA/TestBoard1/CIC.v Line: 56
-Warning (10230): Verilog HDL assignment warning at CIC.v(64): truncated value with size 16 to match size of target (8) File: F:/Git/Sonar/FPGA/TestBoard1/CIC.v Line: 64
-Warning (10230): Verilog HDL assignment warning at CIC.v(106): truncated value with size 17 to match size of target (8) File: F:/Git/Sonar/FPGA/TestBoard1/CIC.v Line: 106
-Info (12128): Elaborating entity "FIR" for hierarchy "FIR:fir" File: F:/Git/Sonar/FPGA/TestBoard1/TOP.v Line: 94
-Info (12128): Elaborating entity "FIR_fir_compiler_ii_0" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/FIR.v Line: 26
-Warning (10036): Verilog HDL or VHDL warning at FIR_fir_compiler_ii_0.vhd(54): object "coeff_in_read_sig" assigned a value but never read File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 54
-Info (12128): Elaborating entity "FIR_fir_compiler_ii_0_ast" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 62
-Warning (10541): VHDL Signal Declaration warning at FIR_fir_compiler_ii_0_ast.vhd(208): used implicit default value for signal "core_channel_out_core" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 208
-Info (12128): Elaborating entity "auk_dspip_avalon_streaming_sink_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_sink_hpfir:sink" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 89
-Info (12128): Elaborating entity "auk_dspip_avalon_streaming_source_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 109
-Info (12128): Elaborating entity "auk_dspip_avalon_streaming_controller_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_controller_hpfir:intf_ctrl" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 137
-Info (12128): Elaborating entity "FIR_fir_compiler_ii_0_rtl_core" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 218
-Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:u0_m0_wo0_memread" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 196
-Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:u0_m0_wo0_compute" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 201
-Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:d_xIn_0_13" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 360
-Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:d_in0_m0_wi0_wo0_assign_id1_q_13" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 365
-Info (12128): Elaborating entity "altsyncram" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 387
-Info (12130): Elaborated megafunction instantiation "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 387
-Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem" with the following parameter: File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 387
+    Info (12023): Found entity 1: PLL_altpll File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/pll_altpll.v Line: 30
+Info (12128): Elaborating entity "PLL_altpll" for hierarchy "PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "CIC" for hierarchy "CIC:cic" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/TOP.v Line: 104
+Warning (10230): Verilog HDL assignment warning at CIC.v(56): truncated value with size 16 to match size of target (8) File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/CIC.v Line: 56
+Warning (10230): Verilog HDL assignment warning at CIC.v(64): truncated value with size 16 to match size of target (8) File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/CIC.v Line: 64
+Warning (10230): Verilog HDL assignment warning at CIC.v(106): truncated value with size 17 to match size of target (8) File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/CIC.v Line: 106
+Info (12128): Elaborating entity "FIR" for hierarchy "FIR:fir" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/TOP.v Line: 114
+Info (12128): Elaborating entity "FIR_fir_compiler_ii_0" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/FIR.v Line: 26
+Warning (10036): Verilog HDL or VHDL warning at FIR_fir_compiler_ii_0.vhd(54): object "coeff_in_read_sig" assigned a value but never read File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 54
+Info (12128): Elaborating entity "FIR_fir_compiler_ii_0_ast" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0.vhd Line: 62
+Warning (10541): VHDL Signal Declaration warning at FIR_fir_compiler_ii_0_ast.vhd(208): used implicit default value for signal "core_channel_out_core" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 208
+Info (12128): Elaborating entity "auk_dspip_avalon_streaming_sink_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_sink_hpfir:sink" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 89
+Info (12128): Elaborating entity "auk_dspip_avalon_streaming_source_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 109
+Info (12128): Elaborating entity "auk_dspip_avalon_streaming_controller_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_controller_hpfir:intf_ctrl" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 137
+Info (12128): Elaborating entity "FIR_fir_compiler_ii_0_rtl_core" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 218
+Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:u0_m0_wo0_memread" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 196
+Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:u0_m0_wo0_compute" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 201
+Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:d_xIn_0_13" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 360
+Info (12128): Elaborating entity "dspba_delay" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|dspba_delay:d_in0_m0_wi0_wo0_assign_id1_q_13" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 365
+Info (12128): Elaborating entity "altsyncram" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 387
+Info (12130): Elaborated megafunction instantiation "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 387
+Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem" with the following parameter: File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 387
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
@@ -1790,11 +1786,11 @@ Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compi
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_etm3.tdf
-    Info (12023): Found entity 1: altsyncram_etm3 File: F:/Git/Sonar/FPGA/TestBoard1/db/altsyncram_etm3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_etm3" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem|altsyncram_etm3:auto_generated" File: f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "LPM_MULT" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 481
-Info (12130): Elaborated megafunction instantiation "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 481
-Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component" with the following parameter: File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 481
+    Info (12023): Found entity 1: altsyncram_etm3 File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/altsyncram_etm3.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_etm3" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_memr0_dmem|altsyncram_etm3:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "LPM_MULT" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 481
+Info (12130): Elaborated megafunction instantiation "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 481
+Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component" with the following parameter: File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 481
     Info (12134): Parameter "LPM_WIDTHA" = "8"
     Info (12134): Parameter "LPM_WIDTHB" = "8"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
@@ -1804,11 +1800,11 @@ Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compi
     Info (12134): Parameter "LPM_TYPE" = "LPM_MULT"
     Info (12134): Parameter "LPM_HINT" = "DEDICATED_MULTIPLIER_CIRCUITRY=YES, MAXIMIZE_SPEED=5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_vlt.tdf
-    Info (12023): Found entity 1: mult_vlt File: F:/Git/Sonar/FPGA/TestBoard1/db/mult_vlt.tdf Line: 29
-Info (12128): Elaborating entity "mult_vlt" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component|mult_vlt:auto_generated" File: f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
-Info (12128): Elaborating entity "altsyncram" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 583
-Info (12130): Elaborated megafunction instantiation "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 583
-Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem" with the following parameter: File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 583
+    Info (12023): Found entity 1: mult_vlt File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/mult_vlt.tdf Line: 29
+Info (12128): Elaborating entity "mult_vlt" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|LPM_MULT:u0_m0_wo0_mtree_mult1_1_component|mult_vlt:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
+Info (12128): Elaborating entity "altsyncram" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 583
+Info (12130): Elaborated megafunction instantiation "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 583
+Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem" with the following parameter: File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 583
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
@@ -1860,29 +1856,28 @@ Info (12133): Instantiated megafunction "FIR:fir|FIR_fir_compiler_ii_0:fir_compi
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5op3.tdf
-    Info (12023): Found entity 1: altsyncram_5op3 File: F:/Git/Sonar/FPGA/TestBoard1/db/altsyncram_5op3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_5op3" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem|altsyncram_5op3:auto_generated" File: f:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "auk_dspip_roundsat_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_roundsat_hpfir:\real_passthrough:gen_outp_blk:0:outp_blk" File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 244
-Info (12128): Elaborating entity "PWM" for hierarchy "PWM:pwm" File: F:/Git/Sonar/FPGA/TestBoard1/TOP.v Line: 110
+    Info (12023): Found entity 1: altsyncram_5op3 File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/db/altsyncram_5op3.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_5op3" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|FIR_fir_compiler_ii_0_rtl_core:\real_passthrough:hpfircore_core|altsyncram:u0_m0_wo0_wi0_r0_delayr1_mem_dmem|altsyncram_5op3:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "auk_dspip_roundsat_hpfir" for hierarchy "FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_roundsat_hpfir:\real_passthrough:gen_outp_blk:0:outp_blk" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_ast.vhd Line: 244
+Info (12128): Elaborating entity "PWM" for hierarchy "PWM:pwm" File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/TOP.v Line: 131
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: F:/Git/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 452
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Reiji/Documents/GitHub/Sonar/FPGA/TestBoard1/FIR/synthesis/submodules/FIR_fir_compiler_ii_0_rtl_core.vhd Line: 452
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 6 registers lost all their fanouts during netlist optimizations.
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15899): PLL "PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|pll1" has parameters clk2_multiply_by and clk2_divide_by specified but port CLK[2] is not connected File: F:/Git/Sonar/FPGA/TestBoard1/db/pll_altpll.v Line: 46
-Info (21057): Implemented 538 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 613 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 514 logic cells
+    Info (21059): Implemented 25 output pins
+    Info (21061): Implemented 567 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 2 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 676 megabytes
-    Info: Processing ended: Mon Oct 16 18:03:13 2017
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 708 megabytes
+    Info: Processing ended: Mon Oct 30 16:05:37 2017
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:31
 
 

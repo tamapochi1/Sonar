@@ -1,5 +1,5 @@
 Flow report for TOP
-Mon Oct 16 18:03:30 2017
+Mon Oct 30 16:06:01 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 16 18:03:30 2017       ;
+; Flow Status                        ; Successful - Mon Oct 30 16:06:01 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; TOP                                         ;
 ; Top-level Entity Name              ; TOP                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08SAE144C8GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 504 / 8,064 ( 6 % )                         ;
-;     Total combinational functions  ; 456 / 8,064 ( 6 % )                         ;
-;     Dedicated logic registers      ; 439 / 8,064 ( 5 % )                         ;
-; Total registers                    ; 439                                         ;
-; Total pins                         ; 5 / 101 ( 5 % )                             ;
+; Total logic elements               ; 555 / 8,064 ( 7 % )                         ;
+;     Total combinational functions  ; 483 / 8,064 ( 6 % )                         ;
+;     Dedicated logic registers      ; 482 / 8,064 ( 6 % )                         ;
+; Total registers                    ; 482                                         ;
+; Total pins                         ; 27 / 101 ( 27 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 1,920 / 387,072 ( < 1 % )                   ;
 ; Embedded Multiplier 9-bit elements ; 2 / 48 ( 4 % )                              ;
@@ -67,7 +67,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/16/2017 18:03:03 ;
+; Start date & time ; 10/30/2017 16:05:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TOP                 ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ agreement for further details.
 +--------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                                                     ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 165407972350.150814458214980                                              ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 200859176547320.150934712245604                                           ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                        ; --            ; --          ; tb_TestBoard1  ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_TestBoard1                                                             ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                               ; --            ; --          ; eda_simulation ;
@@ -89,6 +89,7 @@ agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; tb_TestBoard1                                                             ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 ms                                                                      ; --            ; --          ; tb_TestBoard1  ;
 ; EDA_TIME_SCALE                       ; 10 ps                                                                     ; --            ; --          ; eda_simulation ;
+; ENABLE_SIGNALTAP                     ; On                                                                        ; --            ; --          ; --             ;
 ; FLOW_ENABLE_POWER_ANALYZER           ; On                                                                        ; Off           ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                                                        ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                                                         ; --            ; --          ; --             ;
@@ -129,10 +130,12 @@ agreement for further details.
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                     ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                              ; --            ; --          ; --             ;
 ; SLD_FILE                             ; FIR/synthesis/FIR.debuginfo                                               ; --            ; --          ; --             ;
+; SLD_FILE                             ; db/stp1_auto_stripped.stp                                                 ; --            ; --          ; --             ;
 ; SLD_INFO                             ; QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1508073620                     ; --            ; FIR         ; --             ;
 ; SOPCINFO_FILE                        ; FIR/synthesis/../../FIR.sopcinfo                                          ; --            ; --          ; --             ;
 ; SPD_FILE                             ; FIR/simulation/../FIR.spd                                                 ; --            ; --          ; --             ;
 ; SYNTHESIS_ONLY_QIP                   ; On                                                                        ; --            ; --          ; --             ;
+; USE_SIGNALTAP_FILE                   ; stp1.stp                                                                  ; --            ; --          ; --             ;
 +--------------------------------------+---------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
@@ -141,28 +144,28 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 676 MB              ; 00:00:22                           ;
-; Fitter                    ; 00:00:06     ; 1.1                     ; 1370 MB             ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 534 MB              ; 00:00:01                           ;
-; PowerPlay Power Analyzer  ; 00:00:02     ; 1.2                     ; 666 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.2                     ; 635 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 520 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 708 MB              ; 00:00:31                           ;
+; Fitter                    ; 00:00:10     ; 1.1                     ; 1182 MB             ; 00:00:12                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 563 MB              ; 00:00:01                           ;
+; PowerPlay Power Analyzer  ; 00:00:03     ; 1.1                     ; 677 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.1                     ; 646 MB              ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 545 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:52                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; Reiji-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; Reiji-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; Reiji-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; PowerPlay Power Analyzer  ; Reiji-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; Reiji-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; Reiji-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-3Q4BNBF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-3Q4BNBF  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-3Q4BNBF  ; Windows 10 ; 10.0       ; x86_64         ;
+; PowerPlay Power Analyzer  ; DESKTOP-3Q4BNBF  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-3Q4BNBF  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-3Q4BNBF  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
