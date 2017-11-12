@@ -3,15 +3,19 @@ module TOP(
 	output wire speaker,
 	output wire pdwClk,
 	input  wire pdwData,
-	output wire pwmOut
+	output wire pwmOut,
+	output wire subClk,
+	output wire [20:0] dataOut
 );
 
 wire clk4_8;
 wire clk0_64;
 wire clk0_3;
 wire reset;
+wire speaker_on;
 
 assign pdwClk = clk4_8;
+assign subClk = clk0_3;
 
 PLL pll(.inclk0(clk48), .c0(clk4_8), .c1(clk0_64), .c2(clk0_3), .locked());
 
@@ -38,6 +42,22 @@ always @(posedge clk48)
  end
 assign reset = por;
 
+reg [15:0] counter_slow;
+always @(posedge clk0_64)
+ begin
+ 
+	if(counter_slow == 16'hFFFF || ~reset)
+	 begin
+		counter_slow <= 16'h0;
+	 end
+	else
+	 begin
+		counter_slow <= counter_slow + 16'h1;
+	 end
+	 
+ end
+assign speaker_on = (counter_slow < 16'h6F);
+
 // Output 40kHz to Speaker.
 reg [3:0] counter;
 always @(posedge clk0_64)
@@ -53,7 +73,7 @@ always @(posedge clk0_64)
 	 end
 	 
  end
-assign speaker = counter < 4'h8;
+assign speaker = (counter < 4'h8) & speaker_on;
 
 // Receive PDW data from MIC.
 reg signed [7:0] pdw_inputBuf;
@@ -105,7 +125,8 @@ always @(posedge fir_valid)
 wire [7:0] result;
 
 //DIV div(.denom(16'h00FF), .numer(fir_result), .quotient(result));	// 死ぬほどLE使う。500以上？
-assign result = fir_result_buf[20:13] + 7'd127;
+assign result = fir_result_buf[17:10] + 7'd127;
+assign dataOut = fir_result_buf;
 
 PWM pwm(.clk(clk48), .reset_n(reset), .duty(result), .out(pwmOut));
 
