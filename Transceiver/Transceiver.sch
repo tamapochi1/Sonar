@@ -235,58 +235,32 @@ Text GLabel 9000 3650 0    50   Input ~ 0
 GND
 Text GLabel 9500 3650 2    50   Input ~ 0
 GND
-$Comp
-L Conn_02x05_Odd_Even J1
-U 1 1 59E880B2
-P 2300 2050
-F 0 "J1" H 2350 2350 50  0000 C CNN
-F 1 "Conn_02x05" H 2350 1750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 2300 2050 50  0001 C CNN
-F 3 "" H 2300 2050 50  0001 C CNN
-	1    2300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_02x05_Odd_Even J4
-U 1 1 59E88104
-P 9200 4500
-F 0 "J4" H 9250 4800 50  0000 C CNN
-F 1 "Conn_02x05" H 9250 4200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 9200 4500 50  0001 C CNN
-F 3 "" H 9200 4500 50  0001 C CNN
-	1    9200 4500
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 4050 3700 3500 1550
 U 59E881B4
 F0 "Receiver" 60
 F1 "Sheet_Receiver.sch" 60
 $EndSheet
-Text GLabel 2600 2250 2    50   Input ~ 0
+Text GLabel 2600 2450 2    50   Input ~ 0
 GND
-Text GLabel 2100 5850 0    50   Input ~ 0
+Text GLabel 1200 6000 0    50   Input ~ 0
 GND
 $Comp
 L GND #PWR01
 U 1 1 59E8D427
-P 2250 6000
-F 0 "#PWR01" H 2250 5750 50  0001 C CNN
-F 1 "GND" H 2250 5850 50  0000 C CNN
-F 2 "" H 2250 6000 50  0001 C CNN
-F 3 "" H 2250 6000 50  0001 C CNN
-	1    2250 6000
+P 1350 6150
+F 0 "#PWR01" H 1350 5900 50  0001 C CNN
+F 1 "GND" H 1350 6000 50  0000 C CNN
+F 2 "" H 1350 6150 50  0001 C CNN
+F 3 "" H 1350 6150 50  0001 C CNN
+	1    1350 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 5850 2250 5850
-Wire Wire Line
-	2250 5850 2250 6000
 Text GLabel 2600 1850 2    50   Input ~ 0
 3.3V_A
-Text GLabel 2100 2250 0    50   Input ~ 0
+Text GLabel 2100 2450 0    50   Input ~ 0
 GND
-Text GLabel 2600 2150 2    50   Input ~ 0
+Text GLabel 2600 2350 2    50   Input ~ 0
 DATA1
 Text GLabel 2100 2050 0    50   Input ~ 0
 DATA2
@@ -296,21 +270,21 @@ Text GLabel 2600 2050 2    50   Input ~ 0
 DATA3
 Text GLabel 2600 1950 2    50   Input ~ 0
 DATA5
-Text GLabel 2100 2150 0    50   Input ~ 0
+Text GLabel 2100 2350 0    50   Input ~ 0
 DATA12
 Text GLabel 2100 1850 0    50   Input ~ 0
 CLK_A
-Text GLabel 9500 4700 2    50   Input ~ 0
+Text GLabel 9500 4900 2    50   Input ~ 0
 GND
 Text GLabel 9500 4300 2    50   Input ~ 0
 3.3V_B
 Text GLabel 9000 4300 0    50   Input ~ 0
 CLK_B
-Text GLabel 9000 4700 0    50   Input ~ 0
+Text GLabel 9000 4900 0    50   Input ~ 0
 GND
-Text GLabel 9500 4600 2    50   Input ~ 0
+Text GLabel 9500 4800 2    50   Input ~ 0
 DATA6
-Text GLabel 9000 4600 0    50   Input ~ 0
+Text GLabel 9000 4800 0    50   Input ~ 0
 DATA7
 Text GLabel 9500 4500 2    50   Input ~ 0
 DATA8
@@ -323,69 +297,261 @@ DATA11
 $Comp
 L Conn_01x01 J5
 U 1 1 59EC4CDD
-P 5250 6100
-F 0 "J5" H 5250 6200 50  0000 C CNN
-F 1 "MountingHole" H 5250 6000 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 5250 6100 50  0001 C CNN
-F 3 "" H 5250 6100 50  0001 C CNN
-	1    5250 6100
+P 6650 5850
+F 0 "J5" H 6650 5950 50  0000 C CNN
+F 1 "MountingHole" H 6650 5750 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6650 5850 50  0001 C CNN
+F 3 "" H 6650 5850 50  0001 C CNN
+	1    6650 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 J6
 U 1 1 59EC4D72
-P 5250 6400
-F 0 "J6" H 5250 6500 50  0000 C CNN
-F 1 "MountingHole" H 5250 6300 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 5250 6400 50  0001 C CNN
-F 3 "" H 5250 6400 50  0001 C CNN
-	1    5250 6400
+P 6650 6150
+F 0 "J6" H 6650 6250 50  0000 C CNN
+F 1 "MountingHole" H 6650 6050 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6650 6150 50  0001 C CNN
+F 3 "" H 6650 6150 50  0001 C CNN
+	1    6650 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 J7
 U 1 1 59EC4D9C
-P 5250 6700
-F 0 "J7" H 5250 6800 50  0000 C CNN
-F 1 "MountingHole" H 5250 6600 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 5250 6700 50  0001 C CNN
-F 3 "" H 5250 6700 50  0001 C CNN
-	1    5250 6700
+P 6650 6450
+F 0 "J7" H 6650 6550 50  0000 C CNN
+F 1 "MountingHole" H 6650 6350 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6650 6450 50  0001 C CNN
+F 3 "" H 6650 6450 50  0001 C CNN
+	1    6650 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 J8
 U 1 1 59EC4DD1
-P 5250 7000
-F 0 "J8" H 5250 7100 50  0000 C CNN
-F 1 "MountingHole" H 5250 6900 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 5250 7000 50  0001 C CNN
-F 3 "" H 5250 7000 50  0001 C CNN
-	1    5250 7000
+P 6650 6750
+F 0 "J8" H 6650 6850 50  0000 C CNN
+F 1 "MountingHole" H 6650 6650 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 6650 6750 50  0001 C CNN
+F 3 "" H 6650 6750 50  0001 C CNN
+	1    6650 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR02
 U 1 1 59EC4EA9
-P 4950 7250
-F 0 "#PWR02" H 4950 7000 50  0001 C CNN
-F 1 "GND" H 4950 7100 50  0000 C CNN
-F 2 "" H 4950 7250 50  0001 C CNN
-F 3 "" H 4950 7250 50  0001 C CNN
-	1    4950 7250
+P 6350 7000
+F 0 "#PWR02" H 6350 6750 50  0001 C CNN
+F 1 "GND" H 6350 6850 50  0000 C CNN
+F 2 "" H 6350 7000 50  0001 C CNN
+F 3 "" H 6350 7000 50  0001 C CNN
+	1    6350 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x07_Odd_Even J4
+U 1 1 5A06825E
+P 9200 4600
+F 0 "J4" H 9250 5000 50  0000 C CNN
+F 1 "Conn_02x07" H 9250 4200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 9200 4600 50  0001 C CNN
+F 3 "" H 9200 4600 50  0001 C CNN
+	1    9200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x07_Odd_Even J1
+U 1 1 5A0686E5
+P 2300 2150
+F 0 "J1" H 2350 2550 50  0000 C CNN
+F 1 "Conn_02x07" H 2350 1750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 2300 2150 50  0001 C CNN
+F 3 "" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 2150 2    50   Input ~ 0
+LED_R
+Text GLabel 2100 2250 0    50   Input ~ 0
+LED_G
+Text GLabel 2600 2250 2    50   Input ~ 0
+LED_B
+Text GLabel 2100 2150 0    50   Input ~ 0
+LED_COM
+Text GLabel 2700 6350 2    50   Input ~ 0
+LED_COM
+Text GLabel 2300 6150 0    50   Input ~ 0
+LED_R
+Text GLabel 2300 6350 0    50   Input ~ 0
+LED_G
+Text GLabel 2300 6550 0    50   Input ~ 0
+LED_B
+$Comp
+L RGB_LED LED1
+U 1 1 5A069D4B
+P 2500 6350
+F 0 "LED1" H 2500 6720 50  0000 C CNN
+F 1 "RGB_LED" H 2500 6000 50  0000 C CNN
+F 2 "LEDs:LED_Cree-PLCC4_2x2mm_CW" H 2500 6300 50  0001 C CNN
+F 3 "" H 2500 6300 50  0001 C CNN
+	1    2500 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 4600 2    50   Input ~ 0
+IMU_SCL
+Text GLabel 9500 4700 2    50   Input ~ 0
+IMU_SDA
+Text GLabel 9000 4600 0    50   Input ~ 0
+GND
+Text GLabel 9000 4700 0    50   Input ~ 0
+GND
+$Comp
+L LSM6DS3H U1
+U 1 1 5A06A68A
+P 5000 6550
+F 0 "U1" H 4800 5900 60  0000 C CNN
+F 1 "LSM6DS3H" H 5000 7300 60  0000 C CNN
+F 2 "Housings_LGA:Bosch_LGA-14_3x2.5mm_Pitch0.5mm" H 4900 6750 60  0001 C CNN
+F 3 "" H 4900 6750 60  0001 C CNN
+	1    5000 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 5900 1    50   Input ~ 0
+3.3V_B
+$Comp
+L GND #PWR03
+U 1 1 5A06AD6B
+P 4500 6500
+F 0 "#PWR03" H 4500 6250 50  0001 C CNN
+F 1 "GND" H 4500 6350 50  0000 C CNN
+F 2 "" H 4500 6500 50  0001 C CNN
+F 3 "" H 4500 6500 50  0001 C CNN
+	1    4500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C14
+U 1 1 5A06AE95
+P 3850 6400
+F 0 "C14" H 3860 6470 50  0000 L CNN
+F 1 "0.1u" H 3860 6320 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3850 6400 50  0001 C CNN
+F 3 "" H 3850 6400 50  0001 C CNN
+	1    3850 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 6100 4950 6100
+	1200 6000 1350 6000
 Wire Wire Line
-	4950 6100 4950 7250
+	1350 6000 1350 6150
 Wire Wire Line
-	5050 6400 4950 6400
-Connection ~ 4950 6400
+	6450 5850 6350 5850
 Wire Wire Line
-	5050 6700 4950 6700
-Connection ~ 4950 6700
+	6350 5850 6350 7000
 Wire Wire Line
-	5050 7000 4950 7000
-Connection ~ 4950 7000
+	6450 6150 6350 6150
+Connection ~ 6350 6150
+Wire Wire Line
+	6450 6450 6350 6450
+Connection ~ 6350 6450
+Wire Wire Line
+	6450 6750 6350 6750
+Connection ~ 6350 6750
+Wire Wire Line
+	4500 5900 4500 6100
+Wire Wire Line
+	4500 6100 4600 6100
+Wire Wire Line
+	4600 6000 4500 6000
+Connection ~ 4500 6000
+Wire Wire Line
+	4600 6300 4500 6300
+Wire Wire Line
+	4500 6300 4500 6500
+Wire Wire Line
+	4500 6400 4600 6400
+Connection ~ 4500 6400
+$Comp
+L C_Small C13
+U 1 1 5A06B385
+P 3650 6400
+F 0 "C13" H 3660 6470 50  0000 L CNN
+F 1 "0.1u" H 3660 6320 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3650 6400 50  0001 C CNN
+F 3 "" H 3650 6400 50  0001 C CNN
+	1    3650 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 6150 1    50   Input ~ 0
+3.3V_B
+Wire Wire Line
+	3650 6150 3650 6300
+Wire Wire Line
+	3650 6250 3850 6250
+Wire Wire Line
+	3850 6250 3850 6300
+Connection ~ 3650 6250
+$Comp
+L GND #PWR04
+U 1 1 5A06B429
+P 3650 6600
+F 0 "#PWR04" H 3650 6350 50  0001 C CNN
+F 1 "GND" H 3650 6450 50  0000 C CNN
+F 2 "" H 3650 6600 50  0001 C CNN
+F 3 "" H 3650 6600 50  0001 C CNN
+	1    3650 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6500 3650 6600
+Wire Wire Line
+	3650 6550 3850 6550
+Wire Wire Line
+	3850 6550 3850 6500
+Connection ~ 3650 6550
+Text GLabel 5400 6000 2    50   Input ~ 0
+IMU_SCL
+Text GLabel 5400 6100 2    50   Input ~ 0
+IMU_SDA
+NoConn ~ 5400 6500
+NoConn ~ 5400 6600
+Wire Wire Line
+	5400 6200 5550 6200
+$Comp
+L GND #PWR05
+U 1 1 5A06BC94
+P 5550 6350
+F 0 "#PWR05" H 5550 6100 50  0001 C CNN
+F 1 "GND" H 5550 6200 50  0000 C CNN
+F 2 "" H 5550 6350 50  0001 C CNN
+F 3 "" H 5550 6350 50  0001 C CNN
+	1    5550 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6200 5550 6350
+Text GLabel 5650 6300 2    50   Input ~ 0
+3.3V_B
+Wire Wire Line
+	5650 6300 5400 6300
+$Comp
+L GND #PWR06
+U 1 1 5A06BFC0
+P 5550 7100
+F 0 "#PWR06" H 5550 6850 50  0001 C CNN
+F 1 "GND" H 5550 6950 50  0000 C CNN
+F 2 "" H 5550 7100 50  0001 C CNN
+F 3 "" H 5550 7100 50  0001 C CNN
+	1    5550 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6800 5550 6800
+Wire Wire Line
+	5550 6800 5550 7100
+Wire Wire Line
+	5400 6900 5550 6900
+Connection ~ 5550 6900
+NoConn ~ 5400 7000
 $EndSCHEMATC
