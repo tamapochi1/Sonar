@@ -1,5 +1,5 @@
 Assembler report for TOP
-Sat Sep 23 21:27:45 2017
+Tue Dec 26 18:03:54 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -38,11 +38,11 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Sep 23 21:27:45 2017 ;
+; Assembler Status      ; Successful - Tue Dec 26 18:03:54 2017 ;
 ; Revision Name         ; TOP                                   ;
 ; Top-level Entity Name ; TOP                                   ;
 ; Family                ; MAX 10                                ;
-; Device                ; 10M02SCE144C8G                        ;
+; Device                ; 10M16SCE144I7G                        ;
 +-----------------------+---------------------------------------+
 
 
@@ -67,8 +67,8 @@ agreement for further details.
 +----------------+-----------------------------------------------------------------------+
 ; Option         ; Setting                                                               ;
 +----------------+-----------------------------------------------------------------------+
-; JTAG usercode  ; 0x0004DD35                                                            ;
-; Checksum       ; 0x0004DD35                                                            ;
+; JTAG usercode  ; 0x003E1DD1                                                            ;
+; Checksum       ; 0x003E1DD1                                                            ;
 +----------------+-----------------------------------------------------------------------+
 
 
@@ -78,15 +78,15 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Sep 23 21:27:45 2017
+    Info: Processing started: Tue Dec 26 18:03:52 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off PhasedArrayController -c TOP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 532 megabytes
-    Info: Processing ended: Sat Sep 23 21:27:45 2017
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 562 megabytes
+    Info: Processing ended: Tue Dec 26 18:03:54 2017
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

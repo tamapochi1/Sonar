@@ -15,10 +15,10 @@ vlog +define+SIMULATION				\
 	../../../PhasedArrayController/PhaseShifter.v	\
 	../../../PhasedArrayController/simulation/modelsim/test.v
 
-vsim -L -c work.test
+vsim -L altera_mf_ver -c work.test
 
 add wave -hex sim:/test/clk
 
 log -r *
 
-ren -all
+run -all

@@ -1,45 +1,60 @@
 module SerialSlave(
-	input  wire clk,
-	
-	input  wire RSPCK,
-	input  wire MOSI,
-	output wire MISO,
-	input  wire SSL,
-	
+	input  wire res_n,
+	input  wire SCK,
+	input  wire RXD,
+	output wire TXD,
 	input  wire [7:0] sendData,
 	output wire [7:0] recievedData,
 	output wire recieved
 );
 
+wire nSCK = ~SCK;
+
 reg [7:0] sendBuffer;
-reg [2:0] sendingBitCounter;
 reg [7:0] recieveBuffer;
-reg [2:0] recievedBitCounter;
+reg [3:0] BitCounter;
 
-
-assign recieved = (recievedBitCounter == 2'h3);
-
-always @(posedge clk)
- begin
-
- end
-
-always @(negedge SSL)
- begin
-	recievedBitCounter <= 3'h0;
-	sendingBitCounter <= 3'h0;
- end
-
-
-always @(posedge RSPCK)
- begin
-	recieveBuffer <= {recieveBuffer[6:0], MOSI};
- end
+assign TXD = sendBuffer[0];
+assign recievedData = recieveBuffer;
+assign recieved = (BitCounter == 4'h8);
  
-always @(negedge RSPCK)
+always @(posedge SCK or posedge nSCK or negedge res_n)
  begin
-	recievedBitCounter <= recievedBitCounter + 3'h1;
-	sendingBitCounter <= sendingBitCounter + 3'h1;
+ 
+ 	if (res_n == 1'b0)
+	 begin
+	 
+		sendBuffer <= 8'h0;
+		recieveBuffer <= 8'h0;
+		BitCounter <= 4'h8;
+		
+	 end
+	else if (SCK == 1'b1)
+	 begin
+	 
+		recieveBuffer <= {RXD, recieveBuffer[7:1]};
+		BitCounter <= BitCounter + 4'h1;
+	 
+	 end
+	else
+	 begin
+	 
+		if (BitCounter == 4'h8)
+		 begin
+		
+			BitCounter <= 4'h0;
+			sendBuffer <= sendData;
+		
+		 end
+		else
+		 begin
+		
+			sendBuffer <= {1'b0 ,sendBuffer[7:1]};
+		
+		 end
+	 
+	 end
+	
  end
 
 endmodule

@@ -4,10 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "speakers[0]",
-					"strict" : false
-				},
-				{
 					"name" : "speakers[1]",
 					"strict" : false
 				},
@@ -152,35 +148,115 @@
 					"strict" : false
 				},
 				{
-					"name" : "data[1]",
+					"name" : "speakers[37]",
 					"strict" : false
 				},
 				{
-					"name" : "sync",
+					"name" : "VSYNC",
 					"strict" : false
 				},
 				{
-					"name" : "address",
+					"name" : "HSYNC",
 					"strict" : false
 				},
 				{
-					"name" : "data[0]",
+					"name" : "PIXCLK",
 					"strict" : false
 				},
 				{
-					"name" : "data[3]",
+					"name" : "PIXD[0]",
 					"strict" : false
 				},
 				{
-					"name" : "data[2]",
+					"name" : "PIXD[1]",
 					"strict" : false
 				},
 				{
-					"name" : "data[4]",
+					"name" : "PIXD[2]",
 					"strict" : false
 				},
 				{
-					"name" : "data[5]",
+					"name" : "PIXD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PIXD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PIXD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PIXD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PIXD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCKO",
+					"strict" : false
+				},
+				{
+					"name" : "clk24",
+					"strict" : false
+				},
+				{
+					"name" : "SCK",
+					"strict" : false
+				},
+				{
+					"name" : "RXD",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MIC[12]",
 					"strict" : false
 				}
 			]

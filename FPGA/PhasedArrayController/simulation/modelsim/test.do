@@ -13,9 +13,12 @@ vlog +define+SIMULATION				\
 	+incdir+../../../PhasedArrayController	\
 	../../../PhasedArrayController/TOP.v	\
 	../../../PhasedArrayController/PhaseShifter.v	\
+	../../../PhasedArrayController/PowerOnReset.v	\
+	../../../PhasedArrayController/PLL.v	\
+	../../../PhasedArrayController/SerialSlave.v	\
 	../../../PhasedArrayController/simulation/modelsim/test.v
 
-vsim -L -c work.test
+vsim -L altera_mf_ver -c work.test
 
 add wave -hex sim:/test/clk
 

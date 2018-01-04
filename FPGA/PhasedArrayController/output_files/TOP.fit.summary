@@ -1,18 +1,18 @@
-Fitter Status : Successful - Thu Sep 28 17:45:37 2017
+Fitter Status : Successful - Tue Dec 26 18:03:50 2017
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : TOP
 Top-level Entity Name : TOP
 Family : MAX 10
-Device : 10M08SCE144C8G
+Device : 10M16SCE144I7G
 Timing Models : Final
-Total logic elements : 447 / 8,064 ( 6 % )
-    Total combinational functions : 431 / 8,064 ( 5 % )
-    Dedicated logic registers : 179 / 8,064 ( 2 % )
-Total registers : 179
-Total pins : 46 / 101 ( 46 % )
+Total logic elements : 5,346 / 15,840 ( 34 % )
+    Total combinational functions : 4,521 / 15,840 ( 29 % )
+    Dedicated logic registers : 4,735 / 15,840 ( 30 % )
+Total registers : 4735
+Total pins : 70 / 101 ( 69 % )
 Total virtual pins : 0
-Total memory bits : 0 / 387,072 ( 0 % )
-Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total memory bits : 12,800 / 562,176 ( 2 % )
+Embedded Multiplier 9-bit elements : 12 / 90 ( 13 % )
 Total PLLs : 1 / 1 ( 100 % )
 UFM blocks : 0 / 1 ( 0 % )
 ADC blocks : 0

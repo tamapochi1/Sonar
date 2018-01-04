@@ -2,88 +2,676 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.472
-TNS   : -17.238
+Type  : Slow 1200mV 100C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -13.814
+TNS   : -552.372
 
-Type  : Slow 1200mV 85C Model Setup 'sync'
-Slack : -2.825
-TNS   : -328.191
+Type  : Slow 1200mV 100C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -12.277
+TNS   : -59.368
 
-Type  : Slow 1200mV 85C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.344
+Type  : Slow 1200mV 100C Model Setup 'SCK'
+Slack : -8.900
+TNS   : -1185.348
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.857
+TNS   : -92.477
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.743
+TNS   : -90.865
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.731
+TNS   : -92.830
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.710
+TNS   : -92.700
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.641
+TNS   : -91.300
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.593
+TNS   : -90.676
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.573
+TNS   : -91.076
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.555
+TNS   : -91.234
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.515
+TNS   : -88.426
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.496
+TNS   : -89.385
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.478
+TNS   : -89.802
+
+Type  : Slow 1200mV 100C Model Setup 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.428
+TNS   : -89.589
+
+Type  : Slow 1200mV 100C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 28.562
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'sync'
-Slack : 0.394
+Type  : Slow 1200mV 100C Model Setup 'clk24'
+Slack : 37.791
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sync'
-Slack : -3.000
-TNS   : -239.433
+Type  : Slow 1200mV 100C Model Hold 'SCK'
+Slack : -3.536
+TNS   : -368.075
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk10'
-Slack : 49.936
+Type  : Slow 1200mV 100C Model Hold 'clk24'
+Slack : 0.048
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 780.987
+Type  : Slow 1200mV 100C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -3.125
-TNS   : -15.500
-
-Type  : Slow 1200mV 0C Model Setup 'sync'
-Slack : -2.662
-TNS   : -304.312
-
-Type  : Slow 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.306
+Type  : Slow 1200mV 100C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.332
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'sync'
-Slack : 0.352
+Type  : Slow 1200mV 100C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.349
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sync'
-Slack : -3.000
-TNS   : -239.433
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk10'
-Slack : 49.960
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.442
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 780.957
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.454
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.265
-TNS   : -6.183
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.484
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'sync'
-Slack : -0.526
-TNS   : -36.115
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.522
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.525
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.528
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.547
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.569
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.571
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.632
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.652
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'SCK'
+Slack : -4.304
+TNS   : -61.050
+
+Type  : Slow 1200mV 100C Model Recovery 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 33.549
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'SCK'
+Slack : 1.187
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 6.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'SCK'
+Slack : -4.373
+TNS   : -5169.751
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'PCKO'
+Slack : -3.566
+TNS   : -60.056
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clk24'
+Slack : 20.540
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 103.734
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 780.980
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1666.298
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -12.137
+TNS   : -485.270
+
+Type  : Slow 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -10.701
+TNS   : -51.977
+
+Type  : Slow 1200mV -40C Model Setup 'SCK'
+Slack : -7.759
+TNS   : -1071.412
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.691
+TNS   : -91.886
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.655
+TNS   : -91.326
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.632
+TNS   : -90.792
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.597
+TNS   : -90.517
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.512
+TNS   : -90.291
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.509
+TNS   : -89.259
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.482
+TNS   : -87.898
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.444
+TNS   : -88.601
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.442
+TNS   : -90.145
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.439
+TNS   : -89.334
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.437
+TNS   : -89.376
+
+Type  : Slow 1200mV -40C Model Setup 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -4.421
+TNS   : -87.871
+
+Type  : Slow 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 30.283
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'clk24'
+Slack : 38.228
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'SCK'
+Slack : -3.315
+TNS   : -386.120
+
+Type  : Slow 1200mV -40C Model Hold 'clk24'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.283
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.201
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.253
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.269
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.277
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.310
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.333
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.334
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.365
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.374
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.389
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.393
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 2.400
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'SCK'
+Slack : -3.836
+TNS   : -53.678
+
+Type  : Slow 1200mV -40C Model Recovery 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 34.775
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'SCK'
+Slack : 0.992
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.237
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'SCK'
+Slack : -3.859
+TNS   : -4524.196
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'PCKO'
+Slack : -3.566
+TNS   : -60.056
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk24'
+Slack : 20.473
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 103.754
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 780.946
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1666.320
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -5.197
+TNS   : -205.674
+
+Type  : Fast 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.433
+TNS   : -21.614
+
+Type  : Fast 1200mV -40C Model Setup 'SCK'
+Slack : -3.508
+TNS   : -455.234
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.689
+TNS   : -46.982
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.518
+TNS   : -45.899
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.484
+TNS   : -47.262
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.477
+TNS   : -46.216
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.452
+TNS   : -46.157
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.387
+TNS   : -45.789
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.354
+TNS   : -45.626
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.335
+TNS   : -44.719
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.275
+TNS   : -45.085
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.268
+TNS   : -45.260
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.265
+TNS   : -43.927
+
+Type  : Fast 1200mV -40C Model Setup 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -2.246
+TNS   : -44.167
+
+Type  : Fast 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 35.720
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'clk24'
+Slack : 40.122
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'SCK'
+Slack : -1.272
+TNS   : -101.295
+
+Type  : Fast 1200mV -40C Model Hold 'clk24'
+Slack : -0.004
+TNS   : -0.004
+
+Type  : Fast 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
 Slack : 0.145
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'sync'
-Slack : 0.165
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.855
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sync'
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.884
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.892
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.896
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.904
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.906
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.930
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.941
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.945
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.948
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.974
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : 0.983
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'SCK'
+Slack : -1.751
+TNS   : -24.568
+
+Type  : Fast 1200mV -40C Model Recovery 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 37.918
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'SCK'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.695
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'SCK'
 Slack : -3.000
-TNS   : -182.453
+TNS   : -1776.879
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk10'
-Slack : 49.657
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'PCKO'
+Slack : -3.000
+TNS   : -20.332
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk24'
+Slack : 19.398
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 781.000
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 103.875
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 780.986
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1666.352
 TNS   : 0.000
 
 ------------------------------------------------------------

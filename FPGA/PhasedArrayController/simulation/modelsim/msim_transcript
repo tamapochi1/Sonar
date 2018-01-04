@@ -10,45 +10,65 @@
 # Copying F:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/PhasedArrayController {F:/Git/Sonar/FPGA/PhasedArrayController/SerialSlave.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:51 on Dec 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/PhasedArrayController" F:/Git/Sonar/FPGA/PhasedArrayController/SerialSlave.v 
+# -- Compiling module SerialSlave
+# 
+# Top level modules:
+# 	SerialSlave
+# End time: 13:30:51 on Dec 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/PhasedArrayController {F:/Git/Sonar/FPGA/PhasedArrayController/TOP.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:19:09 on Sep 27,2017
+# Start time: 13:30:51 on Dec 24,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/PhasedArrayController" F:/Git/Sonar/FPGA/PhasedArrayController/TOP.v 
 # -- Compiling module TOP
 # 
 # Top level modules:
 # 	TOP
-# End time: 21:19:09 on Sep 27,2017, Elapsed time: 0:00:00
+# End time: 13:30:51 on Dec 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/PhasedArrayController {F:/Git/Sonar/FPGA/PhasedArrayController/PhaseShifter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:19:09 on Sep 27,2017
+# Start time: 13:30:51 on Dec 24,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/PhasedArrayController" F:/Git/Sonar/FPGA/PhasedArrayController/PhaseShifter.v 
 # -- Compiling module PhaseShifter
 # 
 # Top level modules:
 # 	PhaseShifter
-# End time: 21:19:09 on Sep 27,2017, Elapsed time: 0:00:00
+# End time: 13:30:51 on Dec 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/PhasedArrayController {F:/Git/Sonar/FPGA/PhasedArrayController/PLL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:19:09 on Sep 27,2017
+# Start time: 13:30:51 on Dec 24,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/PhasedArrayController" F:/Git/Sonar/FPGA/PhasedArrayController/PLL.v 
 # -- Compiling module PLL
 # 
 # Top level modules:
 # 	PLL
-# End time: 21:19:09 on Sep 27,2017, Elapsed time: 0:00:00
+# End time: 13:30:51 on Dec 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/PhasedArrayController {F:/Git/Sonar/FPGA/PhasedArrayController/PowerOnReset.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:30:51 on Dec 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/PhasedArrayController" F:/Git/Sonar/FPGA/PhasedArrayController/PowerOnReset.v 
+# -- Compiling module PowerOnReset
+# 
+# Top level modules:
+# 	PowerOnReset
+# End time: 13:30:51 on Dec 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/Git/Sonar/FPGA/PhasedArrayController/db {F:/Git/Sonar/FPGA/PhasedArrayController/db/pll_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:19:09 on Sep 27,2017
+# Start time: 13:30:51 on Dec 24,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Git/Sonar/FPGA/PhasedArrayController/db" F:/Git/Sonar/FPGA/PhasedArrayController/db/pll_altpll.v 
 # -- Compiling module PLL_altpll
 # 
 # Top level modules:
 # 	PLL_altpll
-# End time: 21:19:09 on Sep 27,2017, Elapsed time: 0:00:00
+# End time: 13:30:51 on Dec 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 do test.do
@@ -71,7 +91,7 @@ do test.do
 # 	../../../PhasedArrayController/PhaseShifter.v	\
 # 	../../../PhasedArrayController/simulation/modelsim/test.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:20:52 on Sep 27,2017
+# Start time: 13:31:35 on Dec 24,2017
 # vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/simulation/modelsim/test.v 
 # -- Compiling module TOP
 # -- Compiling module PhaseShifter
@@ -79,105 +99,403 @@ do test.do
 # 
 # Top level modules:
 # 	test
-# End time: 21:20:52 on Sep 27,2017, Elapsed time: 0:00:00
+# End time: 13:31:35 on Dec 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -L -c work.test
 # ** Warning: (vsim-12019) Incorrectly (or incompletely) specified option '-L': (Argument '-c' appears to be a simulator switch).
 # vsim -L -c work.test 
-# Start time: 21:20:52 on Sep 27,2017
+# Start time: 13:31:35 on Dec 24,2017
 # Loading work.test
 # ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
 # No such file or directory. (errno = ENOENT)
 # Loading work.TOP
 # ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
 # No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(38): Instantiation of 'PowerOnReset' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(43): Instantiation of 'PLL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(49): Instantiation of 'SerialSlave' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./test.do PAUSED at line 18
+# A time value could not be extracted from the current line
+do test.do
+# transcript on
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# 
+# vlib  rtl_work
+# 
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog +define+SIMULATION				\
+# 	-vlog01compat -work work		\
+# 	+incdir+../../../PhasedArrayController	\
+# 	../../../PhasedArrayController/TOP.v	\
+# 	../../../PhasedArrayController/PhaseShifter.v	\
+# 	../../../PhasedArrayController/simulation/modelsim/test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:28 on Dec 24,2017
+# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/simulation/modelsim/test.v 
+# -- Compiling module TOP
+# -- Compiling module PhaseShifter
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 13:34:28 on Dec 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -L -c work.test
+# ** Warning: (vsim-12019) Incorrectly (or incompletely) specified option '-L': (Argument '-c' appears to be a simulator switch).
+# vsim -L -c work.test 
+# Start time: 13:31:35 on Dec 24,2017
+# Loading work.test
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# Loading work.TOP
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(38): Instantiation of 'PowerOnReset' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(43): Instantiation of 'PLL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(49): Instantiation of 'SerialSlave' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./test.do PAUSED at line 18
+# Load canceled
+stop
+do test.do
+# transcript on
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# 
+# vlib  rtl_work
+# 
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog +define+SIMULATION				\
+# 	-vlog01compat -work work		\
+# 	+incdir+../../../PhasedArrayController	\
+# 	../../../PhasedArrayController/TOP.v	\
+# 	../../../PhasedArrayController/PhaseShifter.v	\
+# 	../../../PhasedArrayController/simulation/modelsim/test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:37:13 on Dec 24,2017
+# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/simulation/modelsim/test.v 
+# -- Compiling module TOP
+# -- Compiling module PhaseShifter
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 13:37:13 on Dec 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -L -c work.test
+# ** Warning: (vsim-12019) Incorrectly (or incompletely) specified option '-L': (Argument '-c' appears to be a simulator switch).
+# vsim -L -c work.test 
+# Start time: 13:31:35 on Dec 24,2017
+# Loading work.test
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# Loading work.TOP
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(38): Instantiation of 'PowerOnReset' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(43): Instantiation of 'PLL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(49): Instantiation of 'SerialSlave' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
+# No such file or directory. (errno = ENOENT)
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./test.do PAUSED at line 18
+do test.do
+# transcript on
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# 
+# vlib  rtl_work
+# 
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog +define+SIMULATION				\
+# 	-vlog01compat -work work		\
+# 	+incdir+../../../PhasedArrayController	\
+# 	../../../PhasedArrayController/TOP.v	\
+# 	../../../PhasedArrayController/PhaseShifter.v	\
+# 	../../../PhasedArrayController/simulation/modelsim/test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:37 on Dec 24,2017
+# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/simulation/modelsim/test.v 
+# -- Compiling module TOP
+# -- Compiling module PhaseShifter
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 13:39:37 on Dec 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -L altera_mf_ver -c work.test
+# vsim -L altera_mf_ver -c work.test 
+# Start time: 13:31:35 on Dec 24,2017
+# Loading work.test
+# Loading work.TOP
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(38): Instantiation of 'PowerOnReset' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+#             F:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(43): Instantiation of 'PLL' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+#             F:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# ** Error: (vsim-3033) ../../../PhasedArrayController/TOP.v(49): Instantiation of 'SerialSlave' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+#         Searched libraries:
+#             F:/intelFPGA_lite/17.0/modelsim_ase/altera/verilog/altera_mf
+#             F:/Git/Sonar/FPGA/PhasedArrayController/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./test.do PAUSED at line 18
+do test.do
+# transcript on
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# 
+# vlib  rtl_work
+# 
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog +define+SIMULATION				\
+# 	-vlog01compat -work work		\
+# 	+incdir+../../../PhasedArrayController	\
+# 	../../../PhasedArrayController/TOP.v	\
+# 	../../../PhasedArrayController/PhaseShifter.v	\
+# 	../../../PhasedArrayController/PowerOnReset.v	\
+# 	../../../PhasedArrayController/PLL.v	\
+# 	../../../PhasedArrayController/SerialSlave.v	\
+# 	../../../PhasedArrayController/simulation/modelsim/test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:43:44 on Dec 24,2017
+# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/PowerOnReset.v ../../../PhasedArrayController/PLL.v ../../../PhasedArrayController/SerialSlave.v ../../../PhasedArrayController/simulation/modelsim/test.v 
+# -- Compiling module TOP
+# -- Compiling module PhaseShifter
+# -- Compiling module PowerOnReset
+# -- Compiling module PLL
+# -- Compiling module SerialSlave
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 13:43:44 on Dec 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -L altera_mf_ver -c work.test
+# vsim -L altera_mf_ver -c work.test 
+# Start time: 13:31:35 on Dec 24,2017
+# Loading work.test
+# Loading work.TOP
+# Loading work.PowerOnReset
+# Loading work.PLL
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.SerialSlave
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
 # Loading work.PhaseShifter
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-3017) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Too few port connections. Expected 13, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'SCK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'RXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'TXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PCKO'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'VSYNC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'HSYNC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PIXCLK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PIXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'MIC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'MICCLK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'LED'.
 # 
 # add wave -hex sim:/test/clk
 # 
 # log -r *
 # 
 # run -all
-# ** Note: $stop    : ../../../PhasedArrayController/simulation/modelsim/test.v(24)
-#    Time: 19950 ns  Iteration: 2  Instance: /test
-# Break in Module test at ../../../PhasedArrayController/simulation/modelsim/test.v line 24
-add wave -position end  sim:/test/speakers[0]
-add wave -position end  sim:/test/speakers[1]
-add wave -position end  sim:/test/speakers[2]
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 231000  Instance: test.target.pll.altpll_component.cycloneiii_pll.pll3
+# Break key hit
+# Break in Module MF_cycloneiii_pll in file /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v
+add wave -position end  sim:/test/target/clk24
+add wave -position end  sim:/test/target/res_n
+add wave -position end  sim:/test/target/por/por_counter
 do test.do
+# transcript on
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# 
+# vlib  rtl_work
+# 
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog +define+SIMULATION				\
+# 	-vlog01compat -work work		\
+# 	+incdir+../../../PhasedArrayController	\
+# 	../../../PhasedArrayController/TOP.v	\
+# 	../../../PhasedArrayController/PhaseShifter.v	\
+# 	../../../PhasedArrayController/PowerOnReset.v	\
+# 	../../../PhasedArrayController/PLL.v	\
+# 	../../../PhasedArrayController/SerialSlave.v	\
+# 	../../../PhasedArrayController/simulation/modelsim/test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:55 on Dec 24,2017
+# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/PowerOnReset.v ../../../PhasedArrayController/PLL.v ../../../PhasedArrayController/SerialSlave.v ../../../PhasedArrayController/simulation/modelsim/test.v 
+# -- Compiling module TOP
+# -- Compiling module PhaseShifter
+# -- Compiling module PowerOnReset
+# -- Compiling module PLL
+# -- Compiling module SerialSlave
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 13:53:55 on Dec 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -L altera_mf_ver -c work.test
+# End time: 13:53:56 on Dec 24,2017, Elapsed time: 0:22:21
+# Errors: 33, Warnings: 15
+# vsim -L altera_mf_ver -c work.test 
+# Start time: 13:53:56 on Dec 24,2017
+# Loading work.test
+# Loading work.TOP
+# Loading work.PowerOnReset
+# Loading work.PLL
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.SerialSlave
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading work.PhaseShifter
+# ** Warning: (vsim-3017) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Too few port connections. Expected 13, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'SCK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'RXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'TXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PCKO'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'VSYNC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'HSYNC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PIXCLK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PIXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'MIC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'MICCLK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'LED'.
+# 
+# add wave -hex sim:/test/clk
+# 
+# log -r *
+# 
+# run -all
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 231000  Instance: test.target.pll.altpll_component.cycloneiii_pll.pll3
+# ** Note: $stop    : ../../../PhasedArrayController/simulation/modelsim/test.v(24)
+#    Time: 41979 ns  Iteration: 4  Instance: /test
+# Break in Module test at ../../../PhasedArrayController/simulation/modelsim/test.v line 24
+add wave -position end  sim:/test/target/por/pll_locked
+do test.do
+# transcript on
 # 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -199,373 +517,68 @@ do test.do
 # 	+incdir+../../../PhasedArrayController	\
 # 	../../../PhasedArrayController/TOP.v	\
 # 	../../../PhasedArrayController/PhaseShifter.v	\
+# 	../../../PhasedArrayController/PowerOnReset.v	\
+# 	../../../PhasedArrayController/PLL.v	\
+# 	../../../PhasedArrayController/SerialSlave.v	\
 # 	../../../PhasedArrayController/simulation/modelsim/test.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:22:31 on Sep 27,2017
-# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/simulation/modelsim/test.v 
+# Start time: 13:58:28 on Dec 24,2017
+# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/PowerOnReset.v ../../../PhasedArrayController/PLL.v ../../../PhasedArrayController/SerialSlave.v ../../../PhasedArrayController/simulation/modelsim/test.v 
 # -- Compiling module TOP
 # -- Compiling module PhaseShifter
+# -- Compiling module PowerOnReset
+# -- Compiling module PLL
+# -- Compiling module SerialSlave
 # -- Compiling module test
 # 
 # Top level modules:
 # 	test
-# End time: 21:22:31 on Sep 27,2017, Elapsed time: 0:00:00
+# End time: 13:58:28 on Dec 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -L -c work.test
-# End time: 21:22:32 on Sep 27,2017, Elapsed time: 0:01:40
-# Errors: 38, Warnings: 1
-# ** Warning: (vsim-12019) Incorrectly (or incompletely) specified option '-L': (Argument '-c' appears to be a simulator switch).
-# vsim -L -c work.test 
-# Start time: 21:22:33 on Sep 27,2017
+# vsim -L altera_mf_ver -c work.test
+# End time: 13:58:39 on Dec 24,2017, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 12
+# vsim -L altera_mf_ver -c work.test 
+# Start time: 13:58:39 on Dec 24,2017
 # Loading work.test
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
 # Loading work.TOP
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
+# Loading work.PowerOnReset
+# Loading work.PLL
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.SerialSlave
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
 # Loading work.PhaseShifter
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-3017) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Too few port connections. Expected 13, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /test/target File: ../../../PhasedArrayController/TOP.v
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'SCK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'RXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'TXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PCKO'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'VSYNC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'HSYNC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PIXCLK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'PIXD'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'MIC'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'MICCLK'.
+# ** Warning: (vsim-3722) ../../../PhasedArrayController/simulation/modelsim/test.v(35): [TFMPC] - Missing connection for port 'LED'.
 # 
 # add wave -hex sim:/test/clk
 # 
 # log -r *
 # 
 # run -all
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 231000  Instance: test.target.pll.altpll_component.cycloneiii_pll.pll3
 # ** Note: $stop    : ../../../PhasedArrayController/simulation/modelsim/test.v(24)
-#    Time: 19950 ns  Iteration: 2  Instance: /test
+#    Time: 41979 ns  Iteration: 4  Instance: /test
 # Break in Module test at ../../../PhasedArrayController/simulation/modelsim/test.v line 24
-add wave -position end  sim:/test/speakers[0]
-add wave -position end  sim:/test/speakers[1]
-add wave -position end  sim:/test/speakers[2]
-add wave -position end  sim:/test/target/speakersOn
-add wave -position end  sim:/test/target/baseSignal
-do test.do
-# 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# 
-# vlib  rtl_work
-# 
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog +define+SIMULATION				\
-# 	-vlog01compat -work work		\
-# 	+incdir+../../../PhasedArrayController	\
-# 	../../../PhasedArrayController/TOP.v	\
-# 	../../../PhasedArrayController/PhaseShifter.v	\
-# 	../../../PhasedArrayController/simulation/modelsim/test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:24:24 on Sep 27,2017
-# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/simulation/modelsim/test.v 
-# -- Compiling module TOP
-# -- Compiling module PhaseShifter
-# -- Compiling module test
-# 
-# Top level modules:
-# 	test
-# End time: 21:24:24 on Sep 27,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -L -c work.test
-# End time: 21:24:25 on Sep 27,2017, Elapsed time: 0:01:52
-# Errors: 38, Warnings: 1
-# ** Warning: (vsim-12019) Incorrectly (or incompletely) specified option '-L': (Argument '-c' appears to be a simulator switch).
-# vsim -L -c work.test 
-# Start time: 21:24:25 on Sep 27,2017
-# Loading work.test
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# Loading work.TOP
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# Loading work.PhaseShifter
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# 
-# add wave -hex sim:/test/clk
-# 
-# log -r *
-# 
-# run -all
-# ** Note: $stop    : ../../../PhasedArrayController/simulation/modelsim/test.v(24)
-#    Time: 19950 ns  Iteration: 2  Instance: /test
-# Break in Module test at ../../../PhasedArrayController/simulation/modelsim/test.v line 24
-add wave -position end  sim:/test/target/speakersOn
-do test.do
-# 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# 
-# vlib  rtl_work
-# 
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vlog +define+SIMULATION				\
-# 	-vlog01compat -work work		\
-# 	+incdir+../../../PhasedArrayController	\
-# 	../../../PhasedArrayController/TOP.v	\
-# 	../../../PhasedArrayController/PhaseShifter.v	\
-# 	../../../PhasedArrayController/simulation/modelsim/test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:25:11 on Sep 27,2017
-# vlog -reportprogress 300 "+define+SIMULATION" -vlog01compat -work work "+incdir+../../../PhasedArrayController" ../../../PhasedArrayController/TOP.v ../../../PhasedArrayController/PhaseShifter.v ../../../PhasedArrayController/simulation/modelsim/test.v 
-# -- Compiling module TOP
-# -- Compiling module PhaseShifter
-# -- Compiling module test
-# 
-# Top level modules:
-# 	test
-# End time: 21:25:12 on Sep 27,2017, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vsim -L -c work.test
-# End time: 21:25:12 on Sep 27,2017, Elapsed time: 0:00:47
-# Errors: 38, Warnings: 1
-# ** Warning: (vsim-12019) Incorrectly (or incompletely) specified option '-L': (Argument '-c' appears to be a simulator switch).
-# vsim -L -c work.test 
-# Start time: 21:25:13 on Sep 27,2017
-# Loading work.test
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# Loading work.TOP
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# Loading work.PhaseShifter
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vsim-19) Failed to access library '-c' at "-c".
-# No such file or directory. (errno = ENOENT)
-# 
-# add wave -hex sim:/test/clk
-# 
-# log -r *
-# 
-# run -all
-# ** Note: $stop    : ../../../PhasedArrayController/simulation/modelsim/test.v(24)
-#    Time: 29950 ns  Iteration: 2  Instance: /test
-# Break in Module test at ../../../PhasedArrayController/simulation/modelsim/test.v line 24
-add wave -position end  sim:/test/target/speakersOn
-add wave -position end  sim:/test/target/baseSignal
-add wave -position end  sim:/test/speakers[0]
-add wave -position end  sim:/test/speakers[1]
-add wave -position end  sim:/test/speakers[2]
-# End time: 21:28:40 on Sep 27,2017, Elapsed time: 0:03:27
-# Errors: 38, Warnings: 1
+add wave -position end  sim:/test/target/por/por_counter
+add wave -position end  sim:/test/target/por/res_n
+# End time: 13:59:44 on Dec 24,2017, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 12

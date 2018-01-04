@@ -1,8 +1,82 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="b828ecbe35c037abe06c"/>
+    <hash md5_digest_80b="9ae5eaa8bcd2cea8a940"/>
   </project>
   <file_info>
-    <file device="10M02SCE144C8G" path="TOP.sof" usercode="0xFFFFFFFF"/>
+    <file device="10M16SCE144I7G" path="TOP.sof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <sld_infos>
+    <sld_info hpath="Mic:GeneratedMics[1].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[2].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[3].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[4].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[5].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[6].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[7].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[8].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[9].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[10].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[11].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="Mic:GeneratedMics[12].mic|FIR:fir" name="fir">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
 </sld_project_info>
