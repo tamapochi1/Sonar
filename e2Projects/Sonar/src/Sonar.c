@@ -46,7 +46,10 @@ void main(void)
             break;
 
             case USB_STS_READ_COMPLETE :
-                R_USB_Write(&ctrl, g_buf, ctrl.size);
+            	g_buf[0] = 'A';
+            	g_buf[1] = 'B';
+            	g_buf[2] = 'C';
+                R_USB_Write(&ctrl, g_buf, 3);
             break;
 
             default :

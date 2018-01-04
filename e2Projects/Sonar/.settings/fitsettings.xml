@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FITMODULE xmlns:ns2="com.renesas.tools.fitconfigurator.settings.SerializeData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
+    <selectedModules>
+        <name>r_bsp</name>
+        <version>3.60</version>
+    </selectedModules>
+    <selectedModules>
+        <name>r_usb_basic</name>
+        <version>1.22</version>
+    </selectedModules>
+    <selectedModules>
+        <name>r_usb_pcdc</name>
+        <version>1.22</version>
+    </selectedModules>
+    <installedModules>r_bsp:3.60</installedModules>
+    <installedModules>r_usb_basic:1.22</installedModules>
+    <installedModules>r_usb_pcdc:1.22</installedModules>
+    <fitProject>true</fitProject>
+</FITMODULE>
