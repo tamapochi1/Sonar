@@ -23,7 +23,7 @@
 * Device(s)    : R5F571MFDxFB
 * Tool-Chain   : CCRX
 * Description  : This file implements device driver for SCIF module.
-* Creation Date: 2017/12/28
+* Creation Date: 2018/01/08
 ***********************************************************************************************************************/
 #ifndef SCIF_H
 #define SCIF_H

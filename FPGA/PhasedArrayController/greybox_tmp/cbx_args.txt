@@ -12,10 +12,11 @@ UNDERFLOW_CHECKING=ON
 USE_EAB=ON
 WRSYNC_DELAYPIPE=5
 DEVICE_FAMILY="MAX 10"
+CBX_AUTO_BLACKBOX=ALL
 data
 rdclk
 rdreq
 wrclk
 wrreq
 q
-wrusedw
+rdusedw

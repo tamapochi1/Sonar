@@ -23,7 +23,7 @@
 * Device(s)    : R5F571MFDxFB
 * Tool-Chain   : CCRX
 * Description  : This file implements device driver for SCIF module.
-* Creation Date: 2017/12/28
+* Creation Date: 2018/01/08
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -55,6 +55,7 @@ extern uint8_t * gp_scifa11_rx_address;         /* SCIFA11 receive buffer addres
 extern uint16_t  g_scifa11_rx_count;            /* SCIFA11 receive data number */
 extern uint16_t  g_scifa11_rx_length;           /* SCIFA11 receive data length */
 /* Start user code for global. Do not edit comment generated here */
+uint8_t temp;
 /* End user code. Do not edit comment generated here */
 
 /***********************************************************************************************************************
@@ -382,6 +383,7 @@ void r_scifa11_brif_interrupt(void)
 static void r_scifa11_callback_transmitend(void)
 {
     /* Start user code. Do not edit comment generated here */
+	temp = 100;
     /* End user code. Do not edit comment generated here */
 }
 /***********************************************************************************************************************
@@ -405,6 +407,7 @@ static void r_scifa11_callback_receiveend(void)
 static void r_scifa11_callback_error(scif_error_type_t error_type)
 {
     /* Start user code. Do not edit comment generated here */
+	temp = 114;
     /* End user code. Do not edit comment generated here */
 }
 

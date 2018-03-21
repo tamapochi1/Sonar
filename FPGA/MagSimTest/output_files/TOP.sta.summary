@@ -1,0 +1,293 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'sampleClockState'
+Slack : -25.553
+TNS   : -323.098
+
+Type  : Slow 1200mV 100C Model Setup 'PCKO'
+Slack : -5.150
+TNS   : -229.837
+
+Type  : Slow 1200mV 100C Model Setup 'SerialSlave:ss|preSCK[0]'
+Slack : -4.365
+TNS   : -46.639
+
+Type  : Slow 1200mV 100C Model Setup 'clk24'
+Slack : -3.988
+TNS   : -539.873
+
+Type  : Slow 1200mV 100C Model Setup 'SerialSlave:ss|BitCounter[0]'
+Slack : -2.837
+TNS   : -168.489
+
+Type  : Slow 1200mV 100C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -0.217
+TNS   : -0.217
+
+Type  : Slow 1200mV 100C Model Hold 'PCKO'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'SerialSlave:ss|BitCounter[0]'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'sampleClockState'
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'clk24'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'SerialSlave:ss|preSCK[0]'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'SerialSlave:ss|preSCK[0]'
+Slack : -7.461
+TNS   : -38.934
+
+Type  : Slow 1200mV 100C Model Recovery 'PCKO'
+Slack : -2.509
+TNS   : -49.097
+
+Type  : Slow 1200mV 100C Model Recovery 'clk24'
+Slack : 38.132
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'SerialSlave:ss|preSCK[0]'
+Slack : 0.687
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'clk24'
+Slack : 1.664
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'PCKO'
+Slack : 1.715
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'PCKO'
+Slack : -3.566
+TNS   : -162.475
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'sampleClockState'
+Slack : -3.566
+TNS   : -127.674
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'SerialSlave:ss|BitCounter[0]'
+Slack : -1.403
+TNS   : -101.016
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'SerialSlave:ss|preSCK[0]'
+Slack : -1.403
+TNS   : -16.836
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clk24'
+Slack : 20.287
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1666.373
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'sampleClockState'
+Slack : -22.119
+TNS   : -278.757
+
+Type  : Slow 1200mV -40C Model Setup 'PCKO'
+Slack : -4.475
+TNS   : -199.415
+
+Type  : Slow 1200mV -40C Model Setup 'SerialSlave:ss|preSCK[0]'
+Slack : -3.750
+TNS   : -39.944
+
+Type  : Slow 1200mV -40C Model Setup 'clk24'
+Slack : -3.572
+TNS   : -490.245
+
+Type  : Slow 1200mV -40C Model Setup 'SerialSlave:ss|BitCounter[0]'
+Slack : -2.506
+TNS   : -146.684
+
+Type  : Slow 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -0.459
+TNS   : -0.459
+
+Type  : Slow 1200mV -40C Model Hold 'PCKO'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'SerialSlave:ss|BitCounter[0]'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'sampleClockState'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'clk24'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'SerialSlave:ss|preSCK[0]'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'SerialSlave:ss|preSCK[0]'
+Slack : -6.682
+TNS   : -34.888
+
+Type  : Slow 1200mV -40C Model Recovery 'PCKO'
+Slack : -2.319
+TNS   : -45.412
+
+Type  : Slow 1200mV -40C Model Recovery 'clk24'
+Slack : 38.480
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'SerialSlave:ss|preSCK[0]'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'clk24'
+Slack : 1.459
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'PCKO'
+Slack : 1.485
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'PCKO'
+Slack : -3.566
+TNS   : -162.475
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'sampleClockState'
+Slack : -3.566
+TNS   : -127.674
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'SerialSlave:ss|BitCounter[0]'
+Slack : -1.403
+TNS   : -101.016
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'SerialSlave:ss|preSCK[0]'
+Slack : -1.403
+TNS   : -16.836
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk24'
+Slack : 20.322
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1666.361
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'sampleClockState'
+Slack : -10.036
+TNS   : -111.329
+
+Type  : Fast 1200mV -40C Model Setup 'SerialSlave:ss|preSCK[0]'
+Slack : -1.912
+TNS   : -18.000
+
+Type  : Fast 1200mV -40C Model Setup 'clk24'
+Slack : -1.595
+TNS   : -231.599
+
+Type  : Fast 1200mV -40C Model Setup 'PCKO'
+Slack : -1.483
+TNS   : -76.520
+
+Type  : Fast 1200mV -40C Model Setup 'SerialSlave:ss|BitCounter[0]'
+Slack : -0.578
+TNS   : -26.609
+
+Type  : Fast 1200mV -40C Model Setup 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.593
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -0.267
+TNS   : -0.267
+
+Type  : Fast 1200mV -40C Model Hold 'PCKO'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'SerialSlave:ss|BitCounter[0]'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'sampleClockState'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'clk24'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'SerialSlave:ss|preSCK[0]'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'SerialSlave:ss|preSCK[0]'
+Slack : -3.442
+TNS   : -19.047
+
+Type  : Fast 1200mV -40C Model Recovery 'PCKO'
+Slack : -0.884
+TNS   : -17.192
+
+Type  : Fast 1200mV -40C Model Recovery 'clk24'
+Slack : 39.973
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'SerialSlave:ss|preSCK[0]'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'PCKO'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'clk24'
+Slack : 0.690
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'PCKO'
+Slack : -3.000
+TNS   : -96.232
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'SerialSlave:ss|BitCounter[0]'
+Slack : -1.000
+TNS   : -72.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'sampleClockState'
+Slack : -1.000
+TNS   : -54.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'SerialSlave:ss|preSCK[0]'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk24'
+Slack : 19.394
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1666.421
+TNS   : 0.000
+
+------------------------------------------------------------

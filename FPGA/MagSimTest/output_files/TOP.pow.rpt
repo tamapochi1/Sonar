@@ -1,0 +1,479 @@
+PowerPlay Power Analyzer report for TOP
+Tue Jan 09 15:29:43 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. PowerPlay Power Analyzer Summary
+  4. PowerPlay Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+ 16. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.43        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;  14.2%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Tue Jan 09 15:29:43 2018            ;
+; Quartus Prime Version                  ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition      ;
+; Revision Name                          ; TOP                                              ;
+; Top-level Entity Name                  ; TOP                                              ;
+; Family                                 ; MAX 10                                           ;
+; Device                                 ; 10M16SCE144I7G                                   ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 232.82 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 226.30 mW                                        ;
+; I/O Thermal Power Dissipation          ; 6.52 mW                                          ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                                                  ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                     ; Setting                               ; Default Value ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                                      ; Off                                   ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                                ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Preset Cooling Solution                                                    ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                                        ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                                  ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                                  ; On                                    ; On            ;
+; Use Input Files                                                            ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off                                   ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On                                    ; On            ;
+; Specified Junction Temperature                                             ; 25                                    ; 25            ;
+; Ambient Temperature                                                        ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                                ; Off                                   ; Off           ;
+; Board Temperature                                                          ; 25                                    ; 25            ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Indeterminate Toggle Rates                                                                                       ;
++------------------------------------------------------------------------------------+-----------------------------+
+; Node                                                                               ; Reason                      ;
++------------------------------------------------------------------------------------+-----------------------------+
+; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[1]         ; No valid clock domain found ;
+; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[2]         ; No valid clock domain found ;
+; MIC[1]                                                                             ; No valid clock domain found ;
+; MIC[2]                                                                             ; No valid clock domain found ;
+; MIC[3]                                                                             ; No valid clock domain found ;
+; MIC[4]                                                                             ; No valid clock domain found ;
+; MIC[5]                                                                             ; No valid clock domain found ;
+; MIC[6]                                                                             ; No valid clock domain found ;
+; MIC[7]                                                                             ; No valid clock domain found ;
+; MIC[8]                                                                             ; No valid clock domain found ;
+; MIC[9]                                                                             ; No valid clock domain found ;
+; MIC[10]                                                                            ; No valid clock domain found ;
+; MIC[11]                                                                            ; No valid clock domain found ;
+; MIC[12]                                                                            ; No valid clock domain found ;
+; PCKO                                                                               ; No valid clock domain found ;
+; clk24                                                                              ; No valid clock domain found ;
+; SCK                                                                                ; No valid clock domain found ;
+; RXD                                                                                ; No valid clock domain found ;
+; sampleClockState~clkctrl                                                           ; No valid clock domain found ;
+; clk24~inputclkctrl                                                                 ; No valid clock domain found ;
+; SerialSlave:ss|Equal0~clkctrl                                                      ; No valid clock domain found ;
+; SerialSlave:ss|SCK_edge~clkctrl                                                    ; No valid clock domain found ;
+; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[1]~clkctrl ; No valid clock domain found ;
+; PCKO~inputclkctrl                                                                  ; No valid clock domain found ;
+; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[2]~clkctrl ; No valid clock domain found ;
++------------------------------------------------------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCCA                                    ; 3.00 V                    ;
+;     VCC_ONE                                 ; 3.00 V                    ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;     2.5 V Schmitt Trigger I/O Standard      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 28.7 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 8.40 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 7.30 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                                   ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type                 ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; M9K                        ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Embedded multiplier output ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Combinational cell         ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Clock control block        ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; Register cell              ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
+; I/O                        ; 0.36 mW                           ; 0.00 mW                     ; 0.36 mW                        ; 0.00 mW                       ;    0.000                                                  ;
+; Voltage Regulator          ; 0.96 mW                           ; 0.00 mW                     ; 0.96 mW                        ; --                            ; --                                                        ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                                                  ;
++--------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                                               ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                         ;
++--------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; |TOP                                                                     ; 1.32 mW (1.32 mW)                    ; 0.00 mW (0.00 mW)               ; 1.32 mW (1.32 mW)                 ; 0.00 mW (0.00 mW)                 ; |TOP                                                                                                                                        ;
+;     |hard_block:auto_generated_inst                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|hard_block:auto_generated_inst                                                                                                         ;
+;     |DIV:div_inst                                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst                                                                                                                           ;
+;         |DIV_0002:div_inst                                               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst                                                                                                         ;
+;             |altsyncram:memoryC0_uid146_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid146_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid147_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid147_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid148_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid148_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid149_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid149_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid150_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid150_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid151_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid151_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid152_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid152_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid153_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid153_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid154_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid154_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid155_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid155_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid156_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid156_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid157_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid157_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid158_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid158_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid159_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid159_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC0_uid160_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC0_uid160_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid164_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid164_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid165_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid165_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid166_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid166_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid167_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid167_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid168_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid168_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid169_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid169_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid170_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid170_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid171_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid171_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid172_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid172_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid173_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid173_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid174_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid174_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC1_uid175_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC1_uid175_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid179_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid179_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid180_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid180_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid181_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid181_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid182_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid182_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid183_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid183_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid184_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid184_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid185_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid185_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid186_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid186_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid187_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid187_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC2_uid188_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC2_uid188_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC3_uid191_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC3_uid191_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC3_uid192_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC3_uid192_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC3_uid193_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC3_uid193_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC3_uid194_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC3_uid194_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC3_uid195_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC3_uid195_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC3_uid196_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC3_uid196_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC3_uid197_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC3_uid197_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC4_uid200_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC4_uid200_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC4_uid201_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC4_uid201_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC4_uid202_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC4_uid202_invTables_lutmem_dmem                                                        ;
+;             |altsyncram:memoryC4_uid203_invTables_lutmem_dmem            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:memoryC4_uid203_invTables_lutmem_dmem                                                        ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im0_component             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im0_component                                                         ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im3_component             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im3_component                                                         ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im6_component             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im6_component                                                         ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im9_component             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im9_component                                                         ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im12_component            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im12_component                                                        ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im15_component            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im15_component                                                        ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im18_component            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im18_component                                                        ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im21_component            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im21_component                                                        ;
+;             |lpm_mult:qDivProd_uid89_fpDivTest_im24_component            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:qDivProd_uid89_fpDivTest_im24_component                                                        ;
+;             |altsyncram:redist17_fracY_uid13_fpDivTest_b_12_mem_dmem     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:redist17_fracY_uid13_fpDivTest_b_12_mem_dmem                                                 ;
+;             |altsyncram:redist18_expY_uid12_fpDivTest_b_12_mem_dmem      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:redist18_expY_uid12_fpDivTest_b_12_mem_dmem                                                  ;
+;             |altsyncram:redist20_fracX_uid10_fpDivTest_b_10_mem_dmem     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:redist20_fracX_uid10_fpDivTest_b_10_mem_dmem                                                 ;
+;             |altsyncram:redist23_expX_uid9_fpDivTest_b_12_mem_dmem       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|altsyncram:redist23_expX_uid9_fpDivTest_b_12_mem_dmem                                                   ;
+;             |lpm_mult:sm0_uid327_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid327_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid328_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid328_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid330_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid330_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid331_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid331_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid332_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid332_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid333_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid333_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid334_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid334_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid335_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid335_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm0_uid363_pT1_uid212_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid363_pT1_uid212_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid409_pT2_uid219_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid409_pT2_uid219_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid410_pT2_uid219_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid410_pT2_uid219_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid509_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid509_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid510_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid510_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid512_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid512_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid513_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid513_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid514_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid514_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid515_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid515_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid516_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid516_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid517_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid517_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid518_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid518_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid630_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid630_pT4_uid233_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid631_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid631_pT4_uid233_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid633_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid633_pT4_uid233_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid634_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid634_pT4_uid233_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid635_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid635_pT4_uid233_invPolyEval_component                                                    ;
+;             |lpm_mult:sm0_uid636_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm0_uid636_pT4_uid233_invPolyEval_component                                                    ;
+;             |lpm_mult:sm1_uid329_divValPreNorm_uid59_fpDivTest_component ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm1_uid329_divValPreNorm_uid59_fpDivTest_component                                             ;
+;             |lpm_mult:sm1_uid411_pT2_uid219_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm1_uid411_pT2_uid219_invPolyEval_component                                                    ;
+;             |lpm_mult:sm1_uid511_pT3_uid226_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm1_uid511_pT3_uid226_invPolyEval_component                                                    ;
+;             |lpm_mult:sm1_uid632_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm1_uid632_pT4_uid233_invPolyEval_component                                                    ;
+;             |lpm_mult:sm1_uid637_pT4_uid233_invPolyEval_component        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|DIV:div_inst|DIV_0002:div_inst|lpm_mult:sm1_uid637_pT4_uid233_invPolyEval_component                                                    ;
+;     |FIFO:fifo                                                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo                                                                                                                              ;
+;         |dcfifo_mixed_widths:dcfifo_mixed_widths_component               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                            ;
+;             |dcfifo_lde1:auto_generated                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated                                                 ;
+;                 |cntr_i0d:cntr_b                                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cntr_i0d:cntr_b                                 ;
+;                 |altsyncram_2b01:fifo_ram                                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|altsyncram_2b01:fifo_ram                        ;
+;                 |mux_9d7:rdemp_eq_comp_lsb_mux                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:rdemp_eq_comp_lsb_mux                   ;
+;                 |mux_9d7:rdemp_eq_comp_msb_mux                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:rdemp_eq_comp_msb_mux                   ;
+;                 |a_graycounter_c26:rdptr_g1p                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_graycounter_c26:rdptr_g1p                     ;
+;                 |a_gray2bin_gra:rdptr_g_gray2bin                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_gray2bin_gra:rdptr_g_gray2bin                 ;
+;                 |dffpipe_909:rs_brp                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|dffpipe_909:rs_brp                              ;
+;                 |dffpipe_tu8:rs_bwp                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|dffpipe_tu8:rs_bwp                              ;
+;                 |alt_synch_pipe_j9l:rs_dgwp                              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_j9l:rs_dgwp                      ;
+;                     |dffpipe_4v8:dffpipe6                                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_j9l:rs_dgwp|dffpipe_4v8:dffpipe6 ;
+;                 |a_gray2bin_gra:rs_dgwp_gray2bin                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_gray2bin_gra:rs_dgwp_gray2bin                 ;
+;                 |mux_9d7:wrfull_eq_comp_lsb_mux                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:wrfull_eq_comp_lsb_mux                  ;
+;                 |mux_9d7:wrfull_eq_comp_msb_mux                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:wrfull_eq_comp_msb_mux                  ;
+;                 |a_graycounter_9gb:wrptr_g1p                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_graycounter_9gb:wrptr_g1p                     ;
+;                 |alt_synch_pipe_k9l:ws_dgrp                              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_k9l:ws_dgrp                      ;
+;                     |dffpipe_5v8:dffpipe9                                ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_k9l:ws_dgrp|dffpipe_5v8:dffpipe9 ;
+;     |MULT:mult_inst                                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst                                                                                                                         ;
+;         |MULT_0002:mult_inst                                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst                                                                                                     ;
+;             |dspba_delay:excZ_y_uid29_fpMulTest_delay                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:excZ_y_uid29_fpMulTest_delay                                                            ;
+;             |dspba_delay:expXIsMax_uid30_fpMulTest_delay                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:expXIsMax_uid30_fpMulTest_delay                                                         ;
+;             |dspba_delay:fracXIsZero_uid31_fpMulTest_delay               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:fracXIsZero_uid31_fpMulTest_delay                                                       ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im0_component   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im0_component                                           ;
+;                 |mult_jhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im0_component|mult_jhu:auto_generated                   ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im3_component   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im3_component                                           ;
+;                 |mult_hhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im3_component|mult_hhu:auto_generated                   ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im6_component   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im6_component                                           ;
+;                 |mult_hhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im6_component|mult_hhu:auto_generated                   ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im9_component   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im9_component                                           ;
+;                 |mult_jhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im9_component|mult_jhu:auto_generated                   ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im12_component  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im12_component                                          ;
+;                 |mult_jhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im12_component|mult_jhu:auto_generated                  ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im15_component  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im15_component                                          ;
+;                 |mult_fhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im15_component|mult_fhu:auto_generated                  ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im18_component  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im18_component                                          ;
+;                 |mult_jhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im18_component|mult_jhu:auto_generated                  ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im21_component  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im21_component                                          ;
+;                 |mult_hhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im21_component|mult_hhu:auto_generated                  ;
+;             |lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im24_component  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im24_component                                          ;
+;                 |mult_hhu:auto_generated                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|lpm_mult:prodXY_uid105_prod_uid47_fpMulTest_im24_component|mult_hhu:auto_generated                  ;
+;             |dspba_delay:redist0_signR_uid48_fpMulTest_q_2               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:redist0_signR_uid48_fpMulTest_q_2                                                       ;
+;             |dspba_delay:redist1_expSum_uid44_fpMulTest_q_2              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:redist1_expSum_uid44_fpMulTest_q_2                                                      ;
+;             |dspba_delay:redist2_fracXIsZero_uid31_fpMulTest_q_2         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:redist2_fracXIsZero_uid31_fpMulTest_q_2                                                 ;
+;             |dspba_delay:redist3_expXIsMax_uid30_fpMulTest_q_2           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:redist3_expXIsMax_uid30_fpMulTest_q_2                                                   ;
+;             |dspba_delay:redist4_excZ_y_uid29_fpMulTest_q_2              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:redist4_excZ_y_uid29_fpMulTest_q_2                                                      ;
+;             |dspba_delay:signR_uid48_fpMulTest_delay                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|MULT:mult_inst|MULT_0002:mult_inst|dspba_delay:signR_uid48_fpMulTest_delay                                                             ;
+;     |PDC:pdc                                                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PDC:pdc                                                                                                                                ;
+;     |PLL:pll                                                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PLL:pll                                                                                                                                ;
+;         |altpll:altpll_component                                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PLL:pll|altpll:altpll_component                                                                                                        ;
+;             |PLL_altpll:auto_generated                                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated                                                                              ;
+;     |PowerOnReset:por                                                    ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PowerOnReset:por                                                                                                                       ;
+;     |SerialSlave:ss                                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|SerialSlave:ss                                                                                                                         ;
++--------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; No clock domain ; 0.00                  ; 0.00                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO          ; 2.68 mA                 ; 0.00 mA                   ; 2.68 mA                  ; 2.68 mA                          ;
+; VCCA           ; 3.04 mA                 ; 0.00 mA                   ; 3.04 mA                  ; 3.04 mA                          ;
+; VCC_ONE        ; 72.39 mA                ; 0.00 mA                   ; 72.39 mA                 ; 72.39 mA                         ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1A       ; 2.5V          ; 0.30 mA             ; 0.00 mA               ; 0.30 mA              ;
+; 1B       ; 2.5V          ; 0.30 mA             ; 0.00 mA               ; 0.30 mA              ;
+; 2        ; 2.5V          ; 0.29 mA             ; 0.00 mA               ; 0.29 mA              ;
+; 3        ; 2.5V          ; 0.31 mA             ; 0.00 mA               ; 0.31 mA              ;
+; 4        ; 2.5V          ; 0.28 mA             ; 0.00 mA               ; 0.28 mA              ;
+; 5        ; 2.5V          ; 0.30 mA             ; 0.00 mA               ; 0.30 mA              ;
+; 6        ; 2.5V          ; 0.32 mA             ; 0.00 mA               ; 0.32 mA              ;
+; 7        ; 2.5V          ; 0.28 mA             ; 0.00 mA               ; 0.28 mA              ;
+; 8        ; 2.5V          ; 0.31 mA             ; 0.00 mA               ; 0.31 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 2.68 mA                 ; 0.00 mA                   ; 2.68 mA                  ; 2.68 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                         ;
++----------------------------------------------------------------------------------------+--------------+------------+--------------+---------------+
+; Data Source                                                                            ; Total        ; Pin        ; Registered   ; Combinational ;
++----------------------------------------------------------------------------------------+--------------+------------+--------------+---------------+
+; Simulation (from file)                                                                 ;              ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;                                                                                        ;              ;            ;              ;               ;
+; Node, entity or clock assignment                                                       ;              ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 7 (0.3%)     ; 0 (0.0%)   ; 0 (0.0%)     ; 7 (0.4%)      ;
+;                                                                                        ;              ;            ;              ;               ;
+; Vectorless estimation                                                                  ;              ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 2309 (98.9%) ; 55 (70.5%) ; 576 (100.0%) ; 1678 (99.9%)  ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 140 (6.0%)   ; 45 (57.7%) ; 16 (2.8%)    ; 79 (4.7%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 2302 (98.6%) ; 55 (70.5%) ; 576 (100.0%) ; 1671 (99.5%)  ;
+;                                                                                        ;              ;            ;              ;               ;
+; Default assignment                                                                     ;              ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)     ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 25 (1.1%)    ; 23 (29.5%) ; 0 (0.0%)     ; 2 (0.1%)      ;
+;                                                                                        ;              ;            ;              ;               ;
+; Assumed 0                                                                              ;              ;            ;              ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 25 (1.1%)    ; 23 (29.5%) ; 0 (0.0%)     ; 2 (0.1%)      ;
++----------------------------------------------------------------------------------------+--------------+------------+--------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime PowerPlay Power Analyzer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Jan 09 15:29:40 2018
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off MagSimTest -c TOP
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity dcfifo_lde1
+        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_5v8:dffpipe9|dffe10a* 
+        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_4v8:dffpipe6|dffe7a* 
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'TOP.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (332060): Node: PCKO was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|altsyncram_2b01:fifo_ram|q_b[0] is being clocked by PCKO
+Warning (332060): Node: sampleClockState was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|altsyncram_2b01:fifo_ram|ram_block11a0~porta_we_reg is being clocked by sampleClockState
+Warning (332060): Node: clk24 was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register sampleClockState is being clocked by clk24
+Warning (332060): Node: SerialSlave:ss|BitCounter[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register register[50][0] is being clocked by SerialSlave:ss|BitCounter[0]
+Warning (332060): Node: SerialSlave:ss|preSCK[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register SerialSlave:ss|recieveBuffer[7] is being clocked by SerialSlave:ss|preSCK[0]
+Warning (332068): No clocks defined in design.
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: pll|altpll_component|auto_generated|pll1|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 41.666
+    Warning (332056): Node: pll|altpll_component|auto_generated|pll1|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 41.666
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 232.82 mW
+Info: Quartus Prime PowerPlay Power Analyzer was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 681 megabytes
+    Info: Processing ended: Tue Jan 09 15:29:43 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
+
+

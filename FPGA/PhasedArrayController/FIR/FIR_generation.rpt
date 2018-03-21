@@ -2,53 +2,21 @@ Info: Starting: Create simulation model
 Info: qsys-generate F:\Git\Sonar\FPGA\PhasedArrayController\FIR.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=F:\Git\Sonar\FPGA\PhasedArrayController\FIR\simulation --family="MAX 10" --part=10M16SCE144I7G
 Progress: Loading PhasedArrayController/FIR.qsys
 Progress: Reading input file
-Progress: Adding fir_compiler_ii_0 [altera_fir_compiler_ii 17.0]
+Progress: Adding fir_compiler_ii_0 [altera_fir_compiler_ii 17.1]
 Progress: Parameterizing module fir_compiler_ii_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Info: FIR.fir_compiler_ii_0: PhysChanIn 1, PhysChanOut 1, ChansPerPhyIn 1, ChansPerPhyOut 1, OutputFullBitWidth 21, Bankcount 1, CoefBitWidth 8
+Info: FIR.fir_compiler_ii_0: PhysChanIn -1, PhysChanOut -1, ChansPerPhyIn -1, ChansPerPhyOut -1, OutputFullBitWidth -1, Bankcount 1, CoefBitWidth 8
+Error: FIR.fir_compiler_ii_0: Coefficient bank 0, Symmetric filters require reset coefficients to be matched. Coefficient pair {1(1),29(94)} does not match.
+Error: FIR.fir_compiler_ii_0: Output Fractional Full Bit Width should greater than Output Fractional bit width   
+Error: FIR.fir_compiler_ii_0: Output Bit Width should be greater than 1
+Error: FIR.fir_compiler_ii_0: Port ast_sink_data is not fully defined after elaboration
+Error: FIR.fir_compiler_ii_0.avalon_streaming_sink: data width (-1) must be a multiple of bitsPerSymbol (8)
+Warning: FIR.fir_compiler_ii_0.avalon_streaming_sink: Signal ast_sink_data[-1] of type data must have width [1-8192]
+Error: FIR.fir_compiler_ii_0.avalon_streaming_sink: "Symbols per beat  " (symbolsPerBeat) -1 is out of range: 1-512
+Error: FIR.fir_compiler_ii_0.avalon_streaming_source: "Data bits per symbol" (dataBitsPerSymbol) -1 is out of range: 1-4096
+Error: FIR.fir_compiler_ii_0.avalon_streaming_source: "Symbols per beat  " (symbolsPerBeat) -1 is out of range: 1-512
 Info: FIR: Generating FIR "FIR" for SIM_VERILOG
-Info: fir_compiler_ii_0: PhysChanIn 1, PhysChanOut 1, ChansPerPhyIn 1, ChansPerPhyOut 1, OutputFullBitWidth 21, Bankcount 1, Latency 17, CoefBitWidth 8
-Info: fir_compiler_ii_0: "FIR" instantiated altera_fir_compiler_ii "fir_compiler_ii_0"
-Info: FIR: Done "FIR" with 2 modules, 21 files
-Info: qsys-generate succeeded.
-Info: Finished: Create simulation model
-Info: Starting: Create Modelsim Project.
-Info: sim-script-gen --spd=F:\Git\Sonar\FPGA\PhasedArrayController\FIR\FIR.spd --output-directory=F:/Git/Sonar/FPGA/PhasedArrayController/FIR/simulation/ --use-relative-paths=true
-Info: Doing: ip-make-simscript --spd=F:\Git\Sonar\FPGA\PhasedArrayController\FIR\FIR.spd --output-directory=F:/Git/Sonar/FPGA/PhasedArrayController/FIR/simulation/ --use-relative-paths=true
-Info: Generating the following file(s) for MODELSIM simulator in F:/Git/Sonar/FPGA/PhasedArrayController/FIR/simulation/ directory:
-Info: 	mentor/msim_setup.tcl
-Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
-Info: Generating the following file(s) for VCSMX simulator in F:/Git/Sonar/FPGA/PhasedArrayController/FIR/simulation/ directory:
-Info: 	synopsys/vcsmx/synopsys_sim.setup
-Info: 	synopsys/vcsmx/vcsmx_setup.sh
-Info: Generating the following file(s) for NCSIM simulator in F:/Git/Sonar/FPGA/PhasedArrayController/FIR/simulation/ directory:
-Info: 	cadence/cds.lib
-Info: 	cadence/hdl.var
-Info: 	cadence/ncsim_setup.sh
-Info: 	1 .cds.lib files in cadence/cds_libs/ directory
-Info: Generating the following file(s) for RIVIERA simulator in F:/Git/Sonar/FPGA/PhasedArrayController/FIR/simulation/ directory:
-Info: 	aldec/rivierapro_setup.tcl
-Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under F:/Git/Sonar/FPGA/PhasedArrayController/FIR/simulation/.
-Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
-Info: Finished: Create Modelsim Project.
-Info: 
-Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate F:\Git\Sonar\FPGA\PhasedArrayController\FIR.qsys --synthesis=VERILOG --output-directory=F:\Git\Sonar\FPGA\PhasedArrayController\FIR\synthesis --family="MAX 10" --part=10M16SCE144I7G
-Progress: Loading PhasedArrayController/FIR.qsys
-Progress: Reading input file
-Progress: Adding fir_compiler_ii_0 [altera_fir_compiler_ii 17.0]
-Progress: Parameterizing module fir_compiler_ii_0
-Progress: Building connections
-Progress: Parameterizing connections
-Progress: Validating
-Progress: Done reading input file
-Info: FIR.fir_compiler_ii_0: PhysChanIn 1, PhysChanOut 1, ChansPerPhyIn 1, ChansPerPhyOut 1, OutputFullBitWidth 21, Bankcount 1, CoefBitWidth 8
-Info: FIR: Generating FIR "FIR" for QUARTUS_SYNTH
-Info: fir_compiler_ii_0: PhysChanIn 1, PhysChanOut 1, ChansPerPhyIn 1, ChansPerPhyOut 1, OutputFullBitWidth 21, Bankcount 1, Latency 17, CoefBitWidth 8
-Info: fir_compiler_ii_0: "FIR" instantiated altera_fir_compiler_ii "fir_compiler_ii_0"
-Info: FIR: Done "FIR" with 2 modules, 13 files
-Info: qsys-generate succeeded.
-Info: Finished: Create HDL design files for synthesis
+Error: Internal error: STD_LOGIC: Zero or negative width types not supported, it was -1

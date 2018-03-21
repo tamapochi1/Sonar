@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="FIR" kind="FIR" version="1.0" fabric="QSYS">
- <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2017.12.24.22:46:31 -->
+ <!-- Format version 17.1 590 (Future versions may contain additional information.) -->
+ <!-- 2018.03.21.22:36:12 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1514123191</value>
+  <value>1521639372</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -98,7 +98,7 @@
  <module
    name="fir_compiler_ii_0"
    kind="altera_fir_compiler_ii"
-   version="17.0"
+   version="17.1"
    path="fir_compiler_ii_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
@@ -361,7 +361,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="coeffSetRealValue">
    <type>java.lang.String</type>
-   <value>0.0013075324,-5.4587975E-4,-0.0081939796,-0.016556092,-0.012873912,0.011297639,0.044883132,0.057572299,0.023978918,-0.046037739,-0.10327311,-0.094838994,-0.013192484,0.088244248,0.13381707,0.088244248,-0.013192484,-0.094838994,-0.10327311,-0.046037739,0.023978918,0.057572299,0.044883132,0.011297639,-0.012873912,-0.016556092,-0.0081939796,-5.4587975E-4,0.0013075324</value>
+   <value>0.0013075324,-5.4587975E-4,-0.0081939796,-0.016556092,-0.012873912,0.011297639,0.044883132,0.057572299,0.023978918,-0.046037739,-0.10327311,-0.094838994,-0.013192484,0.088244248,0.13381707,0.088244248,-0.013192484,-0.094838994,-0.10327311,-0.046037739,0.023978918,0.057572299,0.044883132,0.011297639,-0.012873912,-0.016556092,-0.0081939796,-5.4587975E-4,0.1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -385,7 +385,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="coeffSetScaleValue">
    <type>java.lang.String</type>
-   <value>0.001053677716535433,0.0,-0.007375744015748031,-0.015805165748031497,-0.012644132598425197,0.010536777165354332,0.04425446409448819,0.05689859669291339,0.02318090976377953,-0.045308141811023626,-0.10326041622047244,-0.09483099448818898,-0.012644132598425197,0.08745525047244095,0.13381707,0.08745525047244095,-0.012644132598425197,-0.09483099448818898,-0.10326041622047244,-0.045308141811023626,0.02318090976377953,0.05689859669291339,0.04425446409448819,0.010536777165354332,-0.012644132598425197,-0.015805165748031497,-0.007375744015748031,0.0,0.001053677716535433</value>
+   <value>0.001053677716535433,0.0,-0.007375744015748031,-0.015805165748031497,-0.012644132598425197,0.010536777165354332,0.04425446409448819,0.05689859669291339,0.02318090976377953,-0.045308141811023626,-0.10326041622047244,-0.09483099448818898,-0.012644132598425197,0.08745525047244095,0.13381707,0.08745525047244095,-0.012644132598425197,-0.09483099448818898,-0.10326041622047244,-0.045308141811023626,0.02318090976377953,0.05689859669291339,0.04425446409448819,0.010536777165354332,-0.012644132598425197,-0.015805165748031497,-0.007375744015748031,0.0,0.09904570535433072</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -401,7 +401,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="coeffSetFixedValue">
    <type>java.lang.String</type>
-   <value>1,0,-7,-15,-12,10,42,54,22,-43,-98,-90,-12,83,127,83,-12,-90,-98,-43,22,54,42,10,-12,-15,-7,0,1</value>
+   <value>1,0,-7,-15,-12,10,42,54,22,-43,-98,-90,-12,83,127,83,-12,-90,-98,-43,22,54,42,10,-12,-15,-7,0,94</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -481,7 +481,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outBitWidth">
    <type>int</type>
-   <value>21</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>true</visible>
@@ -529,7 +529,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outWidth">
    <type>int</type>
-   <value>21</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>true</visible>
@@ -537,7 +537,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outWidth_realOnly">
    <type>int</type>
-   <value>21</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -545,7 +545,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outFullFracBitWidth_realOnly">
    <type>int</type>
-   <value>0</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -553,7 +553,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="latency_realOnly">
    <type>int</type>
-   <value>17</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -561,7 +561,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outputfifodepth_realOnly">
    <type>int</type>
-   <value>4</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -577,7 +577,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="inputInterfaceNum">
    <type>int</type>
-   <value>1</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -585,7 +585,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outputInterfaceNum">
    <type>int</type>
-   <value>1</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -593,7 +593,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="chanPerInputInterface">
    <type>int</type>
-   <value>1</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -601,7 +601,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="chanPerOutputInterface">
    <type>int</type>
-   <value>1</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -609,7 +609,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="latency">
    <type>int</type>
-   <value>17</value>
+   <value>-1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -617,7 +617,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="outputfifodepth">
    <type>int</type>
-   <value>8</value>
+   <value>0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -626,7 +626,7 @@ the requested settings for a module instance. -->
   <parameter name="funcResult">
    <type>java.lang.String</type>
    <value><![CDATA[-interp=1 -decim=1 -incycles=16 -len=29 -bankcount=1 -sym -nband=1 -chans=1 -family="MAX 10" 
-|{}|1|1|1|1|21|0|17|4|noCode|LUTS: 178 DSPs: 1 RAM Bits: 384|]]></value>
+|{Coefficient bank 0, Symmetric filters require reset coefficients to be matched. Coefficient pair {1(1),29(94)} does not match.}|-1|-1|-1|-1|-1|-1|-1|-1|noCode|LUTS: 0 DSPs: 0 RAM Bits: 0|]]></value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -666,7 +666,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="lutCount">
    <type>int</type>
-   <value>178</value>
+   <value>0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -674,7 +674,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dspCount">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -682,7 +682,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="memBitCount">
    <type>int</type>
-   <value>384</value>
+   <value>0</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -690,7 +690,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="errorList">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -704,7 +704,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="clk" kind="clock_sink" version="17.0">
+  <interface name="clk" kind="clock_sink" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -749,7 +749,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="rst" kind="reset_sink" version="17.0">
+  <interface name="rst" kind="reset_sink" version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -797,7 +797,7 @@ parameters are a RESULT of the module parameters. -->
   <interface
      name="avalon_streaming_sink"
      kind="avalon_streaming_sink"
-     version="17.0">
+     version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -891,11 +891,11 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="symbolsPerBeat">
     <type>int</type>
-    <value>1</value>
+    <value>-1</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>false</visible>
-    <valid>true</valid>
+    <valid>false</valid>
    </parameter>
    <parameter name="deviceFamily">
     <type>java.lang.String</type>
@@ -918,7 +918,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>ast_sink_data</name>
     <direction>Input</direction>
-    <width>8</width>
+    <width>-1</width>
     <role>data</role>
    </port>
    <port>
@@ -937,7 +937,7 @@ parameters are a RESULT of the module parameters. -->
   <interface
      name="avalon_streaming_source"
      kind="avalon_streaming_source"
-     version="17.0">
+     version="17.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -967,11 +967,11 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="dataBitsPerSymbol">
     <type>int</type>
-    <value>21</value>
+    <value>-1</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
-    <valid>true</valid>
+    <valid>false</valid>
    </parameter>
    <parameter name="emptyWithinPacket">
     <type>boolean</type>
@@ -1031,11 +1031,11 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="symbolsPerBeat">
     <type>int</type>
-    <value>1</value>
+    <value>-1</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>false</visible>
-    <valid>true</valid>
+    <valid>false</valid>
    </parameter>
    <parameter name="deviceFamily">
     <type>java.lang.String</type>
@@ -1058,7 +1058,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>ast_source_data</name>
     <direction>Output</direction>
-    <width>21</width>
+    <width>1</width>
     <role>data</role>
    </port>
    <port>
@@ -1081,7 +1081,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>FIR II</displayName>
-  <version>17.0</version>
+  <version>17.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -1089,7 +1089,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Input</displayName>
-  <version>17.0</version>
+  <version>17.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -1097,7 +1097,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Input</displayName>
-  <version>17.0</version>
+  <version>17.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -1105,7 +1105,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Avalon Streaming Sink</displayName>
-  <version>17.0</version>
+  <version>17.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -1113,8 +1113,8 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Avalon Streaming Source</displayName>
-  <version>17.0</version>
+  <version>17.1</version>
  </plugin>
- <reportVersion>17.0 595</reportVersion>
+ <reportVersion>17.1 590</reportVersion>
  <uniqueIdentifier></uniqueIdentifier>
 </EnsembleReport>

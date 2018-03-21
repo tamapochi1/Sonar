@@ -9,11 +9,13 @@ RM := rm -rf *.sni *.dbg *.lst *.lis *.lpp *.map *.x *.lbp *.bls *.libelf *.rel 
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include r_bsp/board/MainBoard/subdir.mk
+-include r_pdc_rx/src/subdir.mk
 -include r_usb_pcdc/src/subdir.mk
 -include src/cg_src/subdir.mk
 -include r_bsp/mcu/all/subdir.mk
 -include r_usb_basic/src/hw/subdir.mk
 -include src/subdir.mk
+-include r_pincfg/subdir.mk
 -include r_bsp/mcu/rx71m/subdir.mk
 -include r_usb_basic/src/driver/subdir.mk
 
@@ -114,11 +116,13 @@ Sonar.x: Sonar.abs
 clean:
 	-$(RM) $(LINKER_OUTPUT_OUTPUTS) $(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS)
 	-rm -rf r_bsp/board/MainBoard/*.obj r_bsp/board/MainBoard/*.d r_bsp/board/MainBoard/*.asm r_bsp/board/MainBoard/*.p r_bsp/board/MainBoard/*.src r_bsp/board/MainBoard/*.jmp r_bsp/board/MainBoard/*.lst r_bsp/board/MainBoard/*.prn 
+	-rm -rf r_pdc_rx/src/*.obj r_pdc_rx/src/*.d r_pdc_rx/src/*.asm r_pdc_rx/src/*.p r_pdc_rx/src/*.src r_pdc_rx/src/*.jmp r_pdc_rx/src/*.lst r_pdc_rx/src/*.prn 
 	-rm -rf r_usb_pcdc/src/*.obj r_usb_pcdc/src/*.d r_usb_pcdc/src/*.asm r_usb_pcdc/src/*.p r_usb_pcdc/src/*.src r_usb_pcdc/src/*.jmp r_usb_pcdc/src/*.lst r_usb_pcdc/src/*.prn 
 	-rm -rf src/cg_src/*.obj src/cg_src/*.d src/cg_src/*.asm src/cg_src/*.p src/cg_src/*.src src/cg_src/*.jmp src/cg_src/*.lst src/cg_src/*.prn 
 	-rm -rf r_bsp/mcu/all/*.obj r_bsp/mcu/all/*.d r_bsp/mcu/all/*.asm r_bsp/mcu/all/*.p r_bsp/mcu/all/*.src r_bsp/mcu/all/*.jmp r_bsp/mcu/all/*.lst r_bsp/mcu/all/*.prn 
 	-rm -rf r_usb_basic/src/hw/*.obj r_usb_basic/src/hw/*.d r_usb_basic/src/hw/*.asm r_usb_basic/src/hw/*.p r_usb_basic/src/hw/*.src r_usb_basic/src/hw/*.jmp r_usb_basic/src/hw/*.lst r_usb_basic/src/hw/*.prn 
 	-rm -rf src/*.obj src/*.d src/*.asm src/*.p src/*.src src/*.jmp src/*.lst src/*.prn 
+	-rm -rf r_pincfg/*.obj r_pincfg/*.d r_pincfg/*.asm r_pincfg/*.p r_pincfg/*.src r_pincfg/*.jmp r_pincfg/*.lst r_pincfg/*.prn 
 	-rm -rf r_bsp/mcu/rx71m/*.obj r_bsp/mcu/rx71m/*.d r_bsp/mcu/rx71m/*.asm r_bsp/mcu/rx71m/*.p r_bsp/mcu/rx71m/*.src r_bsp/mcu/rx71m/*.jmp r_bsp/mcu/rx71m/*.lst r_bsp/mcu/rx71m/*.prn 
 	-rm -rf r_usb_basic/src/driver/*.obj r_usb_basic/src/driver/*.d r_usb_basic/src/driver/*.asm r_usb_basic/src/driver/*.p r_usb_basic/src/driver/*.src r_usb_basic/src/driver/*.jmp r_usb_basic/src/driver/*.lst r_usb_basic/src/driver/*.prn 
 	@echo

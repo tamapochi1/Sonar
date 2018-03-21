@@ -1,0 +1,197 @@
+Flow report for TOP
+Tue Jan 09 15:32:48 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Tue Jan 09 15:32:47 2018       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; TOP                                         ;
+; Top-level Entity Name              ; TOP                                         ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M16SCE144I7G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 01/09/2018 15:32:22 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; TOP                 ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                           ;
++-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 165407972350.151547954218948                          ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                             ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                                  ; --            ; --          ; eda_simulation ;
+; ENABLE_SIGNALTAP                    ; On                                                    ; --            ; --          ; --             ;
+; FLOW_ENABLE_POWER_ANALYZER          ; On                                                    ; Off           ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 100                                                   ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; FIR/synthesis/../FIR.cmp                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; FIR/synthesis/../../FIR.qsys                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL_inst.v                                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL_bb.v                                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL.ppf                                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; FIFO_inst.v                                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; FIFO_bb.v                                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; MULT.cmp                                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; MULT_sim/MULT.vo                                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV.cmp                                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid146_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid147_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid148_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid149_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid150_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid151_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid152_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid153_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid154_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid155_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid156_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid157_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid158_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid159_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC0_uid160_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid164_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid165_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid166_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid167_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid168_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid169_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid170_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid171_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid172_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid173_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid174_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC1_uid175_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid179_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid180_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid181_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid182_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid183_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid184_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid185_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid186_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid187_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC2_uid188_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC3_uid191_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC3_uid192_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC3_uid193_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC3_uid194_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC3_uid195_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC3_uid196_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC3_uid197_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC4_uid200_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC4_uid201_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC4_uid202_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV_memoryC4_uid203_invTables_lutmem.hex      ; --            ; --          ; --             ;
+; MISC_FILE                           ; DIV_sim/DIV.vo                                        ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                     ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                     ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                            ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                            ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                   ; --            ; --          ; --             ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE  ; 12.5 %                                                ; 12.5%         ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                 ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                          ; --            ; --          ; --             ;
+; SLD_FILE                            ; FIR/synthesis/FIR.debuginfo                           ; --            ; --          ; --             ;
+; SLD_FILE                            ; db/stp1_auto_stripped.stp                             ; --            ; --          ; --             ;
+; SLD_INFO                            ; QSYS_NAME FIR HAS_SOPCINFO 1 GENERATION_ID 1514123191 ; --            ; FIR         ; --             ;
+; SOPCINFO_FILE                       ; FIR/synthesis/../../FIR.sopcinfo                      ; --            ; --          ; --             ;
+; SPD_FILE                            ; MULT.spd                                              ; --            ; --          ; --             ;
+; SPD_FILE                            ; DIV.spd                                               ; --            ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                    ; --            ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                    ; --            ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                    ; --            ; --          ; --             ;
+; USE_SIGNALTAP_FILE                  ; stp1.stp                                              ; --            ; --          ; --             ;
++-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 760 MB              ; 00:00:37                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:37                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; Reiji-PC         ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off MagSimTest -c TOP
+
+
+

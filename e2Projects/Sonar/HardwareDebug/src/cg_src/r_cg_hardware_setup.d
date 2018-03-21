@@ -43,7 +43,5 @@ src/cg_src/r_cg_hardware_setup.obj src/cg_src/r_cg_hardware_setup.d: ../src/cg_s
 ../src/cg_src/r_cg_bsc.h:
 src/cg_src/r_cg_hardware_setup.obj src/cg_src/r_cg_hardware_setup.d: ../src/cg_src/r_cg_scifa.h
 ../src/cg_src/r_cg_scifa.h:
-src/cg_src/r_cg_hardware_setup.obj src/cg_src/r_cg_hardware_setup.d: ../src/cg_src/r_cg_riic.h
-../src/cg_src/r_cg_riic.h:
 src/cg_src/r_cg_hardware_setup.obj src/cg_src/r_cg_hardware_setup.d: ../src/cg_src/r_cg_userdefine.h
 ../src/cg_src/r_cg_userdefine.h:

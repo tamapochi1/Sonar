@@ -23,7 +23,7 @@
 * Device(s)    : R5F571MFDxFB
 * Tool-Chain   : CCRX
 * Description  : This file implements general head file.
-* Creation Date: 2017/12/28
+* Creation Date: 2018/01/08
 ***********************************************************************************************************************/
 #ifndef MODULEID_H
 #define MODULEID_H
@@ -76,8 +76,6 @@ Global functions
 ***********************************************************************************************************************/
 void HardwareSetup(void);
 void R_Systeminit(void);
-void r_riic0_transmitend_interrupt(void);
-void r_riic0_error_interrupt(void);
 void r_scifa10_teif_interrupt(void);
 void r_scifa10_erif_interrupt(void);
 void r_scifa10_brif_interrupt(void);

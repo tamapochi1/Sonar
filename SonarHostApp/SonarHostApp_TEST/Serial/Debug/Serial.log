@@ -1,0 +1,2 @@
+﻿  SerialController.cpp
+f:\git\sonar\sonarhostapp\sonarhostapp_test\serial\serialcontroller.cpp(8): error C3861: 'sprintf_s': 識別子が見つかりませんでした

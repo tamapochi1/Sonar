@@ -1,5 +1,5 @@
 |TOP
-clk24 => clk24.IN2
+clk24 => clk24.IN3
 speakers[1] <= PhaseShifter:GeneratedPhaseShifters[1].ps.out
 speakers[2] <= PhaseShifter:GeneratedPhaseShifters[2].ps.out
 speakers[3] <= PhaseShifter:GeneratedPhaseShifters[3].ps.out
@@ -66,8 +66,8 @@ MIC[11] => MIC[11].IN1
 MIC[12] => MIC[12].IN1
 MICCLK[0] <= clk4_8.DB_MAX_OUTPUT_PORT_TYPE
 MICCLK[1] <= clk4_8.DB_MAX_OUTPUT_PORT_TYPE
-LED[0] <= <VCC>
-LED[1] <= <VCC>
+LED[0] <= LED.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= register[4][1].DB_MAX_OUTPUT_PORT_TYPE
 LED[2] <= <VCC>
 
 
@@ -183,19 +183,7 @@ locked <= pll1.LOCKED
 
 
 |TOP|SerialSlave:ss
-res_n => BitCounter[0].IN0
-res_n => BitCounter[0].ACLR
-res_n => BitCounter[1].ACLR
-res_n => BitCounter[2].ACLR
-res_n => BitCounter[3].PRESET
-res_n => sendBuffer[0].ACLR
-res_n => sendBuffer[1].ACLR
-res_n => sendBuffer[2].ACLR
-res_n => sendBuffer[3].ACLR
-res_n => sendBuffer[4].ACLR
-res_n => sendBuffer[5].ACLR
-res_n => sendBuffer[6].ACLR
-res_n => sendBuffer[7].ACLR
+res_n => BitCounter[0].IN1
 res_n => recieveBuffer[0].ACLR
 res_n => recieveBuffer[1].ACLR
 res_n => recieveBuffer[2].ACLR
@@ -204,36 +192,52 @@ res_n => recieveBuffer[4].ACLR
 res_n => recieveBuffer[5].ACLR
 res_n => recieveBuffer[6].ACLR
 res_n => recieveBuffer[7].ACLR
-SCK => BitCounter[0].IN1
-SCK => recieveBuffer[0].LATCH_ENABLE
-SCK => recieveBuffer[1].LATCH_ENABLE
-SCK => recieveBuffer[2].LATCH_ENABLE
-SCK => recieveBuffer[3].LATCH_ENABLE
-SCK => recieveBuffer[4].LATCH_ENABLE
-SCK => recieveBuffer[5].LATCH_ENABLE
-SCK => recieveBuffer[6].LATCH_ENABLE
-SCK => recieveBuffer[7].LATCH_ENABLE
-SCK => BitCounter[0].CLK
-SCK => BitCounter[1].CLK
-SCK => BitCounter[2].CLK
-SCK => BitCounter[3].CLK
-SCK => sendBuffer[0].CLK
-SCK => sendBuffer[1].CLK
-SCK => sendBuffer[2].CLK
-SCK => sendBuffer[3].CLK
-SCK => sendBuffer[4].CLK
-SCK => sendBuffer[5].CLK
-SCK => sendBuffer[6].CLK
-SCK => sendBuffer[7].CLK
-SCK => sendBuffer[7].ENA
-SCK => sendBuffer[6].ENA
-SCK => sendBuffer[5].ENA
-SCK => sendBuffer[4].ENA
-SCK => sendBuffer[3].ENA
-SCK => sendBuffer[2].ENA
-SCK => sendBuffer[1].ENA
-SCK => sendBuffer[0].ENA
-RXD => recieveBuffer[7].DATAIN
+res_n => sendBuffer[0].ACLR
+res_n => sendBuffer[1].ACLR
+res_n => sendBuffer[2].ACLR
+res_n => sendBuffer[3].ACLR
+res_n => sendBuffer[4].ACLR
+res_n => sendBuffer[5].ACLR
+res_n => sendBuffer[6].ACLR
+res_n => sendBuffer[7].ACLR
+clk => preSCK[0].CLK
+clk => preSCK[1].CLK
+clk => preSCK[2].CLK
+clk => preSCK[3].CLK
+clk => preSCK[4].CLK
+clk => preSCK[5].CLK
+clk => preSCK[6].CLK
+clk => preSCK[7].CLK
+clk => preSCK[8].CLK
+clk => preSCK[9].CLK
+clk => preSCK[10].CLK
+clk => preSCK[11].CLK
+clk => preSCK[12].CLK
+clk => preSCK[13].CLK
+clk => preSCK[14].CLK
+clk => preSCK[15].CLK
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => recieveBuffer.OUTPUTSELECT
+SCK => BitCounter.OUTPUTSELECT
+SCK => BitCounter.OUTPUTSELECT
+SCK => BitCounter.OUTPUTSELECT
+SCK => BitCounter.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => sendBuffer.OUTPUTSELECT
+SCK => preSCK[0].DATAIN
+RXD => recieveBuffer.DATAB
 TXD <= sendBuffer[0].DB_MAX_OUTPUT_PORT_TYPE
 sendData[0] => sendBuffer.DATAB
 sendData[1] => sendBuffer.DATAB
@@ -23168,304 +23172,309 @@ q[4] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q
 q[5] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q
 q[6] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q
 q[7] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.q
-wrusedw[0] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrusedw
-wrusedw[1] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrusedw
-wrusedw[2] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrusedw
-wrusedw[3] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.wrusedw
+rdusedw[0] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[1] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[2] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[3] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[4] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[5] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[6] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[7] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
+rdusedw[8] <= dcfifo_mixed_widths:dcfifo_mixed_widths_component.rdusedw
 
 
 |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component
 aclr => ~NO_FANOUT~
-data[0] => dcfifo_8ee1:auto_generated.data[0]
-data[1] => dcfifo_8ee1:auto_generated.data[1]
-data[2] => dcfifo_8ee1:auto_generated.data[2]
-data[3] => dcfifo_8ee1:auto_generated.data[3]
-data[4] => dcfifo_8ee1:auto_generated.data[4]
-data[5] => dcfifo_8ee1:auto_generated.data[5]
-data[6] => dcfifo_8ee1:auto_generated.data[6]
-data[7] => dcfifo_8ee1:auto_generated.data[7]
-data[8] => dcfifo_8ee1:auto_generated.data[8]
-data[9] => dcfifo_8ee1:auto_generated.data[9]
-data[10] => dcfifo_8ee1:auto_generated.data[10]
-data[11] => dcfifo_8ee1:auto_generated.data[11]
-data[12] => dcfifo_8ee1:auto_generated.data[12]
-data[13] => dcfifo_8ee1:auto_generated.data[13]
-data[14] => dcfifo_8ee1:auto_generated.data[14]
-data[15] => dcfifo_8ee1:auto_generated.data[15]
-data[16] => dcfifo_8ee1:auto_generated.data[16]
-data[17] => dcfifo_8ee1:auto_generated.data[17]
-data[18] => dcfifo_8ee1:auto_generated.data[18]
-data[19] => dcfifo_8ee1:auto_generated.data[19]
-data[20] => dcfifo_8ee1:auto_generated.data[20]
-data[21] => dcfifo_8ee1:auto_generated.data[21]
-data[22] => dcfifo_8ee1:auto_generated.data[22]
-data[23] => dcfifo_8ee1:auto_generated.data[23]
-data[24] => dcfifo_8ee1:auto_generated.data[24]
-data[25] => dcfifo_8ee1:auto_generated.data[25]
-data[26] => dcfifo_8ee1:auto_generated.data[26]
-data[27] => dcfifo_8ee1:auto_generated.data[27]
-data[28] => dcfifo_8ee1:auto_generated.data[28]
-data[29] => dcfifo_8ee1:auto_generated.data[29]
-data[30] => dcfifo_8ee1:auto_generated.data[30]
-data[31] => dcfifo_8ee1:auto_generated.data[31]
-data[32] => dcfifo_8ee1:auto_generated.data[32]
-data[33] => dcfifo_8ee1:auto_generated.data[33]
-data[34] => dcfifo_8ee1:auto_generated.data[34]
-data[35] => dcfifo_8ee1:auto_generated.data[35]
-data[36] => dcfifo_8ee1:auto_generated.data[36]
-data[37] => dcfifo_8ee1:auto_generated.data[37]
-data[38] => dcfifo_8ee1:auto_generated.data[38]
-data[39] => dcfifo_8ee1:auto_generated.data[39]
-data[40] => dcfifo_8ee1:auto_generated.data[40]
-data[41] => dcfifo_8ee1:auto_generated.data[41]
-data[42] => dcfifo_8ee1:auto_generated.data[42]
-data[43] => dcfifo_8ee1:auto_generated.data[43]
-data[44] => dcfifo_8ee1:auto_generated.data[44]
-data[45] => dcfifo_8ee1:auto_generated.data[45]
-data[46] => dcfifo_8ee1:auto_generated.data[46]
-data[47] => dcfifo_8ee1:auto_generated.data[47]
-data[48] => dcfifo_8ee1:auto_generated.data[48]
-data[49] => dcfifo_8ee1:auto_generated.data[49]
-data[50] => dcfifo_8ee1:auto_generated.data[50]
-data[51] => dcfifo_8ee1:auto_generated.data[51]
-data[52] => dcfifo_8ee1:auto_generated.data[52]
-data[53] => dcfifo_8ee1:auto_generated.data[53]
-data[54] => dcfifo_8ee1:auto_generated.data[54]
-data[55] => dcfifo_8ee1:auto_generated.data[55]
-data[56] => dcfifo_8ee1:auto_generated.data[56]
-data[57] => dcfifo_8ee1:auto_generated.data[57]
-data[58] => dcfifo_8ee1:auto_generated.data[58]
-data[59] => dcfifo_8ee1:auto_generated.data[59]
-data[60] => dcfifo_8ee1:auto_generated.data[60]
-data[61] => dcfifo_8ee1:auto_generated.data[61]
-data[62] => dcfifo_8ee1:auto_generated.data[62]
-data[63] => dcfifo_8ee1:auto_generated.data[63]
-data[64] => dcfifo_8ee1:auto_generated.data[64]
-data[65] => dcfifo_8ee1:auto_generated.data[65]
-data[66] => dcfifo_8ee1:auto_generated.data[66]
-data[67] => dcfifo_8ee1:auto_generated.data[67]
-data[68] => dcfifo_8ee1:auto_generated.data[68]
-data[69] => dcfifo_8ee1:auto_generated.data[69]
-data[70] => dcfifo_8ee1:auto_generated.data[70]
-data[71] => dcfifo_8ee1:auto_generated.data[71]
-data[72] => dcfifo_8ee1:auto_generated.data[72]
-data[73] => dcfifo_8ee1:auto_generated.data[73]
-data[74] => dcfifo_8ee1:auto_generated.data[74]
-data[75] => dcfifo_8ee1:auto_generated.data[75]
-data[76] => dcfifo_8ee1:auto_generated.data[76]
-data[77] => dcfifo_8ee1:auto_generated.data[77]
-data[78] => dcfifo_8ee1:auto_generated.data[78]
-data[79] => dcfifo_8ee1:auto_generated.data[79]
-data[80] => dcfifo_8ee1:auto_generated.data[80]
-data[81] => dcfifo_8ee1:auto_generated.data[81]
-data[82] => dcfifo_8ee1:auto_generated.data[82]
-data[83] => dcfifo_8ee1:auto_generated.data[83]
-data[84] => dcfifo_8ee1:auto_generated.data[84]
-data[85] => dcfifo_8ee1:auto_generated.data[85]
-data[86] => dcfifo_8ee1:auto_generated.data[86]
-data[87] => dcfifo_8ee1:auto_generated.data[87]
-data[88] => dcfifo_8ee1:auto_generated.data[88]
-data[89] => dcfifo_8ee1:auto_generated.data[89]
-data[90] => dcfifo_8ee1:auto_generated.data[90]
-data[91] => dcfifo_8ee1:auto_generated.data[91]
-data[92] => dcfifo_8ee1:auto_generated.data[92]
-data[93] => dcfifo_8ee1:auto_generated.data[93]
-data[94] => dcfifo_8ee1:auto_generated.data[94]
-data[95] => dcfifo_8ee1:auto_generated.data[95]
-data[96] => dcfifo_8ee1:auto_generated.data[96]
-data[97] => dcfifo_8ee1:auto_generated.data[97]
-data[98] => dcfifo_8ee1:auto_generated.data[98]
-data[99] => dcfifo_8ee1:auto_generated.data[99]
-data[100] => dcfifo_8ee1:auto_generated.data[100]
-data[101] => dcfifo_8ee1:auto_generated.data[101]
-data[102] => dcfifo_8ee1:auto_generated.data[102]
-data[103] => dcfifo_8ee1:auto_generated.data[103]
-data[104] => dcfifo_8ee1:auto_generated.data[104]
-data[105] => dcfifo_8ee1:auto_generated.data[105]
-data[106] => dcfifo_8ee1:auto_generated.data[106]
-data[107] => dcfifo_8ee1:auto_generated.data[107]
-data[108] => dcfifo_8ee1:auto_generated.data[108]
-data[109] => dcfifo_8ee1:auto_generated.data[109]
-data[110] => dcfifo_8ee1:auto_generated.data[110]
-data[111] => dcfifo_8ee1:auto_generated.data[111]
-data[112] => dcfifo_8ee1:auto_generated.data[112]
-data[113] => dcfifo_8ee1:auto_generated.data[113]
-data[114] => dcfifo_8ee1:auto_generated.data[114]
-data[115] => dcfifo_8ee1:auto_generated.data[115]
-data[116] => dcfifo_8ee1:auto_generated.data[116]
-data[117] => dcfifo_8ee1:auto_generated.data[117]
-data[118] => dcfifo_8ee1:auto_generated.data[118]
-data[119] => dcfifo_8ee1:auto_generated.data[119]
-data[120] => dcfifo_8ee1:auto_generated.data[120]
-data[121] => dcfifo_8ee1:auto_generated.data[121]
-data[122] => dcfifo_8ee1:auto_generated.data[122]
-data[123] => dcfifo_8ee1:auto_generated.data[123]
-data[124] => dcfifo_8ee1:auto_generated.data[124]
-data[125] => dcfifo_8ee1:auto_generated.data[125]
-data[126] => dcfifo_8ee1:auto_generated.data[126]
-data[127] => dcfifo_8ee1:auto_generated.data[127]
-data[128] => dcfifo_8ee1:auto_generated.data[128]
-data[129] => dcfifo_8ee1:auto_generated.data[129]
-data[130] => dcfifo_8ee1:auto_generated.data[130]
-data[131] => dcfifo_8ee1:auto_generated.data[131]
-data[132] => dcfifo_8ee1:auto_generated.data[132]
-data[133] => dcfifo_8ee1:auto_generated.data[133]
-data[134] => dcfifo_8ee1:auto_generated.data[134]
-data[135] => dcfifo_8ee1:auto_generated.data[135]
-data[136] => dcfifo_8ee1:auto_generated.data[136]
-data[137] => dcfifo_8ee1:auto_generated.data[137]
-data[138] => dcfifo_8ee1:auto_generated.data[138]
-data[139] => dcfifo_8ee1:auto_generated.data[139]
-data[140] => dcfifo_8ee1:auto_generated.data[140]
-data[141] => dcfifo_8ee1:auto_generated.data[141]
-data[142] => dcfifo_8ee1:auto_generated.data[142]
-data[143] => dcfifo_8ee1:auto_generated.data[143]
-data[144] => dcfifo_8ee1:auto_generated.data[144]
-data[145] => dcfifo_8ee1:auto_generated.data[145]
-data[146] => dcfifo_8ee1:auto_generated.data[146]
-data[147] => dcfifo_8ee1:auto_generated.data[147]
-data[148] => dcfifo_8ee1:auto_generated.data[148]
-data[149] => dcfifo_8ee1:auto_generated.data[149]
-data[150] => dcfifo_8ee1:auto_generated.data[150]
-data[151] => dcfifo_8ee1:auto_generated.data[151]
-data[152] => dcfifo_8ee1:auto_generated.data[152]
-data[153] => dcfifo_8ee1:auto_generated.data[153]
-data[154] => dcfifo_8ee1:auto_generated.data[154]
-data[155] => dcfifo_8ee1:auto_generated.data[155]
-data[156] => dcfifo_8ee1:auto_generated.data[156]
-data[157] => dcfifo_8ee1:auto_generated.data[157]
-data[158] => dcfifo_8ee1:auto_generated.data[158]
-data[159] => dcfifo_8ee1:auto_generated.data[159]
-data[160] => dcfifo_8ee1:auto_generated.data[160]
-data[161] => dcfifo_8ee1:auto_generated.data[161]
-data[162] => dcfifo_8ee1:auto_generated.data[162]
-data[163] => dcfifo_8ee1:auto_generated.data[163]
-data[164] => dcfifo_8ee1:auto_generated.data[164]
-data[165] => dcfifo_8ee1:auto_generated.data[165]
-data[166] => dcfifo_8ee1:auto_generated.data[166]
-data[167] => dcfifo_8ee1:auto_generated.data[167]
-data[168] => dcfifo_8ee1:auto_generated.data[168]
-data[169] => dcfifo_8ee1:auto_generated.data[169]
-data[170] => dcfifo_8ee1:auto_generated.data[170]
-data[171] => dcfifo_8ee1:auto_generated.data[171]
-data[172] => dcfifo_8ee1:auto_generated.data[172]
-data[173] => dcfifo_8ee1:auto_generated.data[173]
-data[174] => dcfifo_8ee1:auto_generated.data[174]
-data[175] => dcfifo_8ee1:auto_generated.data[175]
-data[176] => dcfifo_8ee1:auto_generated.data[176]
-data[177] => dcfifo_8ee1:auto_generated.data[177]
-data[178] => dcfifo_8ee1:auto_generated.data[178]
-data[179] => dcfifo_8ee1:auto_generated.data[179]
-data[180] => dcfifo_8ee1:auto_generated.data[180]
-data[181] => dcfifo_8ee1:auto_generated.data[181]
-data[182] => dcfifo_8ee1:auto_generated.data[182]
-data[183] => dcfifo_8ee1:auto_generated.data[183]
-data[184] => dcfifo_8ee1:auto_generated.data[184]
-data[185] => dcfifo_8ee1:auto_generated.data[185]
-data[186] => dcfifo_8ee1:auto_generated.data[186]
-data[187] => dcfifo_8ee1:auto_generated.data[187]
-data[188] => dcfifo_8ee1:auto_generated.data[188]
-data[189] => dcfifo_8ee1:auto_generated.data[189]
-data[190] => dcfifo_8ee1:auto_generated.data[190]
-data[191] => dcfifo_8ee1:auto_generated.data[191]
-data[192] => dcfifo_8ee1:auto_generated.data[192]
-data[193] => dcfifo_8ee1:auto_generated.data[193]
-data[194] => dcfifo_8ee1:auto_generated.data[194]
-data[195] => dcfifo_8ee1:auto_generated.data[195]
-data[196] => dcfifo_8ee1:auto_generated.data[196]
-data[197] => dcfifo_8ee1:auto_generated.data[197]
-data[198] => dcfifo_8ee1:auto_generated.data[198]
-data[199] => dcfifo_8ee1:auto_generated.data[199]
-data[200] => dcfifo_8ee1:auto_generated.data[200]
-data[201] => dcfifo_8ee1:auto_generated.data[201]
-data[202] => dcfifo_8ee1:auto_generated.data[202]
-data[203] => dcfifo_8ee1:auto_generated.data[203]
-data[204] => dcfifo_8ee1:auto_generated.data[204]
-data[205] => dcfifo_8ee1:auto_generated.data[205]
-data[206] => dcfifo_8ee1:auto_generated.data[206]
-data[207] => dcfifo_8ee1:auto_generated.data[207]
-data[208] => dcfifo_8ee1:auto_generated.data[208]
-data[209] => dcfifo_8ee1:auto_generated.data[209]
-data[210] => dcfifo_8ee1:auto_generated.data[210]
-data[211] => dcfifo_8ee1:auto_generated.data[211]
-data[212] => dcfifo_8ee1:auto_generated.data[212]
-data[213] => dcfifo_8ee1:auto_generated.data[213]
-data[214] => dcfifo_8ee1:auto_generated.data[214]
-data[215] => dcfifo_8ee1:auto_generated.data[215]
-data[216] => dcfifo_8ee1:auto_generated.data[216]
-data[217] => dcfifo_8ee1:auto_generated.data[217]
-data[218] => dcfifo_8ee1:auto_generated.data[218]
-data[219] => dcfifo_8ee1:auto_generated.data[219]
-data[220] => dcfifo_8ee1:auto_generated.data[220]
-data[221] => dcfifo_8ee1:auto_generated.data[221]
-data[222] => dcfifo_8ee1:auto_generated.data[222]
-data[223] => dcfifo_8ee1:auto_generated.data[223]
-data[224] => dcfifo_8ee1:auto_generated.data[224]
-data[225] => dcfifo_8ee1:auto_generated.data[225]
-data[226] => dcfifo_8ee1:auto_generated.data[226]
-data[227] => dcfifo_8ee1:auto_generated.data[227]
-data[228] => dcfifo_8ee1:auto_generated.data[228]
-data[229] => dcfifo_8ee1:auto_generated.data[229]
-data[230] => dcfifo_8ee1:auto_generated.data[230]
-data[231] => dcfifo_8ee1:auto_generated.data[231]
-data[232] => dcfifo_8ee1:auto_generated.data[232]
-data[233] => dcfifo_8ee1:auto_generated.data[233]
-data[234] => dcfifo_8ee1:auto_generated.data[234]
-data[235] => dcfifo_8ee1:auto_generated.data[235]
-data[236] => dcfifo_8ee1:auto_generated.data[236]
-data[237] => dcfifo_8ee1:auto_generated.data[237]
-data[238] => dcfifo_8ee1:auto_generated.data[238]
-data[239] => dcfifo_8ee1:auto_generated.data[239]
-data[240] => dcfifo_8ee1:auto_generated.data[240]
-data[241] => dcfifo_8ee1:auto_generated.data[241]
-data[242] => dcfifo_8ee1:auto_generated.data[242]
-data[243] => dcfifo_8ee1:auto_generated.data[243]
-data[244] => dcfifo_8ee1:auto_generated.data[244]
-data[245] => dcfifo_8ee1:auto_generated.data[245]
-data[246] => dcfifo_8ee1:auto_generated.data[246]
-data[247] => dcfifo_8ee1:auto_generated.data[247]
-data[248] => dcfifo_8ee1:auto_generated.data[248]
-data[249] => dcfifo_8ee1:auto_generated.data[249]
-data[250] => dcfifo_8ee1:auto_generated.data[250]
-data[251] => dcfifo_8ee1:auto_generated.data[251]
-data[252] => dcfifo_8ee1:auto_generated.data[252]
-data[253] => dcfifo_8ee1:auto_generated.data[253]
-data[254] => dcfifo_8ee1:auto_generated.data[254]
-data[255] => dcfifo_8ee1:auto_generated.data[255]
+data[0] => dcfifo_lde1:auto_generated.data[0]
+data[1] => dcfifo_lde1:auto_generated.data[1]
+data[2] => dcfifo_lde1:auto_generated.data[2]
+data[3] => dcfifo_lde1:auto_generated.data[3]
+data[4] => dcfifo_lde1:auto_generated.data[4]
+data[5] => dcfifo_lde1:auto_generated.data[5]
+data[6] => dcfifo_lde1:auto_generated.data[6]
+data[7] => dcfifo_lde1:auto_generated.data[7]
+data[8] => dcfifo_lde1:auto_generated.data[8]
+data[9] => dcfifo_lde1:auto_generated.data[9]
+data[10] => dcfifo_lde1:auto_generated.data[10]
+data[11] => dcfifo_lde1:auto_generated.data[11]
+data[12] => dcfifo_lde1:auto_generated.data[12]
+data[13] => dcfifo_lde1:auto_generated.data[13]
+data[14] => dcfifo_lde1:auto_generated.data[14]
+data[15] => dcfifo_lde1:auto_generated.data[15]
+data[16] => dcfifo_lde1:auto_generated.data[16]
+data[17] => dcfifo_lde1:auto_generated.data[17]
+data[18] => dcfifo_lde1:auto_generated.data[18]
+data[19] => dcfifo_lde1:auto_generated.data[19]
+data[20] => dcfifo_lde1:auto_generated.data[20]
+data[21] => dcfifo_lde1:auto_generated.data[21]
+data[22] => dcfifo_lde1:auto_generated.data[22]
+data[23] => dcfifo_lde1:auto_generated.data[23]
+data[24] => dcfifo_lde1:auto_generated.data[24]
+data[25] => dcfifo_lde1:auto_generated.data[25]
+data[26] => dcfifo_lde1:auto_generated.data[26]
+data[27] => dcfifo_lde1:auto_generated.data[27]
+data[28] => dcfifo_lde1:auto_generated.data[28]
+data[29] => dcfifo_lde1:auto_generated.data[29]
+data[30] => dcfifo_lde1:auto_generated.data[30]
+data[31] => dcfifo_lde1:auto_generated.data[31]
+data[32] => dcfifo_lde1:auto_generated.data[32]
+data[33] => dcfifo_lde1:auto_generated.data[33]
+data[34] => dcfifo_lde1:auto_generated.data[34]
+data[35] => dcfifo_lde1:auto_generated.data[35]
+data[36] => dcfifo_lde1:auto_generated.data[36]
+data[37] => dcfifo_lde1:auto_generated.data[37]
+data[38] => dcfifo_lde1:auto_generated.data[38]
+data[39] => dcfifo_lde1:auto_generated.data[39]
+data[40] => dcfifo_lde1:auto_generated.data[40]
+data[41] => dcfifo_lde1:auto_generated.data[41]
+data[42] => dcfifo_lde1:auto_generated.data[42]
+data[43] => dcfifo_lde1:auto_generated.data[43]
+data[44] => dcfifo_lde1:auto_generated.data[44]
+data[45] => dcfifo_lde1:auto_generated.data[45]
+data[46] => dcfifo_lde1:auto_generated.data[46]
+data[47] => dcfifo_lde1:auto_generated.data[47]
+data[48] => dcfifo_lde1:auto_generated.data[48]
+data[49] => dcfifo_lde1:auto_generated.data[49]
+data[50] => dcfifo_lde1:auto_generated.data[50]
+data[51] => dcfifo_lde1:auto_generated.data[51]
+data[52] => dcfifo_lde1:auto_generated.data[52]
+data[53] => dcfifo_lde1:auto_generated.data[53]
+data[54] => dcfifo_lde1:auto_generated.data[54]
+data[55] => dcfifo_lde1:auto_generated.data[55]
+data[56] => dcfifo_lde1:auto_generated.data[56]
+data[57] => dcfifo_lde1:auto_generated.data[57]
+data[58] => dcfifo_lde1:auto_generated.data[58]
+data[59] => dcfifo_lde1:auto_generated.data[59]
+data[60] => dcfifo_lde1:auto_generated.data[60]
+data[61] => dcfifo_lde1:auto_generated.data[61]
+data[62] => dcfifo_lde1:auto_generated.data[62]
+data[63] => dcfifo_lde1:auto_generated.data[63]
+data[64] => dcfifo_lde1:auto_generated.data[64]
+data[65] => dcfifo_lde1:auto_generated.data[65]
+data[66] => dcfifo_lde1:auto_generated.data[66]
+data[67] => dcfifo_lde1:auto_generated.data[67]
+data[68] => dcfifo_lde1:auto_generated.data[68]
+data[69] => dcfifo_lde1:auto_generated.data[69]
+data[70] => dcfifo_lde1:auto_generated.data[70]
+data[71] => dcfifo_lde1:auto_generated.data[71]
+data[72] => dcfifo_lde1:auto_generated.data[72]
+data[73] => dcfifo_lde1:auto_generated.data[73]
+data[74] => dcfifo_lde1:auto_generated.data[74]
+data[75] => dcfifo_lde1:auto_generated.data[75]
+data[76] => dcfifo_lde1:auto_generated.data[76]
+data[77] => dcfifo_lde1:auto_generated.data[77]
+data[78] => dcfifo_lde1:auto_generated.data[78]
+data[79] => dcfifo_lde1:auto_generated.data[79]
+data[80] => dcfifo_lde1:auto_generated.data[80]
+data[81] => dcfifo_lde1:auto_generated.data[81]
+data[82] => dcfifo_lde1:auto_generated.data[82]
+data[83] => dcfifo_lde1:auto_generated.data[83]
+data[84] => dcfifo_lde1:auto_generated.data[84]
+data[85] => dcfifo_lde1:auto_generated.data[85]
+data[86] => dcfifo_lde1:auto_generated.data[86]
+data[87] => dcfifo_lde1:auto_generated.data[87]
+data[88] => dcfifo_lde1:auto_generated.data[88]
+data[89] => dcfifo_lde1:auto_generated.data[89]
+data[90] => dcfifo_lde1:auto_generated.data[90]
+data[91] => dcfifo_lde1:auto_generated.data[91]
+data[92] => dcfifo_lde1:auto_generated.data[92]
+data[93] => dcfifo_lde1:auto_generated.data[93]
+data[94] => dcfifo_lde1:auto_generated.data[94]
+data[95] => dcfifo_lde1:auto_generated.data[95]
+data[96] => dcfifo_lde1:auto_generated.data[96]
+data[97] => dcfifo_lde1:auto_generated.data[97]
+data[98] => dcfifo_lde1:auto_generated.data[98]
+data[99] => dcfifo_lde1:auto_generated.data[99]
+data[100] => dcfifo_lde1:auto_generated.data[100]
+data[101] => dcfifo_lde1:auto_generated.data[101]
+data[102] => dcfifo_lde1:auto_generated.data[102]
+data[103] => dcfifo_lde1:auto_generated.data[103]
+data[104] => dcfifo_lde1:auto_generated.data[104]
+data[105] => dcfifo_lde1:auto_generated.data[105]
+data[106] => dcfifo_lde1:auto_generated.data[106]
+data[107] => dcfifo_lde1:auto_generated.data[107]
+data[108] => dcfifo_lde1:auto_generated.data[108]
+data[109] => dcfifo_lde1:auto_generated.data[109]
+data[110] => dcfifo_lde1:auto_generated.data[110]
+data[111] => dcfifo_lde1:auto_generated.data[111]
+data[112] => dcfifo_lde1:auto_generated.data[112]
+data[113] => dcfifo_lde1:auto_generated.data[113]
+data[114] => dcfifo_lde1:auto_generated.data[114]
+data[115] => dcfifo_lde1:auto_generated.data[115]
+data[116] => dcfifo_lde1:auto_generated.data[116]
+data[117] => dcfifo_lde1:auto_generated.data[117]
+data[118] => dcfifo_lde1:auto_generated.data[118]
+data[119] => dcfifo_lde1:auto_generated.data[119]
+data[120] => dcfifo_lde1:auto_generated.data[120]
+data[121] => dcfifo_lde1:auto_generated.data[121]
+data[122] => dcfifo_lde1:auto_generated.data[122]
+data[123] => dcfifo_lde1:auto_generated.data[123]
+data[124] => dcfifo_lde1:auto_generated.data[124]
+data[125] => dcfifo_lde1:auto_generated.data[125]
+data[126] => dcfifo_lde1:auto_generated.data[126]
+data[127] => dcfifo_lde1:auto_generated.data[127]
+data[128] => dcfifo_lde1:auto_generated.data[128]
+data[129] => dcfifo_lde1:auto_generated.data[129]
+data[130] => dcfifo_lde1:auto_generated.data[130]
+data[131] => dcfifo_lde1:auto_generated.data[131]
+data[132] => dcfifo_lde1:auto_generated.data[132]
+data[133] => dcfifo_lde1:auto_generated.data[133]
+data[134] => dcfifo_lde1:auto_generated.data[134]
+data[135] => dcfifo_lde1:auto_generated.data[135]
+data[136] => dcfifo_lde1:auto_generated.data[136]
+data[137] => dcfifo_lde1:auto_generated.data[137]
+data[138] => dcfifo_lde1:auto_generated.data[138]
+data[139] => dcfifo_lde1:auto_generated.data[139]
+data[140] => dcfifo_lde1:auto_generated.data[140]
+data[141] => dcfifo_lde1:auto_generated.data[141]
+data[142] => dcfifo_lde1:auto_generated.data[142]
+data[143] => dcfifo_lde1:auto_generated.data[143]
+data[144] => dcfifo_lde1:auto_generated.data[144]
+data[145] => dcfifo_lde1:auto_generated.data[145]
+data[146] => dcfifo_lde1:auto_generated.data[146]
+data[147] => dcfifo_lde1:auto_generated.data[147]
+data[148] => dcfifo_lde1:auto_generated.data[148]
+data[149] => dcfifo_lde1:auto_generated.data[149]
+data[150] => dcfifo_lde1:auto_generated.data[150]
+data[151] => dcfifo_lde1:auto_generated.data[151]
+data[152] => dcfifo_lde1:auto_generated.data[152]
+data[153] => dcfifo_lde1:auto_generated.data[153]
+data[154] => dcfifo_lde1:auto_generated.data[154]
+data[155] => dcfifo_lde1:auto_generated.data[155]
+data[156] => dcfifo_lde1:auto_generated.data[156]
+data[157] => dcfifo_lde1:auto_generated.data[157]
+data[158] => dcfifo_lde1:auto_generated.data[158]
+data[159] => dcfifo_lde1:auto_generated.data[159]
+data[160] => dcfifo_lde1:auto_generated.data[160]
+data[161] => dcfifo_lde1:auto_generated.data[161]
+data[162] => dcfifo_lde1:auto_generated.data[162]
+data[163] => dcfifo_lde1:auto_generated.data[163]
+data[164] => dcfifo_lde1:auto_generated.data[164]
+data[165] => dcfifo_lde1:auto_generated.data[165]
+data[166] => dcfifo_lde1:auto_generated.data[166]
+data[167] => dcfifo_lde1:auto_generated.data[167]
+data[168] => dcfifo_lde1:auto_generated.data[168]
+data[169] => dcfifo_lde1:auto_generated.data[169]
+data[170] => dcfifo_lde1:auto_generated.data[170]
+data[171] => dcfifo_lde1:auto_generated.data[171]
+data[172] => dcfifo_lde1:auto_generated.data[172]
+data[173] => dcfifo_lde1:auto_generated.data[173]
+data[174] => dcfifo_lde1:auto_generated.data[174]
+data[175] => dcfifo_lde1:auto_generated.data[175]
+data[176] => dcfifo_lde1:auto_generated.data[176]
+data[177] => dcfifo_lde1:auto_generated.data[177]
+data[178] => dcfifo_lde1:auto_generated.data[178]
+data[179] => dcfifo_lde1:auto_generated.data[179]
+data[180] => dcfifo_lde1:auto_generated.data[180]
+data[181] => dcfifo_lde1:auto_generated.data[181]
+data[182] => dcfifo_lde1:auto_generated.data[182]
+data[183] => dcfifo_lde1:auto_generated.data[183]
+data[184] => dcfifo_lde1:auto_generated.data[184]
+data[185] => dcfifo_lde1:auto_generated.data[185]
+data[186] => dcfifo_lde1:auto_generated.data[186]
+data[187] => dcfifo_lde1:auto_generated.data[187]
+data[188] => dcfifo_lde1:auto_generated.data[188]
+data[189] => dcfifo_lde1:auto_generated.data[189]
+data[190] => dcfifo_lde1:auto_generated.data[190]
+data[191] => dcfifo_lde1:auto_generated.data[191]
+data[192] => dcfifo_lde1:auto_generated.data[192]
+data[193] => dcfifo_lde1:auto_generated.data[193]
+data[194] => dcfifo_lde1:auto_generated.data[194]
+data[195] => dcfifo_lde1:auto_generated.data[195]
+data[196] => dcfifo_lde1:auto_generated.data[196]
+data[197] => dcfifo_lde1:auto_generated.data[197]
+data[198] => dcfifo_lde1:auto_generated.data[198]
+data[199] => dcfifo_lde1:auto_generated.data[199]
+data[200] => dcfifo_lde1:auto_generated.data[200]
+data[201] => dcfifo_lde1:auto_generated.data[201]
+data[202] => dcfifo_lde1:auto_generated.data[202]
+data[203] => dcfifo_lde1:auto_generated.data[203]
+data[204] => dcfifo_lde1:auto_generated.data[204]
+data[205] => dcfifo_lde1:auto_generated.data[205]
+data[206] => dcfifo_lde1:auto_generated.data[206]
+data[207] => dcfifo_lde1:auto_generated.data[207]
+data[208] => dcfifo_lde1:auto_generated.data[208]
+data[209] => dcfifo_lde1:auto_generated.data[209]
+data[210] => dcfifo_lde1:auto_generated.data[210]
+data[211] => dcfifo_lde1:auto_generated.data[211]
+data[212] => dcfifo_lde1:auto_generated.data[212]
+data[213] => dcfifo_lde1:auto_generated.data[213]
+data[214] => dcfifo_lde1:auto_generated.data[214]
+data[215] => dcfifo_lde1:auto_generated.data[215]
+data[216] => dcfifo_lde1:auto_generated.data[216]
+data[217] => dcfifo_lde1:auto_generated.data[217]
+data[218] => dcfifo_lde1:auto_generated.data[218]
+data[219] => dcfifo_lde1:auto_generated.data[219]
+data[220] => dcfifo_lde1:auto_generated.data[220]
+data[221] => dcfifo_lde1:auto_generated.data[221]
+data[222] => dcfifo_lde1:auto_generated.data[222]
+data[223] => dcfifo_lde1:auto_generated.data[223]
+data[224] => dcfifo_lde1:auto_generated.data[224]
+data[225] => dcfifo_lde1:auto_generated.data[225]
+data[226] => dcfifo_lde1:auto_generated.data[226]
+data[227] => dcfifo_lde1:auto_generated.data[227]
+data[228] => dcfifo_lde1:auto_generated.data[228]
+data[229] => dcfifo_lde1:auto_generated.data[229]
+data[230] => dcfifo_lde1:auto_generated.data[230]
+data[231] => dcfifo_lde1:auto_generated.data[231]
+data[232] => dcfifo_lde1:auto_generated.data[232]
+data[233] => dcfifo_lde1:auto_generated.data[233]
+data[234] => dcfifo_lde1:auto_generated.data[234]
+data[235] => dcfifo_lde1:auto_generated.data[235]
+data[236] => dcfifo_lde1:auto_generated.data[236]
+data[237] => dcfifo_lde1:auto_generated.data[237]
+data[238] => dcfifo_lde1:auto_generated.data[238]
+data[239] => dcfifo_lde1:auto_generated.data[239]
+data[240] => dcfifo_lde1:auto_generated.data[240]
+data[241] => dcfifo_lde1:auto_generated.data[241]
+data[242] => dcfifo_lde1:auto_generated.data[242]
+data[243] => dcfifo_lde1:auto_generated.data[243]
+data[244] => dcfifo_lde1:auto_generated.data[244]
+data[245] => dcfifo_lde1:auto_generated.data[245]
+data[246] => dcfifo_lde1:auto_generated.data[246]
+data[247] => dcfifo_lde1:auto_generated.data[247]
+data[248] => dcfifo_lde1:auto_generated.data[248]
+data[249] => dcfifo_lde1:auto_generated.data[249]
+data[250] => dcfifo_lde1:auto_generated.data[250]
+data[251] => dcfifo_lde1:auto_generated.data[251]
+data[252] => dcfifo_lde1:auto_generated.data[252]
+data[253] => dcfifo_lde1:auto_generated.data[253]
+data[254] => dcfifo_lde1:auto_generated.data[254]
+data[255] => dcfifo_lde1:auto_generated.data[255]
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
-q[0] <= dcfifo_8ee1:auto_generated.q[0]
-q[1] <= dcfifo_8ee1:auto_generated.q[1]
-q[2] <= dcfifo_8ee1:auto_generated.q[2]
-q[3] <= dcfifo_8ee1:auto_generated.q[3]
-q[4] <= dcfifo_8ee1:auto_generated.q[4]
-q[5] <= dcfifo_8ee1:auto_generated.q[5]
-q[6] <= dcfifo_8ee1:auto_generated.q[6]
-q[7] <= dcfifo_8ee1:auto_generated.q[7]
-rdclk => dcfifo_8ee1:auto_generated.rdclk
+q[0] <= dcfifo_lde1:auto_generated.q[0]
+q[1] <= dcfifo_lde1:auto_generated.q[1]
+q[2] <= dcfifo_lde1:auto_generated.q[2]
+q[3] <= dcfifo_lde1:auto_generated.q[3]
+q[4] <= dcfifo_lde1:auto_generated.q[4]
+q[5] <= dcfifo_lde1:auto_generated.q[5]
+q[6] <= dcfifo_lde1:auto_generated.q[6]
+q[7] <= dcfifo_lde1:auto_generated.q[7]
+rdclk => dcfifo_lde1:auto_generated.rdclk
 rdempty <= <GND>
 rdfull <= <GND>
-rdreq => dcfifo_8ee1:auto_generated.rdreq
-rdusedw[0] <= <GND>
-rdusedw[1] <= <GND>
-rdusedw[2] <= <GND>
-rdusedw[3] <= <GND>
-rdusedw[4] <= <GND>
-rdusedw[5] <= <GND>
-rdusedw[6] <= <GND>
-rdusedw[7] <= <GND>
-rdusedw[8] <= <GND>
-wrclk => dcfifo_8ee1:auto_generated.wrclk
+rdreq => dcfifo_lde1:auto_generated.rdreq
+rdusedw[0] <= dcfifo_lde1:auto_generated.rdusedw[0]
+rdusedw[1] <= dcfifo_lde1:auto_generated.rdusedw[1]
+rdusedw[2] <= dcfifo_lde1:auto_generated.rdusedw[2]
+rdusedw[3] <= dcfifo_lde1:auto_generated.rdusedw[3]
+rdusedw[4] <= dcfifo_lde1:auto_generated.rdusedw[4]
+rdusedw[5] <= dcfifo_lde1:auto_generated.rdusedw[5]
+rdusedw[6] <= dcfifo_lde1:auto_generated.rdusedw[6]
+rdusedw[7] <= dcfifo_lde1:auto_generated.rdusedw[7]
+rdusedw[8] <= dcfifo_lde1:auto_generated.rdusedw[8]
+wrclk => dcfifo_lde1:auto_generated.wrclk
 wrempty <= <GND>
 wrfull <= <GND>
-wrreq => dcfifo_8ee1:auto_generated.wrreq
-wrusedw[0] <= dcfifo_8ee1:auto_generated.wrusedw[0]
-wrusedw[1] <= dcfifo_8ee1:auto_generated.wrusedw[1]
-wrusedw[2] <= dcfifo_8ee1:auto_generated.wrusedw[2]
-wrusedw[3] <= dcfifo_8ee1:auto_generated.wrusedw[3]
+wrreq => dcfifo_lde1:auto_generated.wrreq
+wrusedw[0] <= <GND>
+wrusedw[1] <= <GND>
+wrusedw[2] <= <GND>
+wrusedw[3] <= <GND>
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated
 aclr => ~NO_FANOUT~
 data[0] => altsyncram_2b01:fifo_ram.data_a[0]
 data[1] => altsyncram_2b01:fifo_ram.data_a[1]
@@ -23733,6 +23742,8 @@ q[6] <= altsyncram_2b01:fifo_ram.q_b[6]
 q[7] <= altsyncram_2b01:fifo_ram.q_b[7]
 rdclk => a_graycounter_c26:rdptr_g1p.clock
 rdclk => altsyncram_2b01:fifo_ram.clock1
+rdclk => dffpipe_909:rs_brp.clock
+rdclk => dffpipe_tu8:rs_bwp.clock
 rdclk => alt_synch_pipe_d9l:rs_dgwp.clock
 rdclk => cntr_i0d:cntr_b.clock
 rdclk => rdemp_eq_comp_lsb_aeb.CLK
@@ -23753,10 +23764,17 @@ rdclk => rs_dgwp_reg[2].CLK
 rdclk => rs_dgwp_reg[1].CLK
 rdclk => rs_dgwp_reg[0].CLK
 rdreq => valid_rdreq.IN0
+rdusedw[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[4] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[5] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[6] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[7] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
+rdusedw[8] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
 wrclk => a_graycounter_9gb:wrptr_g1p.clock
 wrclk => altsyncram_2b01:fifo_ram.clock0
-wrclk => dffpipe_tu8:ws_brp.clock
-wrclk => dffpipe_tu8:ws_bwp.clock
 wrclk => alt_synch_pipe_g9l:ws_dgrp.clock
 wrclk => delayed_wrptr_g[4].CLK
 wrclk => delayed_wrptr_g[3].CLK
@@ -23776,13 +23794,9 @@ wrclk => ws_dgrp_reg[2].CLK
 wrclk => ws_dgrp_reg[1].CLK
 wrclk => ws_dgrp_reg[0].CLK
 wrreq => valid_wrreq.IN0
-wrusedw[0] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-wrusedw[1] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-wrusedw[2] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
-wrusedw[3] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|a_gray2bin_gra:wrptr_g_gray2bin
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_gray2bin_gra:rdptr_g_gray2bin
 bin[0] <= xor0.DB_MAX_OUTPUT_PORT_TYPE
 bin[1] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
 bin[2] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
@@ -23796,7 +23810,7 @@ gray[4] => bin[4].DATAIN
 gray[4] => xor3.IN0
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|a_gray2bin_gra:ws_dgrp_gray2bin
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_gray2bin_gra:rs_dgwp_gray2bin
 bin[0] <= xor0.DB_MAX_OUTPUT_PORT_TYPE
 bin[1] <= xor1.DB_MAX_OUTPUT_PORT_TYPE
 bin[2] <= xor2.DB_MAX_OUTPUT_PORT_TYPE
@@ -23810,7 +23824,7 @@ gray[4] => bin[4].DATAIN
 gray[4] => xor3.IN0
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|a_graycounter_c26:rdptr_g1p
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_graycounter_c26:rdptr_g1p
 clock => counter7a[4].CLK
 clock => counter7a[3].CLK
 clock => counter7a[2].CLK
@@ -23836,7 +23850,7 @@ q[3] <= counter7a[3].DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= counter7a[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|a_graycounter_9gb:wrptr_g1p
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_graycounter_9gb:wrptr_g1p
 clock => counter8a0.CLK
 clock => counter8a1.CLK
 clock => counter8a2.CLK
@@ -23862,7 +23876,7 @@ q[3] <= counter8a3.DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= counter8a4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|altsyncram_2b01:fifo_ram
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|altsyncram_2b01:fifo_ram
 address_a[0] => ram_block11a0.PORTAADDR
 address_a[0] => ram_block11a1.PORTAADDR
 address_a[0] => ram_block11a2.PORTAADDR
@@ -24281,117 +24295,132 @@ wren_a => ram_block11a7.PORTAWE
 wren_a => ram_block11a7.ENA0
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|alt_synch_pipe_d9l:rs_dgwp
-clock => dffpipe_uu8:dffpipe12.clock
-d[0] => dffpipe_uu8:dffpipe12.d[0]
-d[1] => dffpipe_uu8:dffpipe12.d[1]
-d[2] => dffpipe_uu8:dffpipe12.d[2]
-d[3] => dffpipe_uu8:dffpipe12.d[3]
-d[4] => dffpipe_uu8:dffpipe12.d[4]
-q[0] <= dffpipe_uu8:dffpipe12.q[0]
-q[1] <= dffpipe_uu8:dffpipe12.q[1]
-q[2] <= dffpipe_uu8:dffpipe12.q[2]
-q[3] <= dffpipe_uu8:dffpipe12.q[3]
-q[4] <= dffpipe_uu8:dffpipe12.q[4]
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|dffpipe_909:rs_brp
+clock => dffe12a[9].CLK
+clock => dffe12a[8].CLK
+clock => dffe12a[7].CLK
+clock => dffe12a[6].CLK
+clock => dffe12a[5].CLK
+clock => dffe12a[4].CLK
+clock => dffe12a[3].CLK
+clock => dffe12a[2].CLK
+clock => dffe12a[1].CLK
+clock => dffe12a[0].CLK
+d[0] => dffe12a[0].IN0
+d[1] => dffe12a[1].IN0
+d[2] => dffe12a[2].IN0
+d[3] => dffe12a[3].IN0
+d[4] => dffe12a[4].IN0
+d[5] => dffe12a[5].IN0
+d[6] => dffe12a[6].IN0
+d[7] => dffe12a[7].IN0
+d[8] => dffe12a[8].IN0
+d[9] => dffe12a[9].IN0
+q[0] <= dffe12a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe12a[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffe12a[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffe12a[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffe12a[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= dffe12a[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= dffe12a[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= dffe12a[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= dffe12a[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= dffe12a[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|alt_synch_pipe_d9l:rs_dgwp|dffpipe_uu8:dffpipe12
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|dffpipe_tu8:rs_bwp
 clock => dffe13a[4].CLK
 clock => dffe13a[3].CLK
 clock => dffe13a[2].CLK
 clock => dffe13a[1].CLK
 clock => dffe13a[0].CLK
-clock => dffe14a[4].CLK
-clock => dffe14a[3].CLK
-clock => dffe14a[2].CLK
-clock => dffe14a[1].CLK
-clock => dffe14a[0].CLK
 d[0] => dffe13a[0].IN0
 d[1] => dffe13a[1].IN0
 d[2] => dffe13a[2].IN0
 d[3] => dffe13a[3].IN0
 d[4] => dffe13a[4].IN0
-q[0] <= dffe14a[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffe14a[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffe14a[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffe14a[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffe14a[4].DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= dffe13a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe13a[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffe13a[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffe13a[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffe13a[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|dffpipe_tu8:ws_brp
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_d9l:rs_dgwp
+clock => dffpipe_uu8:dffpipe14.clock
+d[0] => dffpipe_uu8:dffpipe14.d[0]
+d[1] => dffpipe_uu8:dffpipe14.d[1]
+d[2] => dffpipe_uu8:dffpipe14.d[2]
+d[3] => dffpipe_uu8:dffpipe14.d[3]
+d[4] => dffpipe_uu8:dffpipe14.d[4]
+q[0] <= dffpipe_uu8:dffpipe14.q[0]
+q[1] <= dffpipe_uu8:dffpipe14.q[1]
+q[2] <= dffpipe_uu8:dffpipe14.q[2]
+q[3] <= dffpipe_uu8:dffpipe14.q[3]
+q[4] <= dffpipe_uu8:dffpipe14.q[4]
+
+
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_d9l:rs_dgwp|dffpipe_uu8:dffpipe14
 clock => dffe15a[4].CLK
 clock => dffe15a[3].CLK
 clock => dffe15a[2].CLK
 clock => dffe15a[1].CLK
 clock => dffe15a[0].CLK
+clock => dffe16a[4].CLK
+clock => dffe16a[3].CLK
+clock => dffe16a[2].CLK
+clock => dffe16a[1].CLK
+clock => dffe16a[0].CLK
 d[0] => dffe15a[0].IN0
 d[1] => dffe15a[1].IN0
 d[2] => dffe15a[2].IN0
 d[3] => dffe15a[3].IN0
 d[4] => dffe15a[4].IN0
-q[0] <= dffe15a[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffe15a[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffe15a[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffe15a[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffe15a[4].DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= dffe16a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe16a[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffe16a[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffe16a[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffe16a[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|dffpipe_tu8:ws_bwp
-clock => dffe15a[4].CLK
-clock => dffe15a[3].CLK
-clock => dffe15a[2].CLK
-clock => dffe15a[1].CLK
-clock => dffe15a[0].CLK
-d[0] => dffe15a[0].IN0
-d[1] => dffe15a[1].IN0
-d[2] => dffe15a[2].IN0
-d[3] => dffe15a[3].IN0
-d[4] => dffe15a[4].IN0
-q[0] <= dffe15a[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffe15a[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffe15a[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffe15a[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffe15a[4].DB_MAX_OUTPUT_PORT_TYPE
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_g9l:ws_dgrp
+clock => dffpipe_1v8:dffpipe17.clock
+d[0] => dffpipe_1v8:dffpipe17.d[0]
+d[1] => dffpipe_1v8:dffpipe17.d[1]
+d[2] => dffpipe_1v8:dffpipe17.d[2]
+d[3] => dffpipe_1v8:dffpipe17.d[3]
+d[4] => dffpipe_1v8:dffpipe17.d[4]
+q[0] <= dffpipe_1v8:dffpipe17.q[0]
+q[1] <= dffpipe_1v8:dffpipe17.q[1]
+q[2] <= dffpipe_1v8:dffpipe17.q[2]
+q[3] <= dffpipe_1v8:dffpipe17.q[3]
+q[4] <= dffpipe_1v8:dffpipe17.q[4]
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|alt_synch_pipe_g9l:ws_dgrp
-clock => dffpipe_1v8:dffpipe16.clock
-d[0] => dffpipe_1v8:dffpipe16.d[0]
-d[1] => dffpipe_1v8:dffpipe16.d[1]
-d[2] => dffpipe_1v8:dffpipe16.d[2]
-d[3] => dffpipe_1v8:dffpipe16.d[3]
-d[4] => dffpipe_1v8:dffpipe16.d[4]
-q[0] <= dffpipe_1v8:dffpipe16.q[0]
-q[1] <= dffpipe_1v8:dffpipe16.q[1]
-q[2] <= dffpipe_1v8:dffpipe16.q[2]
-q[3] <= dffpipe_1v8:dffpipe16.q[3]
-q[4] <= dffpipe_1v8:dffpipe16.q[4]
-
-
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|alt_synch_pipe_g9l:ws_dgrp|dffpipe_1v8:dffpipe16
-clock => dffe17a[4].CLK
-clock => dffe17a[3].CLK
-clock => dffe17a[2].CLK
-clock => dffe17a[1].CLK
-clock => dffe17a[0].CLK
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_g9l:ws_dgrp|dffpipe_1v8:dffpipe17
 clock => dffe18a[4].CLK
 clock => dffe18a[3].CLK
 clock => dffe18a[2].CLK
 clock => dffe18a[1].CLK
 clock => dffe18a[0].CLK
-d[0] => dffe17a[0].IN0
-d[1] => dffe17a[1].IN0
-d[2] => dffe17a[2].IN0
-d[3] => dffe17a[3].IN0
-d[4] => dffe17a[4].IN0
-q[0] <= dffe18a[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffe18a[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffe18a[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffe18a[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffe18a[4].DB_MAX_OUTPUT_PORT_TYPE
+clock => dffe19a[4].CLK
+clock => dffe19a[3].CLK
+clock => dffe19a[2].CLK
+clock => dffe19a[1].CLK
+clock => dffe19a[0].CLK
+d[0] => dffe18a[0].IN0
+d[1] => dffe18a[1].IN0
+d[2] => dffe18a[2].IN0
+d[3] => dffe18a[3].IN0
+d[4] => dffe18a[4].IN0
+q[0] <= dffe19a[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= dffe19a[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= dffe19a[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= dffe19a[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= dffe19a[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_vg5:rdempty_eq_comp1_lsb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_vg5:rdempty_eq_comp1_lsb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -24401,7 +24430,7 @@ datab[1] => data_wire[0].IN1
 datab[2] => data_wire[1].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_ug5:rdempty_eq_comp1_msb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_ug5:rdempty_eq_comp1_msb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 dataa[1] => aneb_result_wire[0].IN0
@@ -24409,7 +24438,7 @@ datab[0] => aneb_result_wire[0].IN1
 datab[1] => aneb_result_wire[0].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_vg5:rdempty_eq_comp_lsb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_vg5:rdempty_eq_comp_lsb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -24419,7 +24448,7 @@ datab[1] => data_wire[0].IN1
 datab[2] => data_wire[1].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_ug5:rdempty_eq_comp_msb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_ug5:rdempty_eq_comp_msb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 dataa[1] => aneb_result_wire[0].IN0
@@ -24427,7 +24456,7 @@ datab[0] => aneb_result_wire[0].IN1
 datab[1] => aneb_result_wire[0].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_vg5:wrfull_eq_comp1_lsb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_vg5:wrfull_eq_comp1_lsb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -24437,7 +24466,7 @@ datab[1] => data_wire[0].IN1
 datab[2] => data_wire[1].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_ug5:wrfull_eq_comp1_msb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_ug5:wrfull_eq_comp1_msb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 dataa[1] => aneb_result_wire[0].IN0
@@ -24445,7 +24474,7 @@ datab[0] => aneb_result_wire[0].IN1
 datab[1] => aneb_result_wire[0].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_vg5:wrfull_eq_comp_lsb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_vg5:wrfull_eq_comp_lsb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -24455,7 +24484,7 @@ datab[1] => data_wire[0].IN1
 datab[2] => data_wire[1].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cmpr_ug5:wrfull_eq_comp_msb
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cmpr_ug5:wrfull_eq_comp_msb
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 dataa[1] => aneb_result_wire[0].IN0
@@ -24463,7 +24492,7 @@ datab[0] => aneb_result_wire[0].IN1
 datab[1] => aneb_result_wire[0].IN1
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|cntr_i0d:cntr_b
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cntr_i0d:cntr_b
 clock => counter_reg_bit0.CLK
 clock => counter_reg_bit1.CLK
 clock => counter_reg_bit2.CLK
@@ -24478,7 +24507,7 @@ q[3] <= counter_reg_bit3.DB_MAX_OUTPUT_PORT_TYPE
 q[4] <= counter_reg_bit4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|mux_9d7:rdemp_eq_comp_lsb_mux
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:rdemp_eq_comp_lsb_mux
 data[0] => result_node[0].IN1
 data[1] => result_node[0].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -24486,7 +24515,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|mux_9d7:rdemp_eq_comp_msb_mux
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:rdemp_eq_comp_msb_mux
 data[0] => result_node[0].IN1
 data[1] => result_node[0].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -24494,7 +24523,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|mux_9d7:wrfull_eq_comp_lsb_mux
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:wrfull_eq_comp_lsb_mux
 data[0] => result_node[0].IN1
 data[1] => result_node[0].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -24502,7 +24531,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_8ee1:auto_generated|mux_9d7:wrfull_eq_comp_msb_mux
+|TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:wrfull_eq_comp_msb_mux
 data[0] => result_node[0].IN1
 data[1] => result_node[0].IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -24511,6 +24540,7 @@ sel[0] => _.IN0
 
 
 |TOP|PDC:pdc
+res_n => output_enable.ACLR
 res_n => dataReadReqState.ACLR
 res_n => hsync.ACLR
 res_n => vsync.ACLR
@@ -24542,7 +24572,6 @@ res_n => H_Counter[8].ACLR
 res_n => H_Counter[9].ACLR
 res_n => H_Counter[10].ACLR
 res_n => H_Counter[11].ACLR
-res_n => output_enable.ENA
 clk => PIXCLK.DATAIN
 clk => output_enable.CLK
 clk => dataReadReqState.CLK

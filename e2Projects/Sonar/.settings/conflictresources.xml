@@ -1,70 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <RESOURCES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="">
-    <cgModuleInfos>
-        <moduleName>CG</moduleName>
+    <fitModuleInfos>
+        <moduleName>r_pdc_rx</moduleName>
         <peripheralInfo>
-            <peripheralName>cgc</peripheralName>
+            <peripheralName>PDC</peripheralName>
             <pinInfo>
-                <pinName>TRST</pinName>
-                <pinPort>P34</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXCLK</pinName>
+                <pinPort>P24</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TRST</pinName>
-                <pinPort>PO12</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>VSYNC</pinName>
+                <pinPort>P32</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TRST</pinName>
-                <pinPort>POE10#</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>HSYNC</pinName>
+                <pinPort>P25</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TMS</pinName>
-                <pinPort>P31</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD7</pinName>
+                <pinPort>P23</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TMS</pinName>
-                <pinPort>PO9</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD6</pinName>
+                <pinPort>P22</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TDI</pinName>
-                <pinPort>P30</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD5</pinName>
+                <pinPort>P21</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TDI</pinName>
-                <pinPort>PO8</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD4</pinName>
+                <pinPort>P20</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TCK</pinName>
-                <pinPort>P27</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD3</pinName>
+                <pinPort>P17</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TCK</pinName>
-                <pinPort>PO7</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD2</pinName>
+                <pinPort>P87</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TDO</pinName>
-                <pinPort>P26</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD1</pinName>
+                <pinPort>P86</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>TDO</pinName>
-                <pinPort>PO6</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PIXD0</pinName>
+                <pinPort>P15</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
             <pinInfo>
-                <pinName>SDCLK</pinName>
-                <pinPort>P70</pinPort>
-                <pinOption>FIXED</pinOption>
+                <pinName>PCKO</pinName>
+                <pinPort>P33</pinPort>
+                <pinOption>OPTIONAL</pinOption>
             </pinInfo>
         </peripheralInfo>
+    </fitModuleInfos>
+    <cgModuleInfos>
+        <moduleName>CG</moduleName>
         <peripheralInfo>
             <peripheralName>bsc0</peripheralName>
             <pinInfo>
@@ -357,6 +360,69 @@
             </pinInfo>
         </peripheralInfo>
         <peripheralInfo>
+            <peripheralName>cgc</peripheralName>
+            <pinInfo>
+                <pinName>TRST</pinName>
+                <pinPort>P34</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TRST</pinName>
+                <pinPort>PO12</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TRST</pinName>
+                <pinPort>POE10#</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TMS</pinName>
+                <pinPort>P31</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TMS</pinName>
+                <pinPort>PO9</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TDI</pinName>
+                <pinPort>P30</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TDI</pinName>
+                <pinPort>PO8</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TCK</pinName>
+                <pinPort>P27</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TCK</pinName>
+                <pinPort>PO7</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TDO</pinName>
+                <pinPort>P26</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>TDO</pinName>
+                <pinPort>PO6</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+            <pinInfo>
+                <pinName>SDCLK</pinName>
+                <pinPort>P70</pinPort>
+                <pinOption>FIXED</pinOption>
+            </pinInfo>
+        </peripheralInfo>
+        <peripheralInfo>
             <peripheralName>scif11</peripheralName>
             <pinInfo>
                 <pinName>TXD11</pinName>
@@ -386,24 +452,6 @@
             <pinInfo>
                 <pinName>SCK11</pinName>
                 <pinPort>PO20</pinPort>
-                <pinOption>FIXED</pinOption>
-            </pinInfo>
-        </peripheralInfo>
-        <peripheralInfo>
-            <peripheralName>riic0</peripheralName>
-            <pinInfo>
-                <pinName>SDA0</pinName>
-                <pinPort>P13</pinPort>
-                <pinOption>FIXED</pinOption>
-            </pinInfo>
-            <pinInfo>
-                <pinName>SDA0</pinName>
-                <pinPort>PO13</pinPort>
-                <pinOption>FIXED</pinOption>
-            </pinInfo>
-            <pinInfo>
-                <pinName>SCL0</pinName>
-                <pinPort>P12</pinPort>
                 <pinOption>FIXED</pinOption>
             </pinInfo>
         </peripheralInfo>

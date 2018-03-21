@@ -1,6 +1,6 @@
-PowerPlay Power Analyzer report for TOP
-Tue Dec 26 18:04:01 2017
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Power Analyzer report for TOP
+Wed Mar 21 22:51:50 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -8,8 +8,8 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ---------------------
   1. Legal Notice
   2. Parallel Compilation
-  3. PowerPlay Power Analyzer Summary
-  4. PowerPlay Power Analyzer Settings
+  3. Power Analyzer Summary
+  4. Power Analyzer Settings
   5. Indeterminate Toggle Rates
   6. Operating Conditions Used
   7. Thermal Power Dissipation by Block
@@ -21,7 +21,7 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  13. VCCIO Supply Current Drawn by Voltage
  14. Confidence Metric Details
  15. Signal Activities
- 16. PowerPlay Power Analyzer Messages
+ 16. Power Analyzer Messages
 
 
 
@@ -36,12 +36,11 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
@@ -53,20 +52,20 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.93        ;
+; Average used               ; 1.85        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;  30.9%      ;
+;     Processors 2-4         ;  28.3%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
-; PowerPlay Power Analyzer Summary                                                          ;
+; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; PowerPlay Power Analyzer Status        ; Successful - Tue Dec 26 18:04:01 2017            ;
-; Quartus Prime Version                  ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition      ;
+; Power Analyzer Status                  ; Successful - Wed Mar 21 22:51:50 2018            ;
+; Quartus Prime Version                  ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition      ;
 ; Revision Name                          ; TOP                                              ;
 ; Top-level Entity Name                  ; TOP                                              ;
 ; Family                                 ; MAX 10                                           ;
@@ -75,13 +74,13 @@ agreement for further details.
 ; Total Thermal Power Dissipation        ; 232.79 mW                                        ;
 ; Core Dynamic Thermal Power Dissipation ; 0.00 mW                                          ;
 ; Core Static Thermal Power Dissipation  ; 226.30 mW                                        ;
-; I/O Thermal Power Dissipation          ; 6.50 mW                                          ;
+; I/O Thermal Power Dissipation          ; 6.49 mW                                          ;
 ; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
 +----------------------------------------+--------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; PowerPlay Power Analyzer Settings                                                                                                  ;
+; Power Analyzer Settings                                                                                                            ;
 +----------------------------------------------------------------------------+---------------------------------------+---------------+
 ; Option                                                                     ; Setting                               ; Default Value ;
 +----------------------------------------------------------------------------+---------------------------------------+---------------+
@@ -130,25 +129,26 @@ agreement for further details.
 ; MIC[10]                                                                                                                                                                                              ; No valid clock domain found ;
 ; MIC[11]                                                                                                                                                                                              ; No valid clock domain found ;
 ; MIC[12]                                                                                                                                                                                              ; No valid clock domain found ;
-; Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl ; No valid clock domain found ;
+; Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl ; No valid clock domain found ;
 ; SerialSlave:ss|Equal0~clkctrl                                                                                                                                                                        ; No valid clock domain found ;
 ; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[2]~clkctrl                                                                                                                   ; No valid clock domain found ;
 ; clk24~inputclkctrl                                                                                                                                                                                   ; No valid clock domain found ;
-; Mic:GeneratedMics[10].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl ; No valid clock domain found ;
+; sampleClockState~clkctrl                                                                                                                                                                             ; No valid clock domain found ;
 ; PCKO~inputclkctrl                                                                                                                                                                                    ; No valid clock domain found ;
-; Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
-; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0]~clkctrl                                                                                                                   ; No valid clock domain found ;
 ; Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl ; No valid clock domain found ;
+; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0]~clkctrl                                                                                                                   ; No valid clock domain found ;
+; Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl ; No valid clock domain found ;
 ; PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[1]~clkctrl                                                                                                                   ; No valid clock domain found ;
-; Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
-; Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
 ; Mic:GeneratedMics[5].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
-; Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
 ; Mic:GeneratedMics[2].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
-; PowerOnReset:por|por~clkctrl                                                                                                                                                                         ; No valid clock domain found ;
-; Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
+; Mic:GeneratedMics[4].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
+; Mic:GeneratedMics[3].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
+; Mic:GeneratedMics[1].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
+; SerialSlave:ss|SCK_edge~clkctrl                                                                                                                                                                      ; No valid clock domain found ;
 ; Mic:GeneratedMics[9].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
 ; Mic:GeneratedMics[7].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
+; Mic:GeneratedMics[8].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
+; Mic:GeneratedMics[6].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid~clkctrl  ; No valid clock domain found ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+
 
 
@@ -193,7 +193,7 @@ agreement for further details.
 ; Combinational cell         ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
 ; Clock control block        ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
 ; Register cell              ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
-; I/O                        ; 0.34 mW                           ; 0.00 mW                     ; 0.34 mW                        ; 0.00 mW                       ;    0.000                                                  ;
+; I/O                        ; 0.33 mW                           ; 0.00 mW                     ; 0.33 mW                        ; 0.00 mW                       ;    0.000                                                  ;
 ; Voltage Regulator          ; 0.96 mW                           ; 0.00 mW                     ; 0.96 mW                        ; --                            ; --                                                        ;
 +----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
 (1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
@@ -204,7 +204,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Compilation Hierarchy Node                                                           ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                                                                                                                                                           ;
 +--------------------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; |TOP                                                                                 ; 1.30 mW (1.30 mW)                    ; 0.00 mW (0.00 mW)               ; 1.30 mW (1.30 mW)                 ; 0.00 mW (0.00 mW)                 ; |TOP                                                                                                                                                                                                                                                                          ;
+; |TOP                                                                                 ; 1.29 mW (1.29 mW)                    ; 0.00 mW (0.00 mW)               ; 1.29 mW (1.29 mW)                 ; 0.00 mW (0.00 mW)                 ; |TOP                                                                                                                                                                                                                                                                          ;
 ;     |Mic:GeneratedMics[1].mic                                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|Mic:GeneratedMics[1].mic                                                                                                                                                                                                                                                 ;
 ;         |CIC:cic                                                                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|Mic:GeneratedMics[1].mic|CIC:cic                                                                                                                                                                                                                                         ;
 ;         |FIR:fir                                                                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|Mic:GeneratedMics[1].mic|FIR:fir                                                                                                                                                                                                                                         ;
@@ -431,14 +431,24 @@ agreement for further details.
 ;     |hard_block:auto_generated_inst                                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|hard_block:auto_generated_inst                                                                                                                                                                                                                                           ;
 ;     |FIFO:fifo                                                                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo                                                                                                                                                                                                                                                                ;
 ;         |dcfifo_mixed_widths:dcfifo_mixed_widths_component                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                                                                                                                                                              ;
-;             |dcfifo_qbe1:auto_generated                                              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated                                                                                                                                                                                   ;
-;                 |altsyncram_bc01:fifo_ram                                            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|altsyncram_bc01:fifo_ram                                                                                                                                                          ;
-;                 |alt_synch_pipe_e9l:rs_dgwp                                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|alt_synch_pipe_e9l:rs_dgwp                                                                                                                                                        ;
-;                 |mux_9d7:wrfull_eq_comp_lsb_mux                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|mux_9d7:wrfull_eq_comp_lsb_mux                                                                                                                                                    ;
-;                 |mux_9d7:wrfull_eq_comp_msb_mux                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|mux_9d7:wrfull_eq_comp_msb_mux                                                                                                                                                    ;
-;                 |a_graycounter_agb:wrptr_g1p                                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|a_graycounter_agb:wrptr_g1p                                                                                                                                                       ;
-;                 |alt_synch_pipe_f9l:ws_dgrp                                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|alt_synch_pipe_f9l:ws_dgrp                                                                                                                                                        ;
-;                     |dffpipe_0v8:dffpipe15                                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|alt_synch_pipe_f9l:ws_dgrp|dffpipe_0v8:dffpipe15                                                                                                                                  ;
+;             |dcfifo_lde1:auto_generated                                              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated                                                                                                                                                                                   ;
+;                 |cntr_i0d:cntr_b                                                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|cntr_i0d:cntr_b                                                                                                                                                                   ;
+;                 |altsyncram_2b01:fifo_ram                                            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|altsyncram_2b01:fifo_ram                                                                                                                                                          ;
+;                 |mux_9d7:rdemp_eq_comp_lsb_mux                                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:rdemp_eq_comp_lsb_mux                                                                                                                                                     ;
+;                 |mux_9d7:rdemp_eq_comp_msb_mux                                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:rdemp_eq_comp_msb_mux                                                                                                                                                     ;
+;                 |a_graycounter_c26:rdptr_g1p                                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_graycounter_c26:rdptr_g1p                                                                                                                                                       ;
+;                 |a_gray2bin_gra:rdptr_g_gray2bin                                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_gray2bin_gra:rdptr_g_gray2bin                                                                                                                                                   ;
+;                 |dffpipe_909:rs_brp                                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|dffpipe_909:rs_brp                                                                                                                                                                ;
+;                 |dffpipe_tu8:rs_bwp                                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|dffpipe_tu8:rs_bwp                                                                                                                                                                ;
+;                 |alt_synch_pipe_d9l:rs_dgwp                                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_d9l:rs_dgwp                                                                                                                                                        ;
+;                     |dffpipe_uu8:dffpipe14                                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_d9l:rs_dgwp|dffpipe_uu8:dffpipe14                                                                                                                                  ;
+;                 |a_gray2bin_gra:rs_dgwp_gray2bin                                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_gray2bin_gra:rs_dgwp_gray2bin                                                                                                                                                   ;
+;                 |mux_9d7:wrfull_eq_comp_lsb_mux                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:wrfull_eq_comp_lsb_mux                                                                                                                                                    ;
+;                 |mux_9d7:wrfull_eq_comp_msb_mux                                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|mux_9d7:wrfull_eq_comp_msb_mux                                                                                                                                                    ;
+;                 |a_graycounter_9gb:wrptr_g1p                                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|a_graycounter_9gb:wrptr_g1p                                                                                                                                                       ;
+;                 |alt_synch_pipe_g9l:ws_dgrp                                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_g9l:ws_dgrp                                                                                                                                                        ;
+;                     |dffpipe_1v8:dffpipe17                                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|alt_synch_pipe_g9l:ws_dgrp|dffpipe_1v8:dffpipe17                                                                                                                                  ;
+;     |PDC:pdc                                                                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PDC:pdc                                                                                                                                                                                                                                                                  ;
 ;     |PLL:pll                                                                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PLL:pll                                                                                                                                                                                                                                                                  ;
 ;         |altpll:altpll_component                                                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PLL:pll|altpll:altpll_component                                                                                                                                                                                                                                          ;
 ;             |PLL_altpll:auto_generated                                               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |TOP|PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated                                                                                                                                                                                                                ;
@@ -511,12 +521,12 @@ agreement for further details.
 ;                                                                                        ;               ;            ;               ;               ;
 ; Node, entity or clock assignment                                                       ;               ;            ;               ;               ;
 ;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 19 (0.2%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 19 (0.3%)     ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 20 (0.2%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 20 (0.3%)     ;
 ;                                                                                        ;               ;            ;               ;               ;
 ; Vectorless estimation                                                                  ;               ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 12595 (99.8%) ; 55 (70.5%) ; 5139 (100.0%) ; 7401 (100.0%) ;
-;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 99 (0.8%)     ; 18 (23.1%) ; 20 (0.4%)     ; 61 (0.8%)     ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 12576 (99.6%) ; 55 (70.5%) ; 5139 (100.0%) ; 7382 (99.7%)  ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 12845 (99.8%) ; 55 (70.5%) ; 5248 (100.0%) ; 7542 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 80 (0.6%)     ; 6 (7.7%)   ; 16 (0.3%)     ; 58 (0.8%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 12825 (99.6%) ; 55 (70.5%) ; 5248 (100.0%) ; 7522 (99.7%)  ;
 ;                                                                                        ;               ;            ;               ;               ;
 ; Default assignment                                                                     ;               ;            ;               ;               ;
 ;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)      ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
@@ -535,53 +545,32 @@ agreement for further details.
 (1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
 
 
-+-----------------------------------+
-; PowerPlay Power Analyzer Messages ;
-+-----------------------------------+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime PowerPlay Power Analyzer
-    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Dec 26 18:03:55 2017
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Mar 21 22:51:44 2018
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off PhasedArrayController -c TOP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is -40 degrees C
 Info (21077): High junction temperature is 100 degrees C
-Warning (335093): TimeQuest Timing Analyzer is analyzing 12 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332164): Evaluating HDL-embedded SDC commands
-    Info (332165): Entity dcfifo_qbe1
-        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_0v8:dffpipe15|dffe16a* 
-        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_vu8:dffpipe12|dffe13a* 
-Warning (332173): Ignored filter: *rdptr_g* could not be matched with a clock or keeper or register or port or pin or cell or partition
-Warning (332048): Ignored set_false_path: Argument <from> is not an object ID
-Warning (332173): Ignored filter: *delayed_wrptr_g* could not be matched with a clock or keeper or register or port or pin or cell or partition
-Warning (332173): Ignored filter: *rs_dgwp|dffpipe_vu8:dffpipe12|dffe13a* could not be matched with a clock or keeper or register or port or pin or cell or partition
-Warning (332048): Ignored set_false_path: Argument <from> is not an object ID
-Warning (332048): Ignored set_false_path: Argument <to> is not an object ID
+    Info (332165): Entity dcfifo_lde1
+        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_1v8:dffpipe17|dffe18a* 
+        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_uu8:dffpipe14|dffe15a* 
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'TOP.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Warning (332125): Found combinational loop of 4 nodes File: F:/Git/Sonar/FPGA/PhasedArrayController/SerialSlave.v Line: 42
-    Warning (332126): Node "ss|BitCounter[3]~7|combout"
-    Warning (332126): Node "ss|Add0~0|dataa"
-    Warning (332126): Node "ss|Add0~0|combout"
-    Warning (332126): Node "ss|BitCounter[3]~7|dataa"
-Warning (332125): Found combinational loop of 4 nodes File: F:/Git/Sonar/FPGA/PhasedArrayController/SerialSlave.v Line: 42
-    Warning (332126): Node "ss|BitCounter[2]~12|combout"
-    Warning (332126): Node "ss|Add0~1|dataa"
-    Warning (332126): Node "ss|Add0~1|combout"
-    Warning (332126): Node "ss|BitCounter[2]~12|dataa"
-Warning (332125): Found combinational loop of 4 nodes File: F:/Git/Sonar/FPGA/PhasedArrayController/SerialSlave.v Line: 42
-    Warning (332126): Node "ss|BitCounter[1]~17|combout"
-    Warning (332126): Node "ss|Add0~2|datab"
-    Warning (332126): Node "ss|Add0~2|combout"
-    Warning (332126): Node "ss|BitCounter[1]~17|datab"
-Warning (332125): Found combinational loop of 2 nodes File: F:/Git/Sonar/FPGA/PhasedArrayController/SerialSlave.v Line: 42
-    Warning (332126): Node "ss|BitCounter[0]~2|combout"
-    Warning (332126): Node "ss|BitCounter[0]~2|dataa"
 Warning (332060): Node: PCKO was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|altsyncram_bc01:fifo_ram|q_b[0] is being clocked by PCKO
+    Info (13166): Register FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|altsyncram_2b01:fifo_ram|q_b[0] is being clocked by PCKO
+Warning (332060): Node: sampleClockState was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_lde1:auto_generated|altsyncram_2b01:fifo_ram|ram_block11a0~porta_we_reg is being clocked by sampleClockState
+Warning (332060): Node: SerialSlave:ss|BitCounter[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register register[3][0] is being clocked by SerialSlave:ss|BitCounter[0]
+Warning (332060): Node: SerialSlave:ss|preSCK[0] was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register SerialSlave:ss|recieveBuffer[7] is being clocked by SerialSlave:ss|preSCK[0]
 Warning (332060): Node: clk24 was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register FIFO:fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qbe1:auto_generated|altsyncram_bc01:fifo_ram|ram_block11a0~porta_we_reg is being clocked by clk24
-Warning (332060): Node: SCK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register register[3][0] is being clocked by SCK
+    Info (13166): Register SerialSlave:ss|preSCK[10] is being clocked by clk24
 Warning (332060): Node: Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register Mic:GeneratedMics[12].mic|fir_result_buf[17] is being clocked by Mic:GeneratedMics[12].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid
 Warning (332060): Node: Mic:GeneratedMics[11].mic|FIR:fir|FIR_fir_compiler_ii_0:fir_compiler_ii_0|FIR_fir_compiler_ii_0_ast:FIR_fir_compiler_ii_0_ast_inst|auk_dspip_avalon_streaming_source_hpfir:source|data_valid was determined to be a clock but was found without an associated clock assignment.
@@ -619,10 +608,10 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
 Info (215031): Total thermal power estimate for the design is 232.79 mW
-Info: Quartus Prime PowerPlay Power Analyzer was successful. 0 errors, 48 warnings
-    Info: Peak virtual memory: 709 megabytes
-    Info: Processing ended: Tue Dec 26 18:04:01 2017
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 713 megabytes
+    Info: Processing ended: Wed Mar 21 22:51:50 2018
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
 
 

@@ -23,7 +23,7 @@
 * Device(s)    : R5F571MFDxFB
 * Tool-Chain   : CCRX
 * Description  : This file implements device driver for SCIF module.
-* Creation Date: 2017/12/28
+* Creation Date: 2018/01/08
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -299,7 +299,7 @@ void R_SCIFA11_Create(void)
     SCIFA11.SEMR.BIT.MDDRS = 0U;
 
     /* Set bit rate */
-    SCIFA11.BRR = 0x00U;
+    SCIFA11.BRR = 0x05U;
 
     /* Set FIFO trigger conditions */
     SCIFA11.FTCR.WORD = _0000_SCIF_TX_FIFO_TRIGGER_NUM_0 | _0080_SCIF_TX_TRIGGER_TFTC_VALID | 

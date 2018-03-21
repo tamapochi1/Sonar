@@ -1,0 +1,14 @@
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\bin\Debug\SonarHostApp_TEST.exe.config
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\bin\Debug\SonarHostApp_TEST.exe
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\bin\Debug\SonarHostApp_TEST.pdb
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST.csprojResolveAssemblyReference.cache
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\MainWindow.g.cs
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\App.g.cs
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST_MarkupCompile.cache
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST_MarkupCompile.lref
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\MainWindow.baml
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST.g.resources
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST.Properties.Resources.resources
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST.csproj.GenerateResource.Cache
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST.exe
+F:\Git\Sonar\SonarHostApp\SonarHostApp_TEST\SonarHostApp_TEST\obj\Debug\SonarHostApp_TEST.pdb

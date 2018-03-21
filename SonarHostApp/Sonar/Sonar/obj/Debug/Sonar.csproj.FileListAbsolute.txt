@@ -1,0 +1,14 @@
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\bin\Debug\Sonar.exe.config
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\bin\Debug\Sonar.exe
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\bin\Debug\Sonar.pdb
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar.csprojResolveAssemblyReference.cache
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\MainWindow.g.cs
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\App.g.cs
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar_MarkupCompile.cache
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar_MarkupCompile.lref
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\MainWindow.baml
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar.g.resources
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar.Properties.Resources.resources
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar.csproj.GenerateResource.Cache
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar.exe
+F:\Git\Sonar\SonarHostApp\Sonar\Sonar\obj\Debug\Sonar.pdb

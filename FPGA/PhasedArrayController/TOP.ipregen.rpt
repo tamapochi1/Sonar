@@ -1,6 +1,6 @@
 IP Upgrade report for TOP
-Tue Dec 26 23:04:21 2017
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Wed Mar 21 22:36:13 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -8,7 +8,8 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ---------------------
   1. Legal Notice
   2. IP Upgrade Summary
-  3. IP Upgrade Messages
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
 
 
 
@@ -23,34 +24,73 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------+
 ; IP Upgrade Summary                                                         ;
 +------------------------------+---------------------------------------------+
-; IP Components Upgrade Status ; Failed - Tue Dec 26 23:04:21 2017           ;
-; Quartus Prime Version        ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; IP Components Upgrade Status ; Passed - Wed Mar 21 22:36:13 2018           ;
+; Quartus Prime Version        ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                ; TOP                                         ;
 ; Top-level Entity Name        ; TOP                                         ;
 ; Family                       ; MAX 10                                      ;
 +------------------------------+---------------------------------------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                        ;
++-------------+------------------------+---------+-----------------------+----------------------+-----------------+---------------------------------------------------+
+; Entity Name ; Component Name         ; Version ; Original Source File  ; Generation File Path ; New Source File ; Message                                           ;
++-------------+------------------------+---------+-----------------------+----------------------+-----------------+---------------------------------------------------+
+; FIR         ; altera_fir_compiler_ii ; 17.0    ; FIR/synthesis/FIR.qip ; FIR.qsys             ;                 ; Error upgrading Platform Designer file "FIR.qsys" ;
++-------------+------------------------+---------+-----------------------+----------------------+-----------------+---------------------------------------------------+
+
+
 +---------------------+
 ; IP Upgrade Messages ;
 +---------------------+
-Info (23030): Evaluation of Tcl script f:/intelfpga_lite/17.0/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 669 megabytes
-    Info: Processing ended: Tue Dec 26 23:04:21 2017
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:21
+Info (11902): Backing up file "FIR.qsys" to "FIR.BAK.qsys"
+Info (11902): Backing up file "FIR/synthesis/FIR.v" to "FIR.BAK.v"
+Info (11837): Started upgrading IP component altera_fir_compiler_ii with file "FIR.qsys"
+Info: 2018.03.21.22:36:06 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2018.03.21.22:36:06 Info: Finished upgrading the ip cores
+Info: 2018.03.21.22:36:11 Info: Saving generation log to F:/Git/Sonar/FPGA/PhasedArrayController/FIR
+Info: 2018.03.21.22:36:11 Info: Starting: Create simulation model
+Info: 2018.03.21.22:36:11 Info: qsys-generate F:\Git\Sonar\FPGA\PhasedArrayController\FIR.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=F:\Git\Sonar\FPGA\PhasedArrayController\FIR\simulation --family="MAX 10" --part=10M16SCE144I7G
+Info: 2018.03.21.22:36:11 Info: Loading PhasedArrayController
+Info: 2018.03.21.22:36:11 Info: Reading input file
+Info: 2018.03.21.22:36:11 Info: Adding fir_compiler_ii_0 [altera_fir_compiler_ii 17.1]
+Info: 2018.03.21.22:36:11 Info: Parameterizing module fir_compiler_ii_0
+Info: 2018.03.21.22:36:11 Info: Building connections
+Info: 2018.03.21.22:36:11 Info: Parameterizing connections
+Info: 2018.03.21.22:36:11 Info: Validating
+Info: 2018.03.21.22:36:12 Info: Done reading input file
+Info: 2018.03.21.22:36:12 Info: FIR.fir_compiler_ii_0: PhysChanIn -1, PhysChanOut -1, ChansPerPhyIn -1, ChansPerPhyOut -1, OutputFullBitWidth -1, Bankcount 1, CoefBitWidth 8
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0: Coefficient bank 0, Symmetric filters require reset coefficients to be matched. Coefficient pair {1(1),29(94)} does not match.
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0: Output Fractional Full Bit Width should greater than Output Fractional bit width
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0: Output Bit Width should be greater than 1
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0: Port ast_sink_data is not fully defined after elaboration
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0.avalon_streaming_sink: data width (-1) must be a multiple of bitsPerSymbol (8)
+Warning: 2018.03.21.22:36:12 Warning: FIR.fir_compiler_ii_0.avalon_streaming_sink: Signal ast_sink_data[-1] of type data must have width [1-8192]
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0.avalon_streaming_sink: "Symbols per beat  " (symbolsPerBeat) -1 is out of range: 1-512
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0.avalon_streaming_source: "Data bits per symbol" (dataBitsPerSymbol) -1 is out of range: 1-4096
+Error: 2018.03.21.22:36:12 Error: FIR.fir_compiler_ii_0.avalon_streaming_source: "Symbols per beat  " (symbolsPerBeat) -1 is out of range: 1-512
+Info: 2018.03.21.22:36:12 Info: FIR: Generating FIR "FIR" for SIM_VERILOG
+Error: 2018.03.21.22:36:13 Error: Internal error: STD_LOGIC: Zero or negative width types not supported, it was -1
+Info (11904): Restoring file "FIR.BAK.qsys" to "FIR.qsys"
+Error (14923): Error upgrading Platform Designer file "FIR.qsys"
+Error (11890): Unable to automatically upgrade Platform Designer component. Please manually upgrade "FIR.qsys" in Platform Designer
+Error (23031): Evaluation of Tcl script f:/intelfpga/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 12 errors, 1 warning
+    Error: Peak virtual memory: 670 megabytes
+    Error: Processing ended: Wed Mar 21 22:36:13 2018
+    Error: Elapsed time: 00:00:22
+    Error: Total CPU time (on all processors): 00:00:53
 
 

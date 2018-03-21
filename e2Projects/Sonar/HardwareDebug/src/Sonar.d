@@ -47,3 +47,17 @@ src/Sonar.obj src/Sonar.d: F:\Git\Sonar\e2Projects\Sonar\r_config\r_usb_pcdc_con
 F:\Git\Sonar\e2Projects\Sonar\r_config\r_usb_pcdc_config.h:
 src/Sonar.obj src/Sonar.d: ../src/r_usb_pcdc_descriptor.h
 ../src/r_usb_pcdc_descriptor.h:
+src/Sonar.obj src/Sonar.d: ../src/cg_src\r_cg_macrodriver.h
+../src/cg_src\r_cg_macrodriver.h:
+src/Sonar.obj src/Sonar.d: ../src/cg_src\r_cg_bsc.h
+../src/cg_src\r_cg_bsc.h:
+src/Sonar.obj src/Sonar.d: ../src/cg_src\r_cg_scifa.h
+../src/cg_src\r_cg_scifa.h:
+src/Sonar.obj src/Sonar.d: F:\Git\Sonar\e2Projects\Sonar\r_pdc_rx\r_pdc_rx_if.h
+F:\Git\Sonar\e2Projects\Sonar\r_pdc_rx\r_pdc_rx_if.h:
+src/Sonar.obj src/Sonar.d: F:\Git\Sonar\e2Projects\Sonar\r_config\r_pdc_rx_config.h
+F:\Git\Sonar\e2Projects\Sonar\r_config\r_pdc_rx_config.h:
+src/Sonar.obj src/Sonar.d: F:\Git\Sonar\e2Projects\Sonar\r_pincfg\r_pinset.h
+F:\Git\Sonar\e2Projects\Sonar\r_pincfg\r_pinset.h:
+src/Sonar.obj src/Sonar.d: ../src/Converter.h
+../src/Converter.h:

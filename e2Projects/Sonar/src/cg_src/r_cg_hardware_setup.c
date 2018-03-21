@@ -23,7 +23,7 @@
 * Device(s)    : R5F571MFDxFB
 * Tool-Chain   : CCRX
 * Description  : This file implements system initializing function.
-* Creation Date: 2017/12/28
+* Creation Date: 2018/01/08
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -39,7 +39,6 @@ Includes
 #include "r_cg_cgc.h"
 #include "r_cg_bsc.h"
 #include "r_cg_scifa.h"
-#include "r_cg_riic.h"
 /* Start user code for include. Do not edit comment generated here */
 /* End user code. Do not edit comment generated here */
 #include "r_cg_userdefine.h"
@@ -87,16 +86,9 @@ void R_Systeminit(void)
     R_BSC_Create();
     R_SCIFA10_Create();
     R_SCIFA11_Create();
-    R_RIIC0_Create();
 
     /* Register undefined interrupt */
     R_BSP_InterruptWrite(BSP_INT_SRC_UNDEFINED_INTERRUPT,(bsp_int_cb_t)r_undefined_exception);
-
-    /* Register BL1 group interrupt TEI0 */
-    R_BSP_InterruptWrite(BSP_INT_SRC_BL1_RIIC0_TEI0,(bsp_int_cb_t)r_riic0_transmitend_interrupt);
-
-    /* Register BL1 group interrupt EEI0 */
-    R_BSP_InterruptWrite(BSP_INT_SRC_BL1_RIIC0_EEI0,(bsp_int_cb_t)r_riic0_error_interrupt);
 
     /* Register AL0 group interrupt TEIF10 */
     R_BSP_InterruptWrite(BSP_INT_SRC_AL0_SCIFA10_TEIF10,(bsp_int_cb_t)r_scifa10_teif_interrupt);

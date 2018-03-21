@@ -41,12 +41,15 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_usb_basic}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_usb_basic\src\driver\inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_usb_basic\src\hw\inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_config}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_usb_pcdc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_usb_pcdc\src\inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_pdc_rx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/r_pincfg}&quot;"/>
 								</option>
 								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.langFileC.691526856" name="Cソース" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.langFileC" useByScannerDiscovery="false" value="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.langFileC.c99" valueType="enumerated"/>
 								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.debug.1620940396" name="デバッグ情報を出力する" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.debug"/>
+								<option id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.optimize.709323619" name="最適化レベル" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.optimize" useByScannerDiscovery="false" value="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.option.optimize.level0" valueType="enumerated"/>
 								<inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType.579892657" name="Compiler Input C" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType"/>
 								<inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType.839721203" name="Compiler Input CPP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType"/>
 							</tool>
@@ -77,9 +80,11 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="r_bsp"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="r_pdc_rx"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="r_pincfg"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="r_usb_basic"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="r_usb_pcdc"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+						<entry excluding="cg_src/r_cg_riic.h|cg_src/r_cg_riic_user.c|cg_src/r_cg_riic.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -93,6 +98,10 @@
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="HardwareDebug">
+			<resource resourceType="PROJECT" workspacePath="/Sonar"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
